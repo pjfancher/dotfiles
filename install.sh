@@ -6,12 +6,12 @@ VIM_DIR="$HOME/vimrc"
 
 # CHECK FOR AND REMOVE EXISTING DIRS
 if [ -d $BASH_DIR ]; then
-  rmdir $BASH_DIR
+  rm -rf $BASH_DIR
 fi
 
 # CHECK FOR AND REMOVE EXISTING DIRS
 if [ -d $VIM_DIR ]; then
-  rmdir $VIM_DIR
+  rm -rf $VIM_DIR
 fi
 
 git clone https://github.com/db-pj/bashrc $BASH_DIR && cd $BASH_DIR && ./install && cd ~ && . .bashrc
