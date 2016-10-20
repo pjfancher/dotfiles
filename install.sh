@@ -1,7 +1,7 @@
 #!/bin/bash
 
-BASH_DIR = "~/bashrc"
-VIM_DIR = "~/vimrc"
+BASH_DIR="~/bashrc"
+VIM_DIR="~/vimrc"
 
 git clone https://github.com/db-pj/bashrc $BASH_DIR && cd $BASH_DIR && ./install && cd ~ && . .bashrc
 
