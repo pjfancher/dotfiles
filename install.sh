@@ -5,12 +5,12 @@ BASH_DIR="$HOME/bashrc"
 VIM_DIR="$HOME/vimrc"
 
 # CHECK FOR AND REMOVE EXISTING DIRS
-if [ -d $BASH_DIR ]; then
+if [ -d $BASH_DIR ] then
   rmdir $BASH_DIR
 fi
 
 # CHECK FOR AND REMOVE EXISTING DIRS
-if [ -d $VIM_DIR ]; then
+if [ -d $VIM_DIR ] then
   rmdir $VIM_DIR
 fi
 
