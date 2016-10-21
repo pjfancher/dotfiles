@@ -1,0 +1,5 @@
+[user]
+	name = PJ Fancher
+	email = pj@digitalbrands.com
+[core]
+	mergeoptions = --no-edit
