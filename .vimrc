@@ -265,5 +265,5 @@ au BufRead,BufNewFile *.go set ft=go syntax=go
 " Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-	source ~/.vim_plugins
+	source ~/.vim-plugins
 call vundle#end()
