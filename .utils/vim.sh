@@ -1,13 +1,13 @@
 #!/bin/bash
 
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-    && . "../utils.sh"
+    && . "utils.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 install_plugins() {
 
-    declare -r VUNDLE_DIR="$HOME/.vim/plugins/Vundle.vim"
+    declare -r VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
     declare -r VUNDLE_GIT_REPO_URL="https://github.com/VundleVim/Vundle.vim.git"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
