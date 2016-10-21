@@ -1,7 +1,8 @@
 #!/bin/bash
 
-. .utils/utils.sh
-. .utils/symlinks.sh
-. .bashrc
-. .utils/vim.sh
+cd "$(dirname "${BASH_SOURCE[0]}")" \
+        && . ".utils/utils.sh" \
+        && . ".utils/symlinks.sh" \
+        && . ".bashrc" \
+        && . ".utils/vim.sh"
 printf "\n\n"
