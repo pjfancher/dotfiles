@@ -6,6 +6,14 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# Load our dotfiles like ~/.bash_prompt, etc…
+#   ~/.extra can be used for settings you don’t want to commit,
+#   Use it to configure your PATH, thus it being first in line.
+for file in ~/.{aliases,git_prompt,functions}; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -54,7 +62,6 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-source ~/bashrc/.git-prompt.sh
 if [ "$color_prompt" = yes ]; then
 	PS1="${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00;32m\]\$(__git_ps1)\[\033[01;35m\]\$\[\033[00m\] "
 else
@@ -78,10 +85,6 @@ esac
 
 if [ -f ~/.bash_site_aliases ]; then
     . ~/bashrc/.bash_site_aliases
-fi
-
-if [ -f ~/bashrc/.bash_aliases ]; then
-    . ~/bashrc/.bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
