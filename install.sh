@@ -1,7 +1,7 @@
 #!/bin/bash
 
-. .utils/utils.sh
-. .utils/symlinks.sh
-. .bashrc
-. .utils/vim.sh
+source .utils/utils.sh
+source .utils/symlinks.sh
+source .bashrc
+source .utils/vim.sh
 printf "\n\n"
