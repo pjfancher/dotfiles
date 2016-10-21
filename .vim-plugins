@@ -20,9 +20,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'marcweber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 
-" Snippets Pack
-Plugin 'honza/vim-snippets'
-
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
