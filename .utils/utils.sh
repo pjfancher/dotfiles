@@ -13,7 +13,7 @@ ask() {
 
 ask_for_confirmation() {
     print_question "$1 (y/n) "
-    read -n 1
+    read
     printf "\n"
 }
 
