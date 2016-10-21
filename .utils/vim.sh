@@ -16,11 +16,11 @@ install_plugins() {
 
     execute \
         "rm -rf '$VUNDLE_DIR' \
-            && git clone --quiet '$VUNDLE_GIT_REPO_URL' '$VUNDLE_DIR'" \
+            && git clone --quiet '$VUNDLE_GIT_REPO_URL' '$VUNDLE_DIR' \
+            && printf '\n' | vim +PluginInstall +qall" \
         "Installing plugins" \
         || return 1
 
-            # && printf '\n' | vim +PluginInstall +qall" \
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 }
@@ -40,7 +40,6 @@ main() {
     print_in_purple "\n   Vim\n\n"
 
     install_plugins
-	vim +PluginInstall +qall
     #update_plugins
 
 }
