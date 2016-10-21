@@ -87,6 +87,10 @@ if [ -f ~/.bash_site_aliases ]; then
     . ~/.bash_site_aliases
 fi
 
+if [ -f ~/.aliases_local ]; then
+    . ~/.aliases_local
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
