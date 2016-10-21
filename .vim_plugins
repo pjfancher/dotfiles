@@ -1,0 +1,189 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => PLUGINS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plug-in manager for Vim
+Plugin 'gmarik/Vundle.vim'
+
+" A tree explorer plugin for vim.
+Plugin 'scrooloose/nerdtree.git'
+
+" Vim plugin for intensely orgasmic commenting
+Plugin 'scrooloose/nerdcommenter.git'
+
+" Extended matching with %
+Plugin 'jwhitley/vim-matchit'
+
+" The ultimate snippet solution for Vim
+Plugin 'garbas/vim-snipmate'
+"
+" Required libs for Snipmate
+Plugin 'marcweber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+
+" Snippets Pack
+Plugin 'honza/vim-snippets'
+
+" Git wrapper
+Plugin 'tpope/vim-fugitive'
+
+" Quoting/parenthesizing made simple
+Plugin 'tpope/vim-surround'
+
+" True Sublime Text style multiple selections for Vim
+Plugin 'terryma/vim-multiple-cursors'
+
+" A light and configurable statusline/tabline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Insert mode auto-completion for quotes, parens, brackets, etc.
+Plugin 'Raimondi/delimitMate'
+
+" Text filtering and alignment
+Plugin 'godlygeek/tabular'
+
+" Support for expanding abbreviations similar to emmet
+Plugin 'mattn/emmet-vim'
+
+" Vim ack replacement
+Plugin 'rking/ag.vim'
+
+" Full path fuzzy file, buffer, tag finder for Vim.
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" Vim motions on speed!
+Plugin 'easymotion/vim-easymotion'
+
+" Vim Plugin for WordPress Development
+Plugin 'dsawardekar/wordpress.vim'
+
+" Improved PHP omnicompletion 
+Plugin 'shawncplus/phpcomplete.vim'
+
+" Syntax checking hacks for vim
+Plugin 'scrooloose/syntastic.git'
+
+" A solid language pack for Vim.
+Plugin 'sheerun/vim-polyglot'
+
+" Check PHP files for syntax errors
+Plugin 'nrocco/vim-phplint'
+
+" A Vim plugin which shows a git diff in the gutter
+"Plugin 'airblade/vim-gitgutter'
+
+" Perform all your vim insert mode completions with Tab
+Plugin 'ervandew/supertab'
+
+" Custom vim movements for selecting variables in PHP and Ruby
+Plugin 'robmiller/vim-movar'
+
+" Miscellaneous auto-load Vim scripts (required by vim-session)
+Plugin 'xolox/vim-misc'
+
+" Extended session management for Vim
+Plugin 'xolox/vim-session'
+
+" Plugin 'flazz/vim-colorschemes'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => PLUGIN CONFIGS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" NerdTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto Open NERDTree when no file on command line
+function! StartUp()
+ if 0 == argc()
+	 NERDTree
+	 call feedkeys("\<C-W>l:q\<Enter>","t")
+ end
+endfunction
+au VimEnter * call StartUp()
+let NERDTreeShowLineNumbers=1
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+
+
+" Vimify NerdTree Tab Navigation
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <C-l> gt
+nmap <C-h> gT
+
+
+" CtrlP
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
+let g:ctrlp_by_filename = 1
+let g:ctrlp_open_new_file = 't'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](plugins|uploads|images|backups|cache|ewww|upgrade|w3tc-config)$',
+  \ }
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
+
+
+" Lightline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:lightline = {
+    "\ 'colorscheme': 'wombat',
+"\ }
+"set laststatus=2
+"highlight clear SignColumn
+"
+" Airline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2
+"let g:airline_powerline_fonts=1
+"let g:airline_theme='distinguished'
+let g:airline_theme='ubaryd'
+let g:airline#extensions#whitespace#enabled = 0
+highlight clear SignColumn
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+
+
+" Snipmate
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+imap <Tab><Space> <Plug>snipMateNextOrTrigger
+
+
+" Tabular
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+vmap <Leader>aa :Tabularize /=><CR>
+nmap <Leader>aa :Tabularize /=><CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a: :Tabularize /:<CR>
+nmap <Leader>a: :Tabularize /:<CR>
+
+
+" Vim Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gc :Gcommit<CR>
+nmap <Leader>gb :Gblame<CR>
+nmap <Leader>gpm :!git push origin master<CR>
+nmap <Leader>gplm :!git pull origin master<CR>
+
+
+" Syntastic
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+
+
+" Sessions
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:session_autosave = 'yes'
+nnoremap SS :SaveSession 
+nnoremap SO :OpenSession 

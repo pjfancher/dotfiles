@@ -1,0 +1,101 @@
+alias pj='cd /home/sites/pj.passprotect.me/public_html'
+alias sites='cd /home/sites/'
+alias feed-status=' watch -n 1 php /home/sites/cd.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/functions/scripts/status-feeds.php'
+alias export-status=' watch -n 1 php /home/sites/cd.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/functions/scripts/status-export.php'
+
+
+# DATINGADVICE ALIASES
+# #########################################
+alias cdda='cd /home/sites/da.pj.passprotect.me/public_html/wp-content/'
+alias cd-da='cd /home/sites/da.pj.passprotect.me/public_html/wp-content/'
+alias wpc-da='cd /home/sites/da.pj.passprotect.me/public_html/wp-content/'
+alias wpc-dam='cd /home/sites/da.pj.passprotect.me.mbl/public_html/wp-content/'
+alias varnish-da='sudo ln -s -f /home/sites/da.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/functions/cache-sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl && sudo service varnish reload'
+alias en-da='sudo a2dissite da.pj.passprotect.me && ra && sudo a2ensite da.pj.passprotect.me && ra && varnish-da && sudo curl -X PURGE da.pj.passprotect.me'
+
+# PRINTAHOLIC ALIASES
+# #########################################
+alias cdpr='cd /home/sites/pr.pj.passprotect.me/public_html/wp-content/'
+alias cd-pr='cd /home/sites/pr.pj.passprotect.me/public_html/wp-content/'
+alias wpc-pr='cd /home/sites/pr.pj.passprotect.me/public_html/wp-content/'
+alias makecss-pr='python /home/sites/pr.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/makefile-css.py'
+alias makejs-pr='python /home/sites/pr.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/makefile-js.py'
+alias varnish-pr='sudo ln -s -f /home/sites/pr.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/functions/cache_sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl'
+
+# COUPONS ALIASES
+# #########################################
+alias cdcd='cd /home/sites/cd.pj.passprotect.me/public_html/wp-content/'
+alias cd-cd='cd /home/sites/cd.pj.passprotect.me/public_html/wp-content/'
+alias wpc-cd='cd /home/sites/cd.pj.passprotect.me/public_html/wp-content/'
+alias makecss-cd='python /home/sites/cd.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/makefile-css.py'
+alias makecss-cdm='lessc /home/sites/cd.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-mobile/less/mobile.less /home/sites/cd.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-mobile/style.css'
+alias makejs-cd='python /home/sites/cd.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/makefile-js.py'
+alias varnish-cd='sudo ln -s -f /home/sites/cd.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/functions/cache_sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl'
+
+# CARDRATES ALIASES
+# #########################################
+alias cdcr='cd /home/sites/cr.pj.passprotect.me/public_html/wp-content/'
+alias cd-cr='cd /home/sites/cr.pj.passprotect.me/public_html/wp-content/'
+alias wpc-cr='cd /home/sites/cr.pj.passprotect.me/public_html/wp-content/'
+alias makecss-cr='lessc /home/sites/cr.pj.passprotect.me/public_html/wp-content/themes/cardreviews/less/style.less /home/sites/cr.pj.passprotect.me/public_html/wp-content/themes/cardreviews/style.css'
+alias makecss-crm='lessc /home/sites/cr.pj.passprotect.me/public_html/wp-content/themes/cardreviews/less/mobile/mobile.less /home/sites/cr.pj.passprotect.me/public_html/wp-content/themes/cardreviews/mobile.css'
+alias makejs-cr='python /home/sites/cr.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/makefile-js.py'
+alias varnish-cr='sudo ln -s -f /home/sites/cr.pj.passprotect.me/public_html/wp-content/themes/cardreviews/functions/cache_sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl'
+alias cr-update='cd /home/sites/cr.pj.passprotect.me/public_html/wp-content/themes/cardreviews/functions/scripts/ && php cr-update.php && cd -'
+
+# BADCREDIT ALIASES
+# #########################################
+alias cdbc='cd /home/sites/bc.pj.passprotect.me/public_html/wp-content/'
+alias cd-bc='cd /home/sites/bc.pj.passprotect.me/public_html/wp-content/'
+alias wpc-bc='cd /home/sites/bc.pj.passprotect.me/public_html/wp-content/'
+alias makecss-bc='python /home/sites/bc.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/makefile-css.py'
+alias makecss-bcm='lessc /home/sites/bc.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/less/mobile/mobile.less /home/sites/bc.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/mobile.css';
+alias makejs-bc='python /home/sites/bc.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/makefile-js.py'
+alias varnish-bc='sudo ln -s -f /home/sites/bc.pj.passprotect.me/public_html/wp-content/themes/tdr-framework-child/functions/cache-sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl'
+alias en-bc='sudo a2dissite bc.pj.passprotect.me && ra && sudo a2ensite bc.pj.passprotect.me && ra && varnish-bc && rv && sudo curl -X PURGE bc.pj.passprotect.me'
+
+# DIGITALBRANDS ALIASES
+# #########################################
+alias cddb='cd /home/sites/db.pj.passprotect.me/public_html/wp-content/'
+alias cd-db='cd /home/sites/db.pj.passprotect.me/public_html/wp-content/'
+alias wpc-db='cd /home/sites/db.pj.passprotect.me/public_html/wp-content/'
+alias varnish-db='sudo ln -s -f /home/sites/db.pj.passprotect.me/public_html/wp-content/themes/digitalbrands/functions/cache_sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl'
+alias db-update-mobile='cd /home/sites/db.pj.passprotect.me/public_html/wp-content/themes/db-mobile/functions/scripts/ && php db-update-mobile.php && cd -'
+alias en-db='sudo a2dissite db.pj.passprotect.me && ra && sudo a2ensite db.pj.passprotect.me && ra && varnish-db && rv && sudo curl -X PURGE db.pj.passprotect.me'
+
+# GAINESVILLESHOWS ALIASES
+# #########################################
+alias cdgvs='cd /home/sites/gvs.pj.passprotect.me/public_html/wp-content/'
+alias cd-gvs='cd /home/sites/gvs.pj.passprotect.me/public_html/wp-content/'
+alias wpc-gvs='cd /home/sites/gvs.pj.passprotect.me/public_html/wp-content/'
+alias varnish-gvs='sudo ln -s -f /home/sites/gvs.pj.passprotect.me/public_html/wp-content/themes/gainesvilleshows/functions/varnish/default.vcl /etc/varnish/default.vcl'
+alias gvs='mosh gainesvilleshows.com'
+
+# HOSTINGADVICE ALIASES
+# #########################################
+alias cdha='cd /home/sites/ha.pj.passprotect.me/public_html/wp-content/'
+alias cd-ha='cd /home/sites/ha.pj.passprotect.me/public_html/wp-content/'
+alias wpc-ha='cd /home/sites/ha.pj.passprotect.me/public_html/wp-content/'
+alias varnish-ha='sudo ln -s -f /home/sites/ha.pj.passprotect.me/public_html/wp-content/themes/hostingadvice/functions/cache_sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl'
+
+# DEALCRUNCH ALIASES
+# #########################################
+alias cddc='cd /home/sites/dc.pj.passprotect.me/public_html/wp-content/'
+alias cd-dc='cd /home/sites/dc.pj.passprotect.me/public_html/wp-content/'
+alias wpc-dc='cd /home/sites/dc.pj.passprotect.me/public_html/wp-content/'
+alias varnish-dc='sudo ln -s -f /home/sites/dc.pj.passprotect.me/public_html/wp-content/themes/dealcrunch/functions/varnish/default.vcl /etc/varnish/default.vcl'
+alias dc-update='cd /home/sites/dc.pj.passprotect.me/public_html/wp-content/themes/dealcrunch/functions/scripts/ && php dc-update.php && cd -'
+
+# CLICKY ALIASES
+# #########################################
+alias wpc-cb='cd /home/sites/cb.pj.passprotect.me/public_html/wp-content/'
+alias varnish-cb='sudo ln -s -f /home/sites/cb.pj.passprotect.me/public_html/wp-content/themes/clicky/functions/cache_sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl'
+
+# REVIEWS ALIASES
+# #########################################
+alias wpc-ro='cd /home/sites/ro.pj.passprotect.me/public_html/wp-content/'
+alias varnish-ro='sudo ln -s -f /home/sites/ro.pj.passprotect.me/public_html/wp-content/themes/review.org/functions/cache_sitemap/varnish_setup/default.vcl /etc/varnish/default.vcl'
+
+# SUPER DOPPLER ALIASES
+# #########################################
+alias wpc-sd='cd /home/sites/sd.pj.passprotect.me/public_html/super-doppler/'

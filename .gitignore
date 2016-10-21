@@ -1,0 +1,8 @@
+# VIM
+.vim/viminfo
+.vim/swaps/*
+.vim/undo
+.vim/sessions
+
+# GIT
+.gitconfig.local
