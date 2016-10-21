@@ -3,6 +3,8 @@
 .vim/swaps/*
 .vim/undo
 .vim/sessions
+.vim/bundle
+.vim/view
 
 # GIT
 .gitconfig.local
