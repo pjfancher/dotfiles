@@ -3,5 +3,8 @@
 
 To install all dot files and plugins: `curl -L peej.io | bash`
 
+> **WARNING: This will overwrite current dotfiles**
+
+
 ## Custom Setup
 Replace all dot files in the root directory with your own files and run install.sh.
