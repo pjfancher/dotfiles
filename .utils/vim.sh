@@ -23,14 +23,6 @@ install_plugins() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    # Install additional things required by some plugins.
-
-    execute \
-        ". $HOME/.bash.local \
-            && cd $HOME/.vim/plugins/tern_for_vim \
-            && npm install" \
-        "Install plugins (extra installs for 'tern_for_vim')"
-
 }
 
 update_plugins() {
