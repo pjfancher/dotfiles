@@ -1,5 +1,5 @@
 ## Install As Is
-> **WARNING: This will overwrite current dotfiles**
+> **<span style="color:red;">WARNING: This will overwrite current dotfiles</span>**
 
 [peej.io](http://peej.io) links to the raw install-remote script.
 
