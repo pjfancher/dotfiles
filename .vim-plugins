@@ -67,7 +67,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'nrocco/vim-phplint'
 
 " A Vim plugin which shows a git diff in the gutter
-"Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 " Perform all your vim insert mode completions with Tab
 Plugin 'ervandew/supertab'
@@ -81,7 +81,6 @@ Plugin 'xolox/vim-misc'
 " Extended session management for Vim
 Plugin 'xolox/vim-session'
 
-" Plugin 'flazz/vim-colorschemes'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PLUGIN CONFIGS
