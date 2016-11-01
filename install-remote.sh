@@ -5,6 +5,4 @@
 
 cd $HOME \
 && git clone https://github.com/db-pj/dotfiles \
-&& . $HOME/dotfiles/install.sh \
-&& mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc \
-&& source $HOME/.zshrc
+&& . $HOME/dotfiles/install.sh
