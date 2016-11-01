@@ -8,9 +8,9 @@ alias .....="cd ../../../.."
 
 # LS ALIASES
 # #########################################
+alias l='ls -alFh'
 alias ll='ls -alFh'
 alias la='ls -lah'
-alias l='ls -CF'
 
 # GREP
 # #########################################
