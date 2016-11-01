@@ -22,6 +22,11 @@ alias gh='history | grep'
 # #########################################
 alias sudo='sudo '
 
+# SOURCE FILES
+# #########################################
+alias bashrc='source $HOME/.bashrc'
+alias zshrc='source $HOME/.zshrc'
+
 # GIT ALIASES
 # #########################################
 alias gb='git branch'
