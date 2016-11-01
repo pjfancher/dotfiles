@@ -14,5 +14,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 printf "\n\n"
 
 # Use Custom .zshrc
-mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc \
-   && source $HOME/.zshrc
+zsh -c "mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc && . $HOME/.zshrc"
