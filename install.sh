@@ -1,8 +1,8 @@
 #!/bin/bash
 
-   sh "$HOME/dotfiles/.utils/utils.sh" \
-&& sh "$HOME/dotfiles/.utils/symlinks.sh" \
-&& sh "$HOME/dotfiles/.utils/vim.sh"
+   . "$HOME/dotfiles/.utils/utils.sh" \
+&& . "$HOME/dotfiles/.utils/symlinks.sh" \
+&& . "$HOME/dotfiles/.utils/vim.sh"
 printf "\n\n"
 
 # Install oh-my-zsh
