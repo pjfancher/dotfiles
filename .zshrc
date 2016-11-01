@@ -1,2 +1,2 @@
-ZSH_THEME="peej"
-source ~/.aliases
+source "dotfiles/.zsh/themes/peej.zsh-theme"
+source ".aliases"
