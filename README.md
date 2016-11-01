@@ -10,3 +10,7 @@ To install all dot files and plugins: `curl -L peej.io | bash`
 * Clone the repo: `git clone https://github.com/db-pj/dotfiles` 
 * Replace all dot files in the root directory with your own files
 * Run `./install.sh`
+
+
+
+bash -c "$(curl -fsSL peej.io)"
