@@ -13,4 +13,4 @@ To install all dot files and plugins: `curl -L peej.io | bash`
 
 
 
-bash -c "$(curl -fsSL peej.io)"
+bash -c "$(curl -L peej.io)"
