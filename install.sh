@@ -10,8 +10,8 @@ printf "\n\n"
 
 # Install oh-my-zsh
 # https://github.com/robbyrussell/oh-my-zsh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh && mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc && source $HOME/.zshrc)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Use Custon .zshrc
-#mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc \
-#&& source $HOME/.zshrc
+mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc \
+&& source $HOME/.zshrc
