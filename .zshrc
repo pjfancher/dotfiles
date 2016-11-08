@@ -56,6 +56,14 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 
+if [ -f ~/.bash_site_aliases ]; then
+    . ~/.bash_site_aliases
+fi
+
+if [ -f ~/.aliases_local ]; then
+    . ~/.aliases_local
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
