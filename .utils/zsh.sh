@@ -98,16 +98,16 @@ main() {
 
 
   printf "${GREEN}"
-  echo '         __                                     __   '
-  echo '  ____  / /_     ____ ___  __  __   ____  _____/ /_  '
-  echo ' / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ '
-  echo '/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / '
-  echo '\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  '
-  echo '                        /____/                       ....is now installed!'
+  echo '             __                                     __   '
+  echo '      ____  / /_     ____ ___  __  __   ____  _____/ /_  '
+  echo '     / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ '
+  echo '    / /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / '
+  echo '    \____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  '
+  echo '                            /____/                       ....is now installed!'
   echo ''
   echo ''
   printf "${BOLD}"
-  echo 'Log out and log back in to complete shell switch.'
+  echo '    Log out and log back in to complete shell switch.'
   echo ''
   printf "${NORMAL}"
   env zsh
