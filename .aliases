@@ -8,7 +8,7 @@ alias .....="cd ../../../.."
 
 # LS ALIASES
 # #########################################
-alias l='ls -alFh'
+alias l='ls -lFh'
 alias ll='ls -alFh'
 alias la='ls -lah'
 
