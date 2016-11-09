@@ -7,4 +7,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
    && . ".utils/zsh.sh" \
    && cd $HOME
 
-printf "\n\n   Environment setup complete! Enjoy!\n"
+print_in_green "\n\n   Environment setup complete! Enjoy!\n"
