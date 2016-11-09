@@ -8,5 +8,5 @@ if [ -d ~/dotfiles ]; then
 fi
 
 cd $HOME \
-&& git clone https://github.com/db-pj/dotfiles \
+&& git clone --quiet https://github.com/db-pj/dotfiles &> /dev/null \
 && . $HOME/dotfiles/install.sh
