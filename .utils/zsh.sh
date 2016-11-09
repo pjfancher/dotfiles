@@ -1,6 +1,6 @@
 main() {
 
-  print_in_purple "\n   Zsh\n\n"
+  print_in_purple "\n   Zsh\n"
   
   # Use colors, but only if connected to a terminal, and that terminal
   # supports them.
