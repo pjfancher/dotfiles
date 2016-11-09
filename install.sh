@@ -9,7 +9,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
    && cd $HOME
 
 print_in_purple "\n\n   Environment Setup Complete! Enjoy!\n"
-print_in_green "\n \
+print_in_green " \
                           _     _       \n \
     ____   ___   ___     (_)   (_)____  \n \
    / __ \ / _ \ / _ \   / /   / // __ \ \n \
@@ -17,4 +17,4 @@ print_in_green "\n \
  / ____/ \___/ \___/__/ /(_)/_/ \____/  \n \
 /_/                /___/                \n \
 "
-printf "\n"
+printf "\n\n"
