@@ -107,7 +107,7 @@ main() {
   echo ''
   echo ''
   printf "${BOLD}"
-  printf "    Log out and log back in to complete shell switch.\n\tOr run: ${GREEN}exec zsh"
+  printf "    Log out and log back in to complete shell switch.\nOr run: exec zsh"
   echo ''
   printf "${NORMAL}"
   env zsh
