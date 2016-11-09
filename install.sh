@@ -8,7 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
    && . ".utils/zsh.sh" \
    && cd $HOME
 
-print_in_green "\n\n \
+print_in_green "\n \
                           _     _       \n \
     ____   ___   ___     (_)   (_)____  \n \
    / __ \ / _ \ / _ \   / /   / // __ \ \n \
