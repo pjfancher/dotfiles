@@ -26,7 +26,7 @@ main() {
 
   CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
   if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
-    printf "${YELLOW}Zsh is not installed!${NORMAL} Please install zsh first!\n"
+    printf "${RED}Zsh is not installed!${NORMAL} Please install zsh first!\n"
     exit
   fi
   unset CHECK_ZSH_INSTALLED
@@ -49,7 +49,7 @@ main() {
   # precedence over umasks except for filesystems mounted with option "noacl".
   umask g-w,o-w
 
-  printf "${BLUE}Cloning Oh My Zsh...${NORMAL}\n"
+  printf "${GREEN}Cloning Oh My Zsh...${NORMAL}\n"
   hash git >/dev/null 2>&1 || {
     echo "Error: git is not installed"
     exit 1
@@ -86,12 +86,12 @@ main() {
   if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     # If this platform provides a "chsh" command (not Cygwin), do it, man!
     if hash chsh >/dev/null 2>&1; then
-      printf "${BLUE}Time to change your default shell to zsh!${NORMAL}\n"
+      printf "${GREEN}Time to change your default shell to zsh!${NORMAL}\n"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
     # Else, suggest the user do so manually.
     else
       printf "I can't change your shell automatically because this system does not have chsh.\n"
-      printf "${BLUE}Please manually change your default shell to zsh!${NORMAL}\n"
+      printf "${RED}Please manually change your default shell to zsh!${NORMAL}\n"
     fi
   fi
 
