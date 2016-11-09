@@ -50,7 +50,7 @@ main() {
   # precedence over umasks except for filesystems mounted with option "noacl".
   umask g-w,o-w
 
-  printf "${GREEN}Cloning Oh My Zsh...${NORMAL}\n"
+  printf "${GREEN}\tCloning Oh My Zsh...${NORMAL}\n"
   hash git >/dev/null 2>&1 || {
     echo "Error: git is not installed"
     exit 1
@@ -87,7 +87,7 @@ main() {
   if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     # If this platform provides a "chsh" command (not Cygwin), do it, man!
     if hash chsh >/dev/null 2>&1; then
-      printf "${GREEN}\nTime to change your default shell to zsh!${NORMAL}\n"
+      printf "${GREEN}\n\tTime to change your default shell to zsh!${NORMAL}\n\n"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
     # Else, suggest the user do so manually.
     else
