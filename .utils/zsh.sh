@@ -87,7 +87,7 @@ main() {
   if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     # If this platform provides a "chsh" command (not Cygwin), do it, man!
     if hash chsh >/dev/null 2>&1; then
-      printf "${GREEN}   Time to change your default shell to zsh${NORMAL}\n\t"
+      printf "${GREEN}   Changing your default shell to zsh...${NORMAL}\n\t"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
     # Else, suggest the user do so manually.
     else
