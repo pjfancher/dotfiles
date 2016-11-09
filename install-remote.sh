@@ -3,7 +3,7 @@
 # peej.io forwards to this file
 # curl -L peej.io | bash
 
-if [ -d $HOME/dotfiles ]; then
+if [ -d "$HOME/dotfiles" ]; then
   rm -rf $HOME/dotfiles
 fi
 
