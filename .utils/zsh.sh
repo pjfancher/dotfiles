@@ -1,4 +1,7 @@
 main() {
+
+  print_in_purple "\n   Zsh\n\n"
+  
   # Use colors, but only if connected to a terminal, and that terminal
   # supports them.
   if which tput >/dev/null 2>&1; then
@@ -47,7 +50,7 @@ main() {
   # precedence over umasks except for filesystems mounted with option "noacl".
   umask g-w,o-w
 
-  printf "${GREEN}Cloning Oh My Zsh...${NORMAL}\n"
+  printf "${GREEN}\n\nCloning Oh My Zsh...${NORMAL}\n"
   hash git >/dev/null 2>&1 || {
     echo "Error: git is not installed"
     exit 1
@@ -84,7 +87,7 @@ main() {
   if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     # If this platform provides a "chsh" command (not Cygwin), do it, man!
     if hash chsh >/dev/null 2>&1; then
-      printf "${GREEN}Time to change your default shell to zsh!${NORMAL}\n"
+      printf "${GREEN}\n\nTime to change your default shell to zsh!${NORMAL}\n"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
       exec zsh
     # Else, suggest the user do so manually.
