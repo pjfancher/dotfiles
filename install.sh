@@ -4,7 +4,7 @@
 cd "$(dirname "${BASH_SOURCE[0]}")" \
    && . ".utils/utils.sh" \
    && . ".utils/symlinks.sh" \
-   && . ".utils/vim.sh" \
+#   && . ".utils/vim.sh" \
    && . ".utils/zsh.sh" \
    && cd $HOME
 printf "\n\n"
@@ -14,5 +14,5 @@ printf "\n\n"
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Use Custon .zshrc
-mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc \
-&& source $HOME/.zshrc
+#mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc \
+#&& source $HOME/.zshrc
