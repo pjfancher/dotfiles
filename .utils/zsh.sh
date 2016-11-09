@@ -112,7 +112,8 @@ main() {
   echo '   Or run: exec zsh'
   echo ''
   printf "${NORMAL}"
-  env zsh
+  #env zsh
+  exec $(grep /zsh$ /etc/shells | tail -1)
 }
 
 main
