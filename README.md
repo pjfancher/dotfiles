@@ -1,7 +1,7 @@
 ## Install As Is
 [peej.io](http://peej.io) links to the raw install-remote script.
 
-To install all dot files and plugins: `curl -L peej.io | bash`
+To install all dot files and plugins: `curl -sL peej.io | bash`
 
 
 ## Custom Setup
