@@ -100,7 +100,7 @@ main() {
   echo '   Shell changed to zsh!'
   printf "${BOLD}"
   echo '   Log out and log back in to complete shell switch'
-  echo '   Or run: exec zsh'
+  echo '   Or run: env zsh'
   echo ''
   printf "${NORMAL}"
   env zsh
