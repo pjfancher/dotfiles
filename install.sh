@@ -1,5 +1,7 @@
 #!/bin/bash
 
+print_in_purple "\n\n   Setting Up Dev Environment...\n"
+
 # Symlinks, Vim Plugins, Oh-My-Zsh
 cd "$(dirname "${BASH_SOURCE[0]}")" \
    && . ".utils/utils.sh" \
@@ -7,4 +9,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
    && . ".utils/zsh.sh" \
    && cd $HOME
 
-print_in_green "\n\n   Environment setup complete! Enjoy!\n"
+print_in_purple "\n\n   Environment Setup Complete! Enjoy!\n"
