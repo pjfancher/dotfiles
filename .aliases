@@ -37,6 +37,7 @@ alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" -
 alias gma='git commit -am'
 alias gm='git commit -m'
 alias gc='git checkout'
+alias gcm='git checkout master'
 alias ga='git add -A .'
 alias grm='git rm $(git ls-files --deleted)  '
 # Push Master
