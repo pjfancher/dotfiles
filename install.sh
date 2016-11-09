@@ -8,4 +8,3 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
    && cd $HOME
 
 print_in_purple "\n\n   Environment Setup Complete! Enjoy!\n"
-exec zsh
