@@ -98,7 +98,7 @@ main() {
 
 
   printf "${GREEN}\n"
-  echo '             __                                     __   '
+  #echo '             __                                     __   '
   #echo '      ____  / /_     ____ ___  __  __   ____  _____/ /_  '
   #echo '     / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ '
   #echo '    / /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / '
@@ -106,6 +106,7 @@ main() {
   #echo '                            /____/                       ....is now installed!'
   #echo ''
   #echo ''
+  echo '    Shell changed to Zsh'
   printf "${BOLD}"
   echo '    Log out and log back in to complete shell switch'
   echo '    Or run: exec zsh'
