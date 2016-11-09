@@ -8,12 +8,12 @@ answer_is_yes() {
 
 ask() {
     print_question "$1"
-    read -r
+    read -r </dev/tty
 }
 
 ask_for_confirmation() {
     print_question "$1 (y/n) "
-    read -n 1
+    read -n 1 </dev/tty
     printf "\n"
 }
 
