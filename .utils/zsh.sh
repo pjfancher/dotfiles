@@ -105,6 +105,7 @@ main() {
   echo '                        /____/                       ....is now installed!'
   echo ''
   echo ''
+  echo 'Log out and log back in to complete shell switch.'
   echo ''
   printf "${NORMAL}"
   env zsh
