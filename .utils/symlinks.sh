@@ -10,7 +10,7 @@ FILES_TO_SYMLINK="$FILES_TO_SYMLINK .vim .zsh" # add in vim and the binaries
 
 main() {
 
-    print_in_purple "\n   Symlinks\n------------------------------\n"
+    print_in_purple "\n   Symlinks\n   ------------------------------\n"
 
     local i=""
     local sourceFile=""
