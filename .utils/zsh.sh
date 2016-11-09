@@ -106,6 +106,12 @@ main() {
   #echo '                            /____/                       ....is now installed!'
   #echo ''
   #echo ''
+  echo '   ██████╗ ███████╗███████╗     ██╗   ██╗ ██████╗ '
+  echo '   ██╔══██╗██╔════╝██╔════╝     ██║   ██║██╔═══██╗'
+  echo '   ██████╔╝█████╗  █████╗       ██║   ██║██║   ██║'
+  echo '   ██╔═══╝ ██╔══╝  ██╔══╝  ██   ██║   ██║██║   ██║'
+  echo '   ██║     ███████╗███████╗╚█████╔╝██╗██║╚██████╔╝'
+  echo '   ╚═╝     ╚══════╝╚══════╝ ╚════╝ ╚═╝╚═╝ ╚═════╝ '
   echo '   Shell changed to zsh!'
   printf "${BOLD}"
   echo '   Log out and log back in to complete shell switch'
