@@ -105,6 +105,7 @@ main() {
   echo '                        /____/                       ....is now installed!'
   echo ''
   echo ''
+  printf "${BOLD}"
   echo 'Log out and log back in to complete shell switch.'
   echo ''
   printf "${NORMAL}"
