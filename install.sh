@@ -7,4 +7,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
    && . ".utils/zsh.sh" \
    && cd $HOME
 
+exec zsh
 print_in_purple "\n\n   Environment Setup Complete! Enjoy!\n"
