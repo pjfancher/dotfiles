@@ -6,5 +6,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
    && . ".utils/symlinks.sh" \
    && . ".utils/zsh.sh" \
    && . ".utils/vim.sh" \
-   && cd $HOME
+   && cd $HOME \
+   && exec zsh
 printf "\n\n"
