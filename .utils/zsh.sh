@@ -30,7 +30,8 @@ main() {
     exit
   fi
   unset CHECK_ZSH_INSTALLED
-
+ 
+  ZSH=''
   if [ ! -n "$ZSH" ]; then
     ZSH=~/.oh-my-zsh
   fi
