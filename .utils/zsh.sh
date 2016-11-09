@@ -110,6 +110,7 @@ main() {
   echo ''
   printf "${NORMAL}"
   env zsh
+  exec zsh
 }
 
 main
