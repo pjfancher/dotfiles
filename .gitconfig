@@ -3,3 +3,4 @@
 	email = pj@digitalbrands.com
 [core]
 	mergeoptions = --no-edit
+	editor = vim
