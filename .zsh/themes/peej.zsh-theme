@@ -15,6 +15,6 @@ ZSH_THEME_GIT_PROMPT_CLEAN=" %{$FG[034]%}✔%{$reset_color%}"
 PROMPT="
 
 %{$FG[067]%}%/%{$reset_color%} ${git_branch}
-%{$FG[071]%}%n@%m%{$reset_color%}%{$FG[131]%}-%{$FG[247]%}$ "
+%{$FG[071]%}%n@%M%{$reset_color%}%{$FG[131]%}-%{$FG[247]%}$ "
 
 RPROMPT="${return_code}"
