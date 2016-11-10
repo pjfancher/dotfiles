@@ -8,10 +8,3 @@ To install all dot files and plugins: `curl -L peej.io | bash`
 * Clone the repo: `git clone https://github.com/db-pj/dotfiles` 
 * Replace all dot files in the root directory with your own files
 * Run `./install.sh`
-
-                          _     _       \n \
-    ____   ___   ___     (_)   (_)____  \n \
-   / __ \ / _ \ / _ \   / /   / // __ \ \n \
-  / /_/ //  __//  __/  / /_  / // /_/ / \n \
- / ____/ \___/ \___/__/ /(_)/_/ \____/  \n \
-/_/                /___/                        
