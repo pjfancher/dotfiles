@@ -2,6 +2,9 @@
 
 # Symlinks, Vim Plugins, Oh-My-Zsh
 clear
+cd "$(dirname "${BASH_SOURCE[0]}")" \
+  && . ".utils/utils.sh"
+
 printf "\n\n"
 print_in_green " \
                           _     _       \n \
@@ -11,9 +14,9 @@ print_in_green " \
  / ____/ \___/ \___/__/ /(_)/_/ \____/  \n \
 /_/                /___/                \n \
 "
-cd "$(dirname "${BASH_SOURCE[0]}")" \
-   && . ".utils/utils.sh" \
-   && print_in_purple "\n\n   Setting Up Dev Environment... \n" \
+ \
+   
+print_in_purple "\n\n   Setting Up Dev Environment... \n" \
    && . ".utils/symlinks.sh" \
    && . ".utils/zsh.sh" \
    && . ".utils/vim.sh" \
