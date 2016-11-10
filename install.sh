@@ -3,8 +3,8 @@ clear
 
 # Load Utils
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-  && . ".utils/utils.sh"
-  && . ".utils/banner.sh"
+  && . ".utils/utils.sh" \
+  && . ".utils/banner.sh" \
   && . ".utils/symlinks.sh" \
   && . ".utils/zsh.sh" \
   && . ".utils/vim.sh" \
