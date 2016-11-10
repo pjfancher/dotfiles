@@ -7,4 +7,4 @@ print_in_green " \
  / ____/ \___/ \___/__/ /(_)/_/ \____/  \n \
 /_/                /___/                \n \
 "
-print_in_purple "\n\n   Setting Up Dev Environment... \n" \
+print_in_purple "\n   Setting Up Dev Environment... \n" \
