@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-# Load Utils
+# Load Scripts
 cd "$(dirname "${BASH_SOURCE[0]}")" \
   && . ".utils/utils.sh" \
   && . ".utils/banner.sh" \
