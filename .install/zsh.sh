@@ -90,9 +90,8 @@ main() {
       printf "${GREEN}   Changing your default shell to zsh...${NORMAL}\n\t"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
       print_success '   Shell changed to zsh!'
-      printf "${BOLD}"
-      echo '   Log out and log back in to complete shell switch'
-      echo '   Or run: env zsh'
+      print_warning '   Log out and log back in to complete shell switch'
+      print_warning '   Or run: env zsh'
     # Else, suggest the user do so manually.
     else
       printf "I can't change your shell automatically because this system does not have chsh.\n"
@@ -100,7 +99,7 @@ main() {
     fi
     else
      printf "${GREEN}"
-     print_success '   zsh is current shell'
+     print_success '   Zsh is current shell'
   fi
 
   printf "${NORMAL}"
