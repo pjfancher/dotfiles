@@ -11,4 +11,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
   && cd $HOME
 
 #Complete
-print_in_purple "\n\n   Environment Setup Complete! Enjoy!\n"
+print_in_purple "\n\n   Environment Setup Complete! Enjoy!\n\n"
