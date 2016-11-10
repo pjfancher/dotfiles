@@ -48,26 +48,25 @@ main() {
   # for users with insecure umasks (e.g., "002", allowing group writability). Note
   # that this will be ignored under Cygwin by default, as Windows ACLs take
   # precedence over umasks except for filesystems mounted with option "noacl".
-  #umask g-w,o-w
+  umask g-w,o-w
 
-  #printf "${GREEN}   Cloning oh-my-zsh...${NORMAL}\n"
-  #hash git >/dev/null 2>&1 || {
-  #  echo "Error: git is not installed"
-  #  exit 1
-  #}
+  printf "${GREEN}   Cloning oh-my-zsh...${NORMAL}\n"
+  hash git >/dev/null 2>&1 || {
+    echo "Error: git is not installed"
+    exit 1
+  }
   # The Windows (MSYS) Git is not compatible with normal use on cygwin
-  #if [ "$OSTYPE" = cygwin ]; then
-  #  if git --version | grep msysgit > /dev/null; then
-  #    echo "Error: Windows/MSYS Git is not supported on Cygwin"
-  #    echo "Error: Make sure the Cygwin git package is installed and is first on the path"
-  #    exit 1
-  #  fi
-  #fi
-  #env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null || {
-  #  printf "Error: git clone of oh-my-zsh repo failed\n"
-  #  exit 1
-  #}
-
+  if [ "$OSTYPE" = cygwin ]; then
+    if git --version | grep msysgit > /dev/null; then
+      echo "Error: Windows/MSYS Git is not supported on Cygwin"
+      echo "Error: Make sure the Cygwin git package is installed and is first on the path"
+      exit 1
+    fi
+  fi
+  env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null || {
+    printf "Error: git clone of oh-my-zsh repo failed\n"
+    exit 1
+  }
 
   #printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   #if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
