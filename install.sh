@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Symlinks, Vim Plugins, Oh-My-Zsh
+clear
 cd "$(dirname "${BASH_SOURCE[0]}")" \
    && . ".utils/utils.sh" \
    && print_in_purple "\n\n   Setting Up Dev Environment... \n" \
