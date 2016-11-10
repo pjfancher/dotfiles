@@ -29,17 +29,17 @@ main() {
 
   CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
   if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
-    print_error "   Zsh is not installed! Attempting to install zsh...\n"
+    print_error "Zsh is not installed! Attempting to install zsh...\n"
     sudo apt-get -q install zsh &> /dev/null
   fi
   unset CHECK_ZSH_INSTALLED
   
   CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
   if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
-    print_error "   Zsh could not be installed! Please try to install manually.\n"
+    print_error "Zsh could not be installed! Please try to install manually.\n"
     exit 1
   else
-    print_success "   Zsh installed!"
+    print_success "Zsh installed!"
   fi
   unset CHECK_ZSH_INSTALLED
  
@@ -76,7 +76,7 @@ main() {
     printf "Error: git clone of oh-my-zsh repo failed\n"
     exit 1
   }
-  print_success "   Installed oh-my-zsh"
+  print_success "Installed oh-my-zsh"
 
   #printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   #if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
@@ -98,8 +98,8 @@ main() {
     if hash chsh >/dev/null 2>&1; then
       printf "${GREEN}\n   Changing your default shell to zsh...${NORMAL}\n\t"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
-      print_success '   Shell changed to zsh!'
-      print_warning '   Log out and log back in to complete shell switch'
+      print_success 'Shell changed to zsh!'
+      print_warning 'Log out and log back in to complete shell switch'
     # Else, suggest the user do so manually.
     else
       printf "I can't change your shell automatically because this system does not have chsh.\n"
@@ -107,7 +107,7 @@ main() {
     fi
     else
      printf "${GREEN}"
-     print_success '   Zsh is current shell'
+     print_success 'Zsh is current shell'
   fi
 
   printf "${NORMAL}"
