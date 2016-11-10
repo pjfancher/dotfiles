@@ -50,7 +50,7 @@ main() {
   # precedence over umasks except for filesystems mounted with option "noacl".
   umask g-w,o-w
 
-  printf "${GREEN}   Cloning oh-my-zsh...${NORMAL}\n"
+  #printf "${GREEN}   Cloning oh-my-zsh...${NORMAL}\n"
   hash git >/dev/null 2>&1 || {
     echo "Error: git is not installed"
     exit 1
@@ -67,6 +67,7 @@ main() {
     printf "Error: git clone of oh-my-zsh repo failed\n"
     exit 1
   }
+  print_success "   Installed oh-my-zsh"
 
   #printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   #if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
@@ -88,7 +89,7 @@ main() {
     if hash chsh >/dev/null 2>&1; then
       printf "${GREEN}   Changing your default shell to zsh...${NORMAL}\n\t"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
-      echo '   Shell changed to zsh!'
+      print_success '   Shell changed to zsh!'
       printf "${BOLD}"
       echo '   Log out and log back in to complete shell switch'
       echo '   Or run: env zsh'
@@ -99,7 +100,7 @@ main() {
     fi
     else
      printf "${GREEN}\n"
-     echo '   zsh is current shell'
+     print_success '   zsh is current shell'
   fi
 
   printf "${NORMAL}"
