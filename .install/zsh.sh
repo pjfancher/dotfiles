@@ -50,7 +50,7 @@ main() {
   # precedence over umasks except for filesystems mounted with option "noacl".
   umask g-w,o-w
 
-  printf "${GREEN}   Cloning Oh My Zsh...${NORMAL}\n"
+  printf "${GREEN}   Cloning oh-my-zsh...${NORMAL}\n"
   hash git >/dev/null 2>&1 || {
     echo "Error: git is not installed"
     exit 1
@@ -67,7 +67,6 @@ main() {
     printf "Error: git clone of oh-my-zsh repo failed\n"
     exit 1
   }
-
 
   #printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   #if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
