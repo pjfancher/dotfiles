@@ -87,7 +87,7 @@ main() {
   if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     # If this platform provides a "chsh" command (not Cygwin), do it, man!
     if hash chsh >/dev/null 2>&1; then
-      printf "${GREEN}   \nChanging your default shell to zsh...${NORMAL}\n\t"
+      printf "${GREEN}\n   Changing your default shell to zsh...${NORMAL}\n\t"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
       print_success '   Shell changed to zsh!'
       print_warning '   Log out and log back in to complete shell switch'
