@@ -99,7 +99,7 @@ main() {
       printf "${RED}Please manually change your default shell to zsh!${NORMAL}\n"
     fi
     else
-     printf "${GREEN}\n"
+     printf "${GREEN}"
      print_success '   zsh is current shell'
   fi
 
