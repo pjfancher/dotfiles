@@ -1,8 +1,8 @@
 local return_code='%(?..%{$FG[009]%}%? ↵ %{$reset_color%})'
 local git_branch='$(git_prompt_info)$(git_prompt_status)'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[240]%}[%{$FG[034]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}%{$FG[240]%}]"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[240]%}(%{$FG[034]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}%{$FG[240]%})"
 #ZSH_THEME_GIT_PROMPT_DIRTY=" %{$FG[009]%}✗%{$reset_color%}"
 #ZSH_THEME_GIT_PROMPT_CLEAN=" %{$FG[034]%}✔%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_ADDED="%{$FG[009]%} ✚ "
