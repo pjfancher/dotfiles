@@ -11,7 +11,7 @@ ZSH_THEME_GIT_PROMPT_DELETED="%{$FG[009]%} ✖ "
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} ➜ "
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═ "
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭ "
-ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[red]%} $(git_commits_ahead)↑ "
+ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[red]%} ${git_commits_ahead}↑ "
 ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[red]%} ↓ "
 
 PROMPT="
