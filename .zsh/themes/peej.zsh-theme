@@ -19,4 +19,4 @@ PROMPT="
 %{$FG[067]%}%/%{$reset_color%} ${git_branch}
 %{$FG[071]%}%n@%M%{$reset_color%}%{$FG[131]%}-%{$FG[247]%}$ "
 
-RPROMPT="${return_code}"
+RPROMPT='$(vi_mode_prompt_info)'
