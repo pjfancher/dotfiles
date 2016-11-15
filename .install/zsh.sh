@@ -72,11 +72,7 @@ main() {
       exit 1
     fi
   fi
-  env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null || {
-    printf "Error: git clone of oh-my-zsh repo failed\n"
-    exit 1
-  }
-  print_success "Installed oh-my-zsh"
+  execute "env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null" "Installed oh-my-zsh"
 
   #printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   #if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
