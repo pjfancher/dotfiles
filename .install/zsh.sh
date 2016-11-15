@@ -74,7 +74,7 @@ main() {
   fi
   
   # INSTALL oh-my-zsh
-  execute "env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null" "Installed oh-my-zsh"
+  execute "env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null" "Installing oh-my-zsh"
 
   #printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   #if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
