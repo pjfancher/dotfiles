@@ -38,8 +38,10 @@ alias gma='git commit -am'
 alias gm='git commit -m'
 alias gc='git checkout'
 alias gcm='git checkout master'
+alias gcb='git checkout -b'
 alias ga='git add -A .'
 alias grm='git rm $(git ls-files --deleted)  '
+#
 # Push Master
 alias gpm='git push origin master'
 # Pull Master
