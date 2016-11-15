@@ -30,7 +30,7 @@ main() {
   CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
   if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
     print_error "Zsh is not installed! Attempting to install zsh...\n"
-    sudo apt-get -q install zsh &> /dev/null
+    execute "sudo apt-get -q install zsh &> /dev/null" "Installing Zsh"
   fi
   unset CHECK_ZSH_INSTALLED
   
@@ -72,11 +72,9 @@ main() {
       exit 1
     fi
   fi
-  env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null || {
-    printf "Error: git clone of oh-my-zsh repo failed\n"
-    exit 1
-  }
-  print_success "Installed oh-my-zsh"
+  
+  # INSTALL oh-my-zsh
+  execute "env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null" "Installing oh-my-zsh"
 
   #printf "${BLUE}Looking for an existing zsh config...${NORMAL}\n"
   #if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
