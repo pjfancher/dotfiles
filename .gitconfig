@@ -4,3 +4,5 @@
 [core]
 	mergeoptions = --no-edit
 	editor = vim
+[credential]
+	helper = cache --timeout=86400
