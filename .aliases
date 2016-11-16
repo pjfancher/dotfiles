@@ -82,7 +82,7 @@ alias less-upgrade='sudo npm install -g less@1.7.4'
 alias less-downgrade='sudo npm install -g less@1.3.3'
 alias doit='sudo $(history -p \!\!)'
 alias ex='exit';
-alias setperm='sudo chgrp -R www-data public_html/ && sudo chmod -R g+w public_html/ && sudo find public_html/ -type d -exec sudo chmod g+s {} \; && sudo chown -R www-data public_html/ && sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;';
+alias setperm='sudo chgrp -R www-data public_html/ && sudo chmod -R g+w public_html/ && sudo find public_html/ -type d -exec sudo chmod g+s {} \; && sudo chown -R www-data public_html/'
 alias setdbdev='sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;'
 alias purge='curl -X PURGE $1';
 alias ni='git commit -m "New Images"';
@@ -96,6 +96,7 @@ alias logs="cd $WP_DIR && cd ../../logs/ && ll"
 alias ctags-gen="ctags -R -f .git/tags ."
 alias w3tc="wp plugin toggle w3-total-cache"
 alias ss="time monsoon && gplm && w3tc"
+alias wp-install="wget http://wordpress.org/latest.tar.gz && tar -xzvf latest.tar.gz && mv ./wordpress/* ./ && rm -rf ./wordpress && rm latest.tar.gz"
 
 if [ -n "$THEME_DIR" ];
     then alias warm="cd ${THEME_DIR}functions/warmer/&& ./build-sitemaps-and-warm-cache.sh && cd -";
