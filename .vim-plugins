@@ -15,7 +15,7 @@ Plugin 'jwhitley/vim-matchit'
 
 " The ultimate snippet solution for Vim
 Plugin 'garbas/vim-snipmate'
-"
+
 " Required libs for Snipmate
 Plugin 'marcweber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -38,12 +38,6 @@ Plugin 'Raimondi/delimitMate'
 
 " Text filtering and alignment
 Plugin 'godlygeek/tabular'
-
-" Support for expanding abbreviations similar to emmet
-Plugin 'mattn/emmet-vim'
-
-" Vim ack replacement
-Plugin 'rking/ag.vim'
 
 " Full path fuzzy file, buffer, tag finder for Vim.
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -74,12 +68,6 @@ Plugin 'ervandew/supertab'
 
 " Custom vim movements for selecting variables in PHP and Ruby
 Plugin 'robmiller/vim-movar'
-
-" Miscellaneous auto-load Vim scripts (required by vim-session)
-Plugin 'xolox/vim-misc'
-
-" Extended session management for Vim
-Plugin 'xolox/vim-session'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -121,14 +109,6 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 
-" Lightline
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:lightline = {
-    "\ 'colorscheme': 'wombat',
-"\ }
-"set laststatus=2
-"highlight clear SignColumn
-"
 " Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set laststatus=2
