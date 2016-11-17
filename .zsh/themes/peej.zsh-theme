@@ -10,7 +10,7 @@ ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[red]%} ✹ "
 ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}✖ "
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%}➜ "
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%}═ "
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}? "
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}-- "
 ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[red]%} ↑ "
 ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[red]%} ↓ "
 
