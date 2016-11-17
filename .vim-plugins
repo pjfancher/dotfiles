@@ -85,8 +85,8 @@ function! StartUp()
 endfunction
 au VimEnter * call StartUp()
 let NERDTreeShowLineNumbers=1
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 
 " Vimify NerdTree Tab Navigation
