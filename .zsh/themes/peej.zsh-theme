@@ -1,7 +1,7 @@
 local return_code='%(?..%{$FG[009]%}%? ↵ %{$reset_color%})'
 local git_branch='$(git_prompt_info)$(git_prompt_status)'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[240]%}→ %{$FG[028]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[245]%}→ %{$FG[028]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 #ZSH_THEME_GIT_PROMPT_DIRTY=" %{$FG[009]%}✗ %{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$FG[028]%}✔ %{$reset_color%}"
@@ -17,7 +17,7 @@ ZSH_THEME_GIT_PROMPT_BEHIND="%{$FG[009]%} ↓ "
 PROMPT="
 
 %{$FG[068]%}%//%{$reset_color%} ${git_branch}
-%{$FG[131]%}%n@%M%{$reset_color%}%{$FG[131]%}-$%{$FG[247]%} "
+%{$FG[065]%}%n@%M%{$reset_color%}%{$FG[131]%}•%{$FG[245]%}$ %{$FG[249]%}"
 
 RPROMPT=''
 
