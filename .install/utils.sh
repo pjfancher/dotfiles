@@ -375,9 +375,6 @@ function setdiff() {
   [[ "$1" ]] && echo "${setdiffC[@]}"
 }
 
-# If this file was being sourced, exit now.
-[[ "$1" == "source" ]] && return
-
 # OS detection
 function is_osx() {
   [[ "$OSTYPE" =~ ^darwin ]] || return 1
@@ -392,3 +389,5 @@ function get_os() {
     is_$os; [[ $? == ${1:-0} ]] && echo $os
   done
 }
+
+ask_for_sudo

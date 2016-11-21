@@ -35,7 +35,6 @@ packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstal
 
 
 if (( ${#packages[@]} > 0 )); then
-    ask_for_sudo
     execute "sudo apt-get -qq update >/dev/null 2>&1  && sudo apt-get -qq upgrade -y >/dev/null 2>&1" "Updating Packages"
   for package in "${packages[@]}"; do
     execute "sudo apt-get -qq install $package -y >/dev/null 2>&1" "Installing $package"
