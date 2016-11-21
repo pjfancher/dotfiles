@@ -25,6 +25,11 @@ packages=(
     tig
     phpmyadmin
     build-essential
+    sendmail
+    libjpeg-progs
+    gifsicle
+    optipng
+    imagemagick
 )
 packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstall | awk '{print $1}')"))
 #printf '%s\n' "${packages[@]}"
