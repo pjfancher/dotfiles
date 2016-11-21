@@ -4,7 +4,6 @@ clear
 # Load Scripts
 cd "$(dirname "${BASH_SOURCE[0]}")" \
   && . ".install/utils.sh" \
-  && ask_for_sudo \
   && . ".install/banner.sh" \
   && . ".install/install-apt.sh" \
   && . ".install/symlinks.sh" \
