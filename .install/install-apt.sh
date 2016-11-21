@@ -13,6 +13,10 @@ packages=(
     php5-gd 
     php5-mysql 
     php5-curl
+    php5-cli
+    php5-cgi
+    php5-dev
+    vim
     htop
     curl
     mosh
