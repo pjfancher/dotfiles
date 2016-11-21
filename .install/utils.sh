@@ -51,6 +51,11 @@ kill_all_subprocesses() {
 
 }
 
+#execute() {
+    #$1 &> /dev/null
+    #print_result $? "${2:-$1}"
+#}
+
 execute() {
 
     local -r CMDS="$1"
