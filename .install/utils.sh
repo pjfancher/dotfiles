@@ -390,4 +390,3 @@ function get_os() {
   done
 }
 
-ask_for_sudo
