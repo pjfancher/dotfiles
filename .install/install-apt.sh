@@ -20,6 +20,7 @@ packages=(
     ncdu
     tig
     phpmyadmin
+    build-essential
 )
 packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstall | awk '{print $1}')"))
 #printf '%s\n' "${packages[@]}"
