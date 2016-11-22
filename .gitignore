@@ -8,3 +8,6 @@
 
 # GIT
 .gitconfig.local
+
+# NPM
+npm-debug.log
