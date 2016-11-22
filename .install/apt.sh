@@ -37,17 +37,21 @@ packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstal
 
 # If we still have packages that need to be installed
 if (( ${#packages[@]} > 0 )); then
-  ask_for_sudo
 
   # Update Packages
   print_success "Updating Packages..."
-  sudo apt-get -qq update > /dev/null 2>&1 && sudo apt-get upgrade -y > /dev/null 2>&1
+  ask_for_sudo
+  sudo apt-get -qq update > /dev/null 2>&1
 
   # Install each package
   for package in "${packages[@]}"; do
     print_success "Installing $package..."
     eval "sudo apt-get -qq install $package -y >/dev/null 2>&1"
   done
+
+  # Upgrade Packages
+  print_success "Upgrading Packages..."
+  sudo apt-get upgrade -y > /dev/null 2>&1
 fi
 
 print_success "All Packages Installed"
