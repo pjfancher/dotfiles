@@ -5,8 +5,8 @@ clear
 cd "$(dirname "${BASH_SOURCE[0]}")" \
   && . ".install/utils.sh" \
   && . ".install/banner.sh" \
-  && . ".install/install-apt.sh" \
   && . ".install/symlinks.sh" \
+  && . ".install/install-apt.sh" \
   && . ".install/zsh.sh" \
   && . ".install/vim.sh" \
   && cd $HOME
