@@ -51,10 +51,10 @@ kill_all_subprocesses() {
 
 }
 
-#execute() {
-    #$1 &> /dev/null
-    #print_result $? "${2:-$1}"
-#}
+execute_simple() {
+    $1 &> /dev/null
+    print_result $? "${2:-$1}"
+}
 
 execute() {
 
