@@ -9,5 +9,5 @@ To install all dot files and plugins: `curl -L peej.io | bash`
 * Replace all dot files in the root directory with your own files
 * Run `./install.sh`
 
-## Install Software Packages
+## Install Packages
 * Run `./install-packages.sh`
