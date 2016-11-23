@@ -1,4 +1,7 @@
 #!/bin/bash
+###########################################
+#      Install npm packages.              #
+###########################################
 
 . "$HOME/dotfiles/install/utils.sh"
 

@@ -298,29 +298,6 @@ show_spinner() {
     local i=0
     local frameText=""
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Note: In order for the Travis CI site to display
-    # things correctly, it needs special treatment, hence,
-    # the "is Travis CI?" checks.
-
-    if [ "$TRAVIS" != "true" ]; then
-
-        # Provide more space so that the text hopefully
-        # doesn't reach the bottom line of the terminal window.
-        #
-        # This is a workaround for escape sequences not tracking
-        # the buffer position (accounting for scrolling).
-        #
-        # See also: https://unix.stackexchange.com/a/278888
-
-        printf "\n\n\n"
-        tput cuu 3
-
-        tput sc
-
-    fi
-
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     # Display spinner while the commands are being executed.
@@ -332,25 +309,14 @@ show_spinner() {
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         # Print frame text.
-
-        if [ "$TRAVIS" != "true" ]; then
-            printf "%s\n" "$frameText"
-        else
-            printf "%s" "$frameText"
-        fi
-
+        printf "%s" "$frameText"
+        
         sleep 0.2
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         # Clear frame text.
-
-        if [ "$TRAVIS" != "true" ]; then
-            tput rc
-        else
-            printf "\r"
-        fi
-
+        printf "\r"
     done
 
 }
@@ -361,23 +327,31 @@ show_spinner() {
 # From http://stackoverflow.com/a/1617303/142339
 function setdiff() {
   local debug skip a b
+  
   if [[ "$1" == 1 ]]; then debug=1; shift; fi
   if [[ "$1" ]]; then
     local setdiffA setdiffB setdiffC
     setdiffA=($1); setdiffB=($2)
   fi
+  
   setdiffC=()
+  
   for a in "${setdiffA[@]}"; do
     skip=
+    
     for b in "${setdiffB[@]}"; do
       [[ "$a" == "$b" ]] && skip=1 && break
     done
+    
     [[ "$skip" ]] || setdiffC=("${setdiffC[@]}" "$a")
   done
+  
   [[ "$debug" ]] && for a in setdiffA setdiffB setdiffC; do
     echo "$a ($(eval echo "\${#$a[*]}")) $(eval echo "\${$a[*]}")" 1>&2
   done
+  
   [[ "$1" ]] && echo "${setdiffC[@]}"
+  
 }
 
 # OS detection
@@ -394,4 +368,3 @@ function get_os() {
     is_$os; [[ $? == ${1:-0} ]] && echo $os
   done
 }
-
