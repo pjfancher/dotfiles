@@ -23,6 +23,7 @@ packages=(
     dtrx
     ncdu
     tig
+    ack
     phpmyadmin
     build-essential
     sendmail
