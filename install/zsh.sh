@@ -1,27 +1,6 @@
 main() {
 
   print_in_purple "\n   Zsh\n   ------------------------------\n"
-  
-  # Use colors, but only if connected to a terminal, and that terminal
-  # supports them.
-  if which tput >/dev/null 2>&1; then
-      ncolors=$(tput colors)
-  fi
-  if [ -t 1 ] && [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
-    RED="$(tput setaf 1)"
-    GREEN="$(tput setaf 2)"
-    YELLOW="$(tput setaf 3)"
-    BLUE="$(tput setaf 4)"
-    BOLD="$(tput bold)"
-    NORMAL="$(tput sgr0)"
-  else
-    RED=""
-    GREEN=""
-    YELLOW=""
-    BLUE=""
-    BOLD=""
-    NORMAL=""
-  fi
 
   # Only enable exit-on-error after the non-critical colorization stuff,
   # which may fail on systems lacking tput or terminfo
@@ -58,20 +37,6 @@ main() {
   # that this will be ignored under Cygwin by default, as Windows ACLs take
   # precedence over umasks except for filesystems mounted with option "noacl".
   umask g-w,o-w
-
-  #printf "${GREEN}   Cloning oh-my-zsh...${NORMAL}\n"
-  hash git >/dev/null 2>&1 || {
-    echo "Error: git is not installed"
-    exit 1
-  }
-  # The Windows (MSYS) Git is not compatible with normal use on cygwin
-  if [ "$OSTYPE" = cygwin ]; then
-    if git --version | grep msysgit > /dev/null; then
-      echo "Error: Windows/MSYS Git is not supported on Cygwin"
-      echo "Error: Make sure the Cygwin git package is installed and is first on the path"
-      exit 1
-    fi
-  fi
   
   # INSTALL oh-my-zsh
   execute "env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null" "Installing oh-my-zsh"
@@ -81,21 +46,19 @@ main() {
   if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     # If this platform provides a "chsh" command (not Cygwin), do it, man!
     if hash chsh >/dev/null 2>&1; then
-      printf "${GREEN}\n   Changing your default shell to zsh...${NORMAL}\n\t"
+      print_success "\n   Changing your default shell to zsh...\n\t"
       chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
       print_success 'Shell changed to zsh!'
       print_warning 'Log out and log back in to complete shell switch'
     # Else, suggest the user do so manually.
     else
-      printf "I can't change your shell automatically because this system does not have chsh.\n"
-      printf "${RED}Please manually change your default shell to zsh!${NORMAL}\n"
+      print_error "I can't change your shell automatically because this system does not have chsh.\n"
+      print_error "Please manually change your default shell to zsh!\n"
     fi
     else
-     printf "${GREEN}"
      print_success 'Zsh is current shell'
   fi
 
-  printf "${NORMAL}"
   env zsh
 }
 
