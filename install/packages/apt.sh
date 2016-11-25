@@ -44,7 +44,6 @@ if (( ${#packages[@]} > 0 )); then
 
   # Update Packages
   print_success "Updating Packages..."
-  ask_for_sudo
   sudo apt-get -qq update > /dev/null 2>&1
 
   # Install each package
