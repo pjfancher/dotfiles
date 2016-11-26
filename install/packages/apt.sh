@@ -19,14 +19,6 @@ packages=(
     php5-cli
     php5-cgi
     php5-dev
-    vim
-    htop
-    curl
-    mosh
-    dtrx
-    ncdu
-    tig
-    ack
     phpmyadmin
     build-essential
     sendmail
@@ -34,6 +26,15 @@ packages=(
     gifsicle
     optipng
     imagemagick
+    vim
+    tmux
+    htop
+    curl
+    mosh
+    dtrx
+    ncdu
+    tig
+    ack
 )
 
 # Remove packages already installed from list
