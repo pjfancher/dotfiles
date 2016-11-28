@@ -6,6 +6,7 @@
 # Ubuntu-only stuff. Abort if not Ubuntu.
 is_ubuntu || return 1
 
+ask_for_sudo
 print_in_purple "\n   Apt-Get\n   ------------------------------\n"
 
 # Define needed packages
