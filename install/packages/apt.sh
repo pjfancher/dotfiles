@@ -60,5 +60,5 @@ fi
 
 print_success "All Packages Installed"
 
-# rename ack-grep to ack
-# sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
+# ag PPA
+# sudo add-apt-repository ppa:gekkio/ag
