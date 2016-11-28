@@ -79,3 +79,10 @@ function extract() {
         echo "'$1' is not a valid file"
     fi
 }
+
+# Adds command line calculator
+# eg. root@host:~$ = 5+3                                                
+function = 
+{
+  echo "$@" | /usr/bin/bc -l
+}

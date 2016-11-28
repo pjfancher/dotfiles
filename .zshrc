@@ -55,6 +55,7 @@ plugins=(z)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
+source $HOME/.functions
 
 if [ -f ~/.bash_site_aliases ]; then
     . ~/.bash_site_aliases
