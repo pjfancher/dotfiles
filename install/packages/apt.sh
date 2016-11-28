@@ -34,8 +34,7 @@ packages=(
     dtrx
     ncdu
     tig
-    ack
-    silversearcher-ag
+    ack-grep
 )
 
 # Remove packages already installed from list
@@ -60,3 +59,6 @@ if (( ${#packages[@]} > 0 )); then
 fi
 
 print_success "All Packages Installed"
+
+# rename ack-grep to ack
+# sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
