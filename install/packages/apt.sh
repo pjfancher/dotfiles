@@ -36,6 +36,7 @@ packages=(
     ncdu
     tig
     ack-grep
+    silversearcher-ag
 )
 
 # Remove packages already installed from list
@@ -44,6 +45,9 @@ packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstal
 # If we still have packages that need to be installed
 if (( ${#packages[@]} > 0 )); then
 
+  # Add PPAs
+  sudo add-apt-repository -qq ppa:gekkio/ag > /dev/null 2>&1
+  
   # Update Packages
   print_success "Updating Packages..."
   sudo apt-get -qq update > /dev/null 2>&1
@@ -62,4 +66,4 @@ fi
 print_success "All Packages Installed"
 
 # ag PPA
-# sudo add-apt-repository ppa:gekkio/ag
+
