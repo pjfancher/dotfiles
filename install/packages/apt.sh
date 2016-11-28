@@ -35,6 +35,7 @@ packages=(
     ncdu
     tig
     ack
+    silversearcher-ag
 )
 
 # Remove packages already installed from list
