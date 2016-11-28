@@ -64,6 +64,3 @@ if (( ${#packages[@]} > 0 )); then
 fi
 
 print_success "All Packages Installed"
-
-# ag PPA
-
