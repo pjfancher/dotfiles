@@ -7,7 +7,7 @@ local db='$BG[202]$FG[000]'
 local da='$BG[175]$FG[233]'
 local cd='$BG[018]$FG[245]'
 local bc='$BG[064]$FG[255]'
-local cr='$BG[019]$FG[245]'
+local cr='$BG[019]$FG[248]'
 local dc='$BG[172]$FG[000]'
 local ha='$BG[130]$FG[255]'
 
