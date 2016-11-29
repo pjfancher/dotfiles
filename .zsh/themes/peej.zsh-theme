@@ -1,10 +1,10 @@
 local return_code='%(?..%{$FG[009]%}%? ↵ %{$reset_color%})'
 local git_branch='$(git_prompt_info)$(git_prompt_status)'
 local machine_color='$FG[065]'
-local da='$BG[175]'
+local da='$BG[175]$FG[233]'
 
-if [ %M = 'www.datingadvice.com' ]; then
-    machine_color = da
+if [[ ${(%):-%M} = *datingadvice* ]]; then
+    machine_color=$da
 fi
  
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[245]%}→ %{$FG[028]%}"
