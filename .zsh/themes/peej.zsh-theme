@@ -3,15 +3,26 @@ local git_branch='$(git_prompt_info)$(git_prompt_status)'
 
 local server_color=''
 local dev='$FG[065]'
+local db='$BG[208]$FG[255]'
 local da='$BG[175]$FG[233]'
+local cd='$BG[017]$FG[255]'
+local bc='$BG[064]$FG[255]'
+local cr='$BG[033]$FG[255]'
+local dc='$BG[172]$FG[000]'
+local ha='$BG[130]$FG[255]'
 
 #if [[ ${(%):-%M} = *datingadvice* ]]; then
 #    server_color=$da
 #fi
 
 case ${(%):-%M} in
+    *digitalbrands* ) server_color=$db;;
     *datingadvice* ) server_color=$da;;
+    *cd-master-web* ) server_color=$cd;;
+    *badcredit* ) server_color=$bc;;
+    *cardreviews* ) server_color=$cr;;
     *hostingadvice* ) server_color=$ha;;
+    *dealcrunch* ) server_color=$dc;;
     *) server_color=$dev;;
 esac
 
