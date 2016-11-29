@@ -1,5 +1,6 @@
 local return_code='%(?..%{$FG[009]%}%? ↵ %{$reset_color%})'
 local git_branch='$(git_prompt_info)$(git_prompt_status)'
+
 local machine_color='$FG[065]'
 local da='$BG[175]'
 
