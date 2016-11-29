@@ -1,6 +1,12 @@
 local return_code='%(?..%{$FG[009]%}%? ↵ %{$reset_color%})'
 local git_branch='$(git_prompt_info)$(git_prompt_status)'
+local machine_color='$FG[065]'
+local da='$BG[175]'
 
+if [ %M = 'www.datingadvice.com' ]; then
+    machine_color = da
+fi
+ 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[245]%}→ %{$FG[028]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 #ZSH_THEME_GIT_PROMPT_DIRTY=" %{$FG[009]%}✗ %{$reset_color%}"
@@ -17,7 +23,7 @@ ZSH_THEME_GIT_PROMPT_BEHIND="%{$FG[009]%} ↓ "
 PROMPT="
 
 %{$FG[068]%}%//%{$reset_color%} ${git_branch}
-%{$FG[065]%}%n@%M%{$reset_color%}%{$FG[131]%}•%{$FG[245]%}$ %{$FG[249]%}"
+%{$machine_color%}%n@%M%{$reset_color%}%{$FG[131]%}•%{$FG[245]%}$ %{$FG[249]%}"
 
 RPROMPT=''
 
