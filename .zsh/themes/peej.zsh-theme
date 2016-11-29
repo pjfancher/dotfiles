@@ -9,7 +9,7 @@ local cd='$BG[018]$FG[245]'
 local bc='$BG[064]$FG[255]'
 local cr='$BG[019]$FG[248]'
 local dc='$BG[172]$FG[000]'
-local ha='$BG[130]$FG[255]'
+local ha='$BG[130]$FG[000]'
 
 #if [[ ${(%):-%M} = *datingadvice* ]]; then
 #    server_color=$da
