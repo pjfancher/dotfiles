@@ -3,7 +3,7 @@ local git_branch='$(git_prompt_info)$(git_prompt_status)'
 
 local server_color=''
 local dev='$FG[065]'
-local db='$BG[166]$FG[000]'
+local db='$BG[202]$FG[000]'
 local da='$BG[175]$FG[233]'
 local cd='$BG[017]$FG[255]'
 local bc='$BG[064]$FG[255]'
