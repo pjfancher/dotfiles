@@ -10,7 +10,7 @@ local da='$BG[175]$FG[233]'
 #fi
 
 case ${(%):-%M} in
-    *datingadvice* ) machine_color=$da;;
+    *datingadvice* ) server_color=$da;;
     *hostingadvice* ) server_color=$ha;;
     *) server_color=$dev;;
 esac
