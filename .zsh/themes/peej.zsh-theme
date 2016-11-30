@@ -18,6 +18,8 @@ local bc='$BG[064]$FG[255]'
 local cr='$BG[060]$FG[253]'
 local dc='$BG[172]$FG[000]'
 local ha='$BG[130]$FG[000]'
+local gvs='$BG[237]$FG[038]'
+
 
 
 ########################################
@@ -32,6 +34,7 @@ case ${(%):-%M} in
     *cardreviews* ) server_color=$cr;;
     *hostingadvice* ) server_color=$ha;;
     *dealcrunch* ) server_color=$dc;;
+    *gainesvilleshows* ) server_color=$gvs;;
     *) server_color=$dev;;
 esac
 
