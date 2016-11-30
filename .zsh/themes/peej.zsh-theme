@@ -12,6 +12,7 @@ local server_color=''
 local dev='$FG[065]'
 local db='$BG[202]$FG[000]'
 local da='$BG[175]$FG[233]'
+local pr='$BG[237]$FG[206]'
 local cd='$BG[018]$FG[245]'
 local bc='$BG[064]$FG[255]'
 local cr='$BG[060]$FG[253]'
@@ -25,6 +26,7 @@ local ha='$BG[130]$FG[000]'
 case ${(%):-%M} in
     *digitalbrands* ) server_color=$db;;
     *datingadvice* ) server_color=$da;;
+    *printaholic* ) server_color=$pr;;
     *cd-master-web* ) server_color=$cd;;
     *badcredit* ) server_color=$bc;;
     *cardreviews* ) server_color=$cr;;
