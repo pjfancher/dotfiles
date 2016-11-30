@@ -57,7 +57,7 @@ ZSH_THEME_GIT_PROMPT_BEHIND="%{$FG[009]%} ↓ "
 PROMPT="
 
 %{$FG[068]%}%//%{$reset_color%} ${git_branch}
-%{$server_color%}%n@%M%{$FG[131]%}•%{$FG[245]%}$ %{$FG[249]%}"
+%{$server_color%}%n@%M%{$FG[131]%}•%{$FG[245]%}$ %{$FG[249]%}%{$reset_color%}"
 
 RPROMPT=''
 
