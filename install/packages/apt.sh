@@ -29,6 +29,7 @@ packages=(
     gifsicle
     optipng
     imagemagick
+    finger
     vim
     tmux
     htop
