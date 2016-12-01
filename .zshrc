@@ -53,17 +53,31 @@ ZSH_CUSTOM=$HOME/.zsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(z)
 
+
+# INCLUDES
+
+# Global Bash Stuff
+source /etc/profile
+
+# oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+# Aliases
 source $HOME/.aliases
+
+# Functions
 source $HOME/.functions
 
+# Local Bash Aliases
 if [ -f ~/.bash_site_aliases ]; then
     . ~/.bash_site_aliases
 fi
 
+# Local Aliases
 if [ -f ~/.aliases_local ]; then
     . ~/.aliases_local
 fi
+
 
 # User configuration
 
