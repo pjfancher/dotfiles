@@ -13,6 +13,8 @@ print_in_purple "\n   Apt-Get\n   ------------------------------\n"
 packages=(
     python-software-properties
     software-properties-common
+    python-pip
+    python-dev
     php5 
     php5-gd 
     php5-mysql 
