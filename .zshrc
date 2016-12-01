@@ -57,7 +57,7 @@ plugins=(z)
 # INCLUDES
 
 # Global Bash Stuff
-# source /etc/profile
+source /etc/profile
 
 # oh-my-zsh
 source $ZSH/oh-my-zsh.sh
