@@ -42,9 +42,10 @@ alias tmux-reload='tmux source-file ~/.tmux.conf';
 # #########################################
 alias gb='git branch'
 alias gs='git status'
-alias gl='git log --pretty=format:"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]" --decorate --date=relative'
-#alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate --numstat'
+alias gpm='git push origin master'
+alias gplm='git pull origin master'
+alias gpb='git push origin $(current-branch)'
+alias gplb='git pull origin $(current-branch)'
 alias gma='git commit -am'
 alias gm='git commit -m'
 alias gc='git checkout'
@@ -53,17 +54,9 @@ alias gcb='git checkout -b'
 alias ga='git add -A .'
 alias grm='git rm $(git ls-files --deleted)  '
 alias ni='git commit -m "New Images"';
-
-# Push Master
-alias gpm='git push origin master'
-# Pull Master
-alias gplm='git pull origin master'
-# Alias current branch
-alias current-branch='git rev-parse --abbrev-ref HEAD'
-# Push Current Branch
-alias gpb='git push origin $(current-branch)'
-# Pull Current Branch
-alias gplb='git pull origin $(current-branch)'
+alias gl='git log --pretty=format:"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]" --decorate --date=relative'
+#alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate --numstat'
 
 # PROGRAMS
 # #########################################
