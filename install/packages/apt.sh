@@ -62,7 +62,7 @@ if (( ${#packages[@]} > 0 )); then
   # Install each package
   for package in "${packages[@]}"; do
     print_success "Installing $package..."
-    eval "sudo apt-get -qq install $package"
+    eval "sudo apt-get -qq install $package -y"
   done
 
   # Upgrade Packages
