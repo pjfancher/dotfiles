@@ -17,7 +17,7 @@ local cd='$BG[018]$FG[245]'
 local bc='$BG[064]$FG[255]'
 local cr='$BG[060]$FG[253]'
 local dc='$BG[172]$FG[000]'
-local ha='$BG[130]$FG[000]'
+local ha='$BG[130]$FG[255]'
 local gvs='$BG[237]$FG[038]'
 
 
