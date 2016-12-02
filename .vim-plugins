@@ -69,6 +69,11 @@ Plugin 'ervandew/supertab'
 " Custom vim movements for selecting variables in PHP and Ruby
 Plugin 'robmiller/vim-movar'
 
+" Simplifies the transition between multiline and single-line code"
+
+" gJ (with the cursor on the first line of a block) to join a block into a single-line statement.
+Plugin 'AndrewRadev/splitjoin.vim'
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PLUGIN CONFIGS
@@ -158,8 +163,7 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
 
-" Sessions
+" Split/Join
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:session_autosave = 'yes'
-nnoremap SS :SaveSession 
-nnoremap SO :OpenSession 
+let g:splitjoin_split_mapping = '<Leader>S'
+let g:splitjoin_join_mapping  = '<Leader>J'
