@@ -32,6 +32,7 @@ alias zshrc='source $HOME/.zshrc'
 # TMUX ALIASES
 # #########################################
 alias tmux='tmux -2' #Force tmux to assume the terminal supports 256 colours
+alias tmux-reload='tmux source-file ~/.tmux.conf';
 
 # GIT ALIASES
 # #########################################
@@ -47,7 +48,7 @@ alias gcm='git checkout master'
 alias gcb='git checkout -b'
 alias ga='git add -A .'
 alias grm='git rm $(git ls-files --deleted)  '
-#
+
 # Push Master
 alias gpm='git push origin master'
 # Pull Master
@@ -92,7 +93,6 @@ alias purge='curl -X PURGE $1';
 alias ni='git commit -m "New Images"';
 alias snippets='vim ~/.vim/bundle/vim-snippets/snippets';
 alias vimrc='vim ~/vimrc/.vimrc';
-alias tmux-reload='tmux source-file ~/.tmux.conf';
 alias weather='curl http://wttr.in/Gainesville_FL';
 alias www-data='sudo chown www-data * && sudo chgrp www-data *';
 alias tial="tail";
