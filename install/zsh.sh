@@ -9,7 +9,7 @@ main() {
   CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
   if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
     print_error "Zsh is not installed! Attempting to install zsh...\n"
-    execute "sudo apt-get -q install zsh &> /dev/null" "Installing Zsh"
+    execute "sudo apt-get -q install zsh > /dev/null 2>&1" "Installing Zsh"
   fi
   unset CHECK_ZSH_INSTALLED
   
