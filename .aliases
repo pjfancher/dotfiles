@@ -8,7 +8,7 @@ alias .....="cd ../../../.."
 alias c='clear'
 alias h='history'
 alias ex='exit';
-alias snippets='vim ~/.vim/bundle/vim-snippets/snippets';
+alias snippets='vim ~/.vim/snippets/';
 alias vimrc='vim ~/vimrc/.vimrc';
 
 # LS ALIASES
