@@ -29,7 +29,7 @@ alias sudo='sudo '
 alias bashrc='source $HOME/.bashrc'
 alias zshrc='source $HOME/.zshrc'
 
-# GIT ALIASES
+# TMUX ALIASES
 # #########################################
 alias tmux='tmux -2' #Force tmux to assume the terminal supports 256 colours
 
