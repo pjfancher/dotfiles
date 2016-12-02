@@ -24,6 +24,9 @@ packages=(
     php5-dev
     phpmyadmin
     build-essential
+    letsencrypt
+    apt-transport-https
+    ca-certificates
     sendmail
     libjpeg-progs
     gifsicle
