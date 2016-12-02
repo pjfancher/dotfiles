@@ -1,5 +1,5 @@
 # NAVIGATION
-# #########################################
+##########################################
 alias ..="cd .."
 alias cd..="cd .."
 alias ...="cd ../.."
@@ -12,34 +12,34 @@ alias snippets='vim ~/.vim/snippets/';
 alias vimrc='vim ~/vimrc/.vimrc';
 
 # LS ALIASES
-# #########################################
+##########################################
 alias l='ls -lFh'
 alias ll='ls -alFh'
 alias la='ls -lah'
 
 # GREP
-# #########################################
+##########################################
 alias grep='grep --color=auto'
 alias hg='history | grep'
 alias gh='history | grep'
 
 # SUDO (makes other aliases available to sudo)
-# #########################################
+##########################################
 alias sudo='sudo '
 alias doit='sudo $(history -p \!\!)'
 
 # SOURCE FILES
-# #########################################
+##########################################
 alias bashrc='source $HOME/.bashrc'
 alias zshrc='source $HOME/.zshrc'
 
 # TMUX ALIASES
-# #########################################
+##########################################
 alias tmux='tmux -2' #Force tmux to assume the terminal supports 256 colours
 alias tmux-reload='tmux source-file ~/.tmux.conf';
 
 # GIT ALIASES
-# #########################################
+##########################################
 alias gb='git branch'
 alias gs='git status'
 alias gpm='git push origin master'
@@ -59,18 +59,18 @@ alias gl='git log --pretty=format:"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]
 alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate --numstat'
 
 # PROGRAMS
-# #########################################
+##########################################
 alias monsoon='php ~/monsoon-php/monsoon.php'
 alias ack="ack-grep"
 
 # SERVICES
-# #########################################
+##########################################
 alias update='sudo apt-get update && sudo apt-get upgrade -y && upgrade_oh_my_zsh && cd $HOME/dotfiles && gplm && cd - && zshrc'
 alias ra='sudo service apache2 reload' 
 alias rv='sudo service varnish reload' 
 
 # SITES
-# #########################################
+##########################################
 alias da='mosh datingadvice.com'
 alias pr='mosh printaholic.com'
 alias coupons='ssh 166.78.136.18'
@@ -83,13 +83,13 @@ alias dc='mosh dealcrunch.com'
 alias docs='mosh docentuser@db-docs.com'
 
 # PERMISSIONS
-# #########################################
+##########################################
 alias setperm='sudo chgrp -R www-data public_html/ && sudo chmod -R g+w public_html/ && sudo find public_html/ -type d -exec sudo chmod g+s {} \; && sudo chown -R www-data public_html/ && sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;';
 alias setdbdev='sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;'
 alias www-data='sudo chown -R www-data:www-data *';
 
 # WORDPRESS
-# #########################################
+##########################################
 alias w3tc="wp plugin toggle w3-total-cache"
 alias ss="time monsoon && gplm && w3tc"
 if [ -n "$THEME_DIR" ]; then
@@ -101,11 +101,11 @@ if [ -n "$WP_DIR" ]; then
 fi
 
 # VARNISH
-# #########################################
+##########################################
 alias purge='curl -X PURGE $1';
 
 # MISC
-# #########################################
+##########################################
 alias less-upgrade='sudo npm install -g less@1.7.4'
 alias less-downgrade='sudo npm install -g less@1.3.3'
 alias tial="tail";
