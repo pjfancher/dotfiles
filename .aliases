@@ -7,6 +7,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias c='clear'
 alias h='history'
+alias ex='exit';
+alias snippets='vim ~/.vim/bundle/vim-snippets/snippets';
+alias vimrc='vim ~/vimrc/.vimrc';
 
 # LS ALIASES
 # #########################################
@@ -23,6 +26,7 @@ alias gh='history | grep'
 # SUDO (makes other aliases available to sudo)
 # #########################################
 alias sudo='sudo '
+alias doit='sudo $(history -p \!\!)'
 
 # SOURCE FILES
 # #########################################
@@ -48,6 +52,7 @@ alias gcm='git checkout master'
 alias gcb='git checkout -b'
 alias ga='git add -A .'
 alias grm='git rm $(git ls-files --deleted)  '
+alias ni='git commit -m "New Images"';
 
 # Push Master
 alias gpm='git push origin master'
@@ -60,49 +65,57 @@ alias gpb='git push origin $(current-branch)'
 # Pull Current Branch
 alias gplb='git pull origin $(current-branch)'
 
-# SERVICES, LOGIN, ETC ALIASES
+# PROGRAMS
 # #########################################
-alias netstat='netstat -plutn'
+alias monsoon='php ~/monsoon-php/monsoon.php'
+alias ack="ack-grep"
+
+# SERVICES
+# #########################################
+alias update='sudo apt-get update && sudo apt-get upgrade -y && upgrade_oh_my_zsh && cd $HOME/dotfiles && gplm && cd - && zshrc'
 alias ra='sudo service apache2 reload' 
 alias rv='sudo service varnish reload' 
-alias cron='ssh 50.56.174.184'
-alias coupons='ssh 166.78.136.18'
+
+# SITES
+# #########################################
 alias da='mosh datingadvice.com'
 alias pr='mosh printaholic.com'
+alias coupons='ssh 166.78.136.18'
 alias bc='mosh 166.78.243.119'
 alias ha='mosh 23.253.111.148'
 alias cr='mosh cardrates.com'
 alias db='mosh digitalbrands.com'
 alias wd='ssh weirddads@weirddads.com'
 alias dc='mosh dealcrunch.com'
-alias dc-old='mosh 162.242.144.214'
 alias docs='mosh docentuser@db-docs.com'
-alias ro='mosh http://169.55.197.105/'
-alias sd-dev='mosh doppleruser@159.203.73.119'
-alias pullrm='git subtree pull --prefix=plugins/rain-maker git@github.com:digital-brands/rain-maker.git master'
-alias pushrm='git subtree push --prefix=plugins/rain-maker git@github.com:digital-brands/rain-maker.git master'
-alias monsoon='php ~/monsoon-php/monsoon.php'
-alias update='sudo apt-get update && sudo apt-get upgrade -y && upgrade_oh_my_zsh && cd $HOME/dotfiles && gplm && cd - && zshrc'
-alias less-upgrade='sudo npm install -g less@1.7.4'
-alias less-downgrade='sudo npm install -g less@1.3.3'
-alias doit='sudo $(history -p \!\!)'
-alias ex='exit';
+
+# PERMISSIONS
+# #########################################
 alias setperm='sudo chgrp -R www-data public_html/ && sudo chmod -R g+w public_html/ && sudo find public_html/ -type d -exec sudo chmod g+s {} \; && sudo chown -R www-data public_html/ && sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;';
 alias setdbdev='sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;'
-alias purge='curl -X PURGE $1';
-alias ni='git commit -m "New Images"';
-alias snippets='vim ~/.vim/bundle/vim-snippets/snippets';
-alias vimrc='vim ~/vimrc/.vimrc';
-alias weather='curl http://wttr.in/Gainesville_FL';
 alias www-data='sudo chown www-data * && sudo chgrp www-data *';
-alias tial="tail";
-alias logs="cd $WP_DIR && cd ../../logs/ && ll"
-alias ctags-gen="ctags -R -f .git/tags ."
+
+# WORDPRESS
+# #########################################
 alias w3tc="wp plugin toggle w3-total-cache"
 alias ss="time monsoon && gplm && w3tc"
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ack="ack-grep"
-
-if [ -n "$THEME_DIR" ];
-    then alias warm="cd ${THEME_DIR}functions/warmer/ && ./build-sitemaps-and-warm-cache.sh && cd -";
+if [ -n "$THEME_DIR" ]; then
+    alias warm="cd ${THEME_DIR}functions/warmer/ && ./build-sitemaps-and-warm-cache.sh && cd -";
 fi
+
+if [ -n "$WP_DIR" ]; then
+    alias logs="cd $WP_DIR && cd ../../logs/ && ll"
+fi
+
+# VARNISH
+# #########################################
+alias purge='curl -X PURGE $1';
+
+# MISC
+# #########################################
+alias less-upgrade='sudo npm install -g less@1.7.4'
+alias less-downgrade='sudo npm install -g less@1.3.3'
+alias tial="tail";
+alias ctags-gen="ctags -R -f .git/tags ."
+alias weather='curl http://wttr.in/Gainesville_FL';
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
