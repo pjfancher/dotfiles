@@ -70,8 +70,6 @@ Plugin 'ervandew/supertab'
 Plugin 'robmiller/vim-movar'
 
 " Simplifies the transition between multiline and single-line code"
-
-" gJ (with the cursor on the first line of a block) to join a block into a single-line statement.
 Plugin 'AndrewRadev/splitjoin.vim'
 
 
@@ -164,6 +162,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 
 " Split/Join
+" <Leader>S - split
+" <Leader>J - join
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:splitjoin_split_mapping = '<Leader>S'
 let g:splitjoin_join_mapping  = '<Leader>J'
