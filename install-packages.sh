@@ -9,7 +9,6 @@ ask_for_sudo
 cd "$(dirname "${BASH_SOURCE[0]}")" \
   && . "install/packages/apt.sh" \
   && . "install/packages/npm.sh" \
-  && . "install/packages/docker.sh" \
   && cd $HOME
 
 #Complete
