@@ -4,6 +4,7 @@
 [core]
 	mergeoptions = --no-edit
 	editor = vim
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
 	helper = cache --timeout=86400
 [alias]
