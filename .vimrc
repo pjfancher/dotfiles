@@ -214,6 +214,9 @@ noremap <F4>  %^y$%a// pxx
 " Source current file
 noremap <F5> :source %<CR>
 
+" Converts echo to `fwrite( $stdout )`
+noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => FILES, BACKUPS & UNDO
