@@ -14,4 +14,5 @@ To install all dot files and plugins: `curl -L peej.io | bash`
 * Run `./install.sh`
 
 ## Install Packages (beta)
-* Run `./install-packages.sh`
+* `./install-packages.sh` installs apt and npm packages necessary for a LAMP dev environment.
+* `/install/packages/docker.sh` sets up a new Docker environment.
