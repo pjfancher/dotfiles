@@ -27,7 +27,6 @@ packages=(
   node-gyp
   less@1.3.3
   uglify-js
-  diff-so-fancy
 )
 
 # Install each package
