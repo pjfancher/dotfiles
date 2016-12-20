@@ -1,3 +1,6 @@
+# PJ's dotfiles
+![screen](http://i.imgur.com/RRC54fI.png)
+
 ## Install As Is
 [peej.io](http://peej.io) links to the raw `install-remote.sh` script.
 
