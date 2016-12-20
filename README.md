@@ -1,11 +1,12 @@
 # PJ's dotfiles
-![screen](http://i.imgur.com/RRC54fI.png)
+Custom dotfiles and scripts to setup new dev environments.
 
 ## Install As Is
 [peej.io](http://peej.io) links to the raw `install-remote.sh` script.
 
 To install all dot files and plugins: `curl -L peej.io | bash`
 
+![screen](http://i.imgur.com/RRC54fI.png)
 
 ## Custom Setup
 * Clone the repo: `git clone https://github.com/db-pj/dotfiles` 
