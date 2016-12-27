@@ -110,5 +110,5 @@ alias less-upgrade='sudo npm install -g less@1.7.4'
 alias less-downgrade='sudo npm install -g less@1.3.3'
 alias tial="tail";
 alias ctags-gen="ctags -R -f .git/tags ."
-alias weather='curl http://wttr.in/Gainesville_FL';
+alias weather='curl http://wttr.in/32601';
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
