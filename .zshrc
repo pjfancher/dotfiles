@@ -112,3 +112,6 @@ export EDITOR='vim'
 # Load NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Set vi editing mode 
+set -o vi
