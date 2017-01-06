@@ -51,7 +51,7 @@ ZSH_CUSTOM=$HOME/.zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z)
+plugins=(z vi-mode)
 
 
 # INCLUDES
@@ -113,5 +113,5 @@ export EDITOR='vim'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-# Set vi editing mode 
-set -o vi
+# Kill The Lag between vi-mode changes
+export KEYTIMEOUT=1

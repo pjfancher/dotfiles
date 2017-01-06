@@ -47,13 +47,19 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 #ZSH_THEME_GIT_PROMPT_DIRTY=" %{$FG[009]%}✗ %{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$FG[028]%}✔ %{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_ADDED="%{$FG[009]%} ✚ "
-ZSH_THEME_GIT_PROMPT_MODIFIED="%{$FG[009]%} ✹ "
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$FG[009]%} ●"
 ZSH_THEME_GIT_PROMPT_DELETED="%{$FG[009]%} ✖ "
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$FG[009]%} ➜ "
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$FG[011]%} ═ "
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[009]%} -- "
 ZSH_THEME_GIT_PROMPT_AHEAD="%{$FG[009]%} ↑ "
 ZSH_THEME_GIT_PROMPT_BEHIND="%{$FG[009]%} ↓ "
+
+
+########################################
+# MODE INDICATOR
+########################################
+MODE_INDICATOR="%{$BG[011]%}%{$FG[000]%} [VIM] %{$reset_color%}"
 
 
 ########################################
@@ -64,7 +70,7 @@ PROMPT="
 %{$FG[068]%}%//%{$reset_color%} ${git_branch}
 %{$server_color%}%n@%M%{$reset_color%}%{$FG[131]%}•%{$FG[245]%}$ %{$FG[249]%}"
 
-RPROMPT=''
+RPROMPT='$(vi_mode_prompt_info)'
 
 
 ########################################
