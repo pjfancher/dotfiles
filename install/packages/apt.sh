@@ -45,6 +45,9 @@ packages=(
     silversearcher-ag
 )
 
+#Install tmuxp
+sudo pip install tmuxp
+
 # Remove packages already installed from list
 packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstall | awk '{print $1}')"))
 
