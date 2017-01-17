@@ -1,0 +1,14 @@
+session_name: Site Diagnose
+windows:
+  - window_name: Site Diagnose
+    layout: tiled
+    panes:
+      - shell_command:
+        - cd $WP_DIR
+        focus: true
+      - shell_command:
+        - htop
+      - shell_command:
+        - errorlog
+      - shell_command:
+        - accesslog
