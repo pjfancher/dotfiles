@@ -39,6 +39,7 @@ alias tmux='tmux -2' #Force tmux to assume the terminal supports 256 colours
 alias tmux-reload='tmux source-file ~/.tmux.conf';
 alias mon='tmuxp load site-monitor'        # Site Monitor Layout
 alias monex='tmux kill-session -t monitor'  # Exit Site Monitor Layout
+alias monk='monex'
 
 # GIT ALIASES
 ##########################################
