@@ -1,4 +1,4 @@
-session_name: diagnose
+session_name: monitor
 windows:
 - focus: 'true'
   layout: 0e57,364x91,0,0[364x45,0,0{182x45,0,0,0,181x45,183,0,2},364x45,0,46{116x45,0,46,1,120x45,117,46,4,126x45,238,46,3}]
@@ -15,4 +15,4 @@ windows:
     - errorlog
   - shell_command:
     - accesslog
-window_name: Site Diagnose
+window_name: Site Monitor
