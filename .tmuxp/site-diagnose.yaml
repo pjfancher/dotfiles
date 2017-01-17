@@ -1,14 +1,18 @@
 session_name: diagnose
 windows:
-  - window_name: Site Diagnose
-    layout: tiled
-    panes:
-      - shell_command:
-        - clear && cd $WP_DIR && ll
-        focus: true
-      - shell_command:
-        - htop
-      - shell_command:
-        - errorlog
-      - shell_command:
-        - accesslog
+- focus: 'true'
+  layout: 0e57,364x91,0,0[364x45,0,0{182x45,0,0,0,181x45,183,0,2},364x45,0,46{116x45,0,46,1,120x45,117,46,4,126x45,238,46,3}]
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command:
+      - clear && cd $WP_DIR && ll
+  - shell_command:
+      - htop
+  - shell_command:
+    - cronlog
+  - shell_command:
+    - errorlog
+  - shell_command:
+    - accesslog
+window_name: Site Diagnose
