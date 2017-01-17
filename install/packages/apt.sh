@@ -52,8 +52,8 @@ packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstal
 if (( ${#packages[@]} > 0 )); then
 
   # Add PPAs
-  sudo add-apt-repository -qq ppa:gekkio/ag > /dev/null 2>&1
-  sudo add-apt-repository -qq ppa:pi-rho/dev > /dev/null 2>&1
+  sudo add-apt-repository -y ppa:gekkio/ag > /dev/null 2>&1
+  sudo add-apt-repository -y ppa:pi-rho/dev > /dev/null 2>&1
   
   # Update Packages
   print_success "Updating Packages..."
