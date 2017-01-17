@@ -4,7 +4,7 @@ windows:
     layout: tiled
     panes:
       - shell_command:
-        - cd $WP_DIR
+        - clear && cd $WP_DIR && ll
         focus: true
       - shell_command:
         - htop
