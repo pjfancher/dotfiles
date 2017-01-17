@@ -45,9 +45,6 @@ packages=(
     silversearcher-ag
 )
 
-#Install tmuxp
-sudo pip install tmuxp
-
 # Remove packages already installed from list
 packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstall | awk '{print $1}')"))
 
@@ -73,4 +70,4 @@ if (( ${#packages[@]} > 0 )); then
   sudo apt-get upgrade -y > /dev/null 2>&1
 fi
 
-print_success "All Packages Installed"
+print_success "Apt-Get Packages Installed"
