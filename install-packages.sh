@@ -8,6 +8,7 @@ ask_for_sudo
 # Load Scripts
 cd "$(dirname "${BASH_SOURCE[0]}")" \
   && . "install/packages/apt.sh" \
+  && . "install/packages/pip.sh" \
   && . "install/packages/npm.sh" \
   && cd $HOME
 
