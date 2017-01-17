@@ -37,8 +37,8 @@ alias zshrc='source $HOME/.zshrc'
 ##########################################
 alias tmux='tmux -2' #Force tmux to assume the terminal supports 256 colours
 alias tmux-reload='tmux source-file ~/.tmux.conf';
-alias dgn='tmuxp load site-diagnose'        # Site Diagnose Layout
-alias dgnk='tmux kill-session -t diagnose'  # Kill Site Diagnose Layout
+alias mon='tmuxp load site-monitor'        # Site Monitor Layout
+alias monex='tmux kill-session -t monitor'  # Exit Site Monitor Layout
 
 # GIT ALIASES
 ##########################################
