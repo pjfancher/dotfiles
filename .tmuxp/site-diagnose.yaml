@@ -1,4 +1,4 @@
-session_name: Site Diagnose
+session_name: diagnose
 windows:
   - window_name: Site Diagnose
     layout: tiled
