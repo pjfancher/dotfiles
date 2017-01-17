@@ -34,3 +34,5 @@ for package in "${packages[@]}"; do
   print_success "Installing $package..."
   eval "sudo npm install -g --silent $package &> /dev/null"
 done
+
+print_success "NPM Packages Installed"
