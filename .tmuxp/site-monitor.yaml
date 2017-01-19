@@ -2,11 +2,10 @@ session_name: monitor
 windows:
 - focus: 'true'
   layout: ec7a,364x91,0,0[364x45,0,0{177x45,0,0,20,186x45,178,0,21},364x45,0,46{116x45,0,46[116x37,0,46,22,116x7,0,84,25],120x45,117,46,23,126x45,238,46,24}]
-  options: {}
   panes:
   - focus: 'true'
     shell_command:
-      - clear && cd $WP_DIR
+      - cd $WP_DIR 
   - shell_command:
       - htop
   - shell_command:
