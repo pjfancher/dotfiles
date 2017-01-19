@@ -5,7 +5,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command:
-      - cd $WP_DIR 
+      - cd $WP_DIR && clear
   - shell_command:
       - htop
   - shell_command:
