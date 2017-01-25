@@ -4,8 +4,5 @@
 [core]
 	mergeoptions = --no-edit
 	editor = vim
-	pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
 	helper = cache --timeout=86400
-[alias]
-	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
