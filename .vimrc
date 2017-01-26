@@ -44,8 +44,11 @@ set ignorecase
 " When searching try to be smart about cases 
 set smartcase
 
-" Makes search act like search in modern browsers
+" Show the first match for the pattern, while you are still typing it
 set incsearch
+
+" Highlight all matches for the pattern
+set hlsearch
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => TEXT, TAB & INDENT
@@ -91,6 +94,13 @@ let &t_Co=256
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MAPPINGS
+" cmap handles command-line mappings
+" imap handles insert-only mappings
+" map maps keys in normal, visual, and operator-pending mode
+" map! maps keys in Vim's command and insert modes
+" nmap maps keys in normal mode only
+" omap maps keys in operator-pending mode only
+" vmap maps keys in visual mode only
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " <LEADER>
@@ -212,7 +222,7 @@ noremap <F3> :set nonumber!<CR>
 noremap <F4>  %^y$%a// pxx
 
 " Source current file
-noremap <F5> :source %<CR>
+noremap <F5> :noh<CR>
 
 " Converts echo to `fwrite( $stdout )`
 noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
