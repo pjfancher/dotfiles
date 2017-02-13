@@ -88,12 +88,45 @@ snippet mw
 snippet af
 	&:after {
 		${1}
-	}// &.after
+	}// &:after
 
 snippet bf
 	&:before {
 		${1}
-	}// &.before
+	}// &:before
+
+snippet lc
+	&:last-child {
+		${1}	
+	}// &:last-child
+
+snippet fc
+	&:first-child {
+		${1}	
+	}// &:first-child
+
+snippet i
+	font-style: italic;
+
+snippet bff
+	font-family: @baseFontFamily;
+
+snippet hff
+	font-family: @headingsFontFamily;
+
+snippet aff
+	font-family: @altFontFamily;
+
+snippet sff
+	font-family: @serifFontFamily;
+
+snippet center
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 
 snippet .
 	.${1} {
