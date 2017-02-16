@@ -34,6 +34,7 @@ packages=(
     imagemagick
     finger
     vim
+    ctags
     tmux
     htop
     curl
