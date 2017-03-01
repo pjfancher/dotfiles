@@ -46,6 +46,7 @@ alias monx='monk'
 ##########################################
 alias current-branch='git rev-parse --abbrev-ref HEAD'
 alias gb='git branch'
+alias gbd='git branch -D'
 alias gs='git status'
 alias gpm='git push origin master'
 alias gplm='git pull origin master'
