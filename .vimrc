@@ -47,8 +47,6 @@ set smartcase
 " Show the first match for the pattern, while you are still typing it
 set incsearch
 
-" Highlight all matches for the pattern
-set hlsearch
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => TEXT, TAB & INDENT
@@ -221,8 +219,8 @@ noremap <F3> :set nonumber!<CR>
 " Add CSS closing comment
 noremap <F4>  %^y$%a// pxx
 
-" Source current file
-noremap <F5> :noh<CR>
+" Remove Highlighting
+"noremap <F5> :noh<CR>
 
 " Converts echo to `fwrite( $stdout )`
 noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>

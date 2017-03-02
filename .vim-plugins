@@ -115,6 +115,22 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 
+" EasyMotion
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"EasyMotion Search
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+"Override s for EasyMotion Search
+nmap s <Plug>(easymotion-overwin-f)
+
+"Override w for EasyMotion Word Search
+nmap w <Plug>(easymotion-w)
+
+"Enable Smartcase
+let g:EasyMotion_smartcase = 1
+
+
 " Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set laststatus=2
