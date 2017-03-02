@@ -42,22 +42,22 @@ main() {
   execute "env git clone --quiet --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH &> /dev/null" "Installing oh-my-zsh"
 
   # If this user's login shell is not already "zsh", attempt to switch.
-  TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
-  if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
-    # If this platform provides a "chsh" command (not Cygwin), do it, man!
-    if hash chsh >/dev/null 2>&1; then
-      print_success "\n   Changing your default shell to zsh...\n\t"
-      chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
-      print_success 'Shell changed to zsh!'
-      print_warning 'Log out and log back in to complete shell switch'
-    # Else, suggest the user do so manually.
-    else
-      print_error "I can't change your shell automatically because this system does not have chsh.\n"
-      print_error "Please manually change your default shell to zsh!\n"
-    fi
-    else
-     print_success 'Zsh is current shell'
-  fi
+  #TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
+  #if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
+    ## If this platform provides a "chsh" command (not Cygwin), do it, man!
+    #if hash chsh >/dev/null 2>&1; then
+      #print_success "\n   Changing your default shell to zsh...\n\t"
+      #chsh -s $(grep /zsh$ /etc/shells | tail -1) < /dev/tty
+      #print_success 'Shell changed to zsh!'
+      #print_warning 'Log out and log back in to complete shell switch'
+    ## Else, suggest the user do so manually.
+    #else
+      #print_error "I can't change your shell automatically because this system does not have chsh.\n"
+      #print_error "Please manually change your default shell to zsh!\n"
+    #fi
+    #else
+     #print_success 'Zsh is current shell'
+  #fi
 
   env zsh
 }
