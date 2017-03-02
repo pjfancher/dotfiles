@@ -20,9 +20,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'marcweber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 
-" Git wrapper
-Plugin 'tpope/vim-fugitive'
-
 " Quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
 
