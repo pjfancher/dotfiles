@@ -140,6 +140,11 @@ let g:airline_theme='bubblegum'
 let g:airline#extensions#whitespace#enabled = 0
 highlight clear SignColumn
 
+if 'pj-dev-1' != hostname()
+    let g:airline_theme='light'
+end
+
+
 function! AirlineInit() 
   let g:airline_section_a = airline#section#create(['mode', ' ', 'paste'])
   let g:airline_section_b = airline#section#create(['branch'])
