@@ -23,6 +23,9 @@ Plugin 'tomtom/tlib_vim'
 " Quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
 
+" a Git wrapper so awesome, it should be illegal 
+Plugin 'tpope/vim-fugitive'
+
 " True Sublime Text style multiple selections for Vim
 Plugin 'terryma/vim-multiple-cursors'
 
@@ -132,14 +135,21 @@ let g:EasyMotion_smartcase = 1
 " Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set laststatus=2
-"let g:airline_powerline_fonts=1
-"let g:airline_theme='distinguished'
-let g:airline_theme='ubaryd'
+let g:airline_powerline_fonts=1
+let g:airline_theme='bubblegum'
 let g:airline#extensions#whitespace#enabled = 0
 highlight clear SignColumn
-let g:airline_left_sep=''
-let g:airline_right_sep=''
 
+function! AirlineInit() 
+  let g:airline_section_a = airline#section#create(['mode', ' ', 'paste'])
+  let g:airline_section_b = airline#section#create(['branch'])
+  let g:airline_section_c = airline#section#create(['hunks'])
+  let g:airline_section_x = airline#section#create(['%f'])
+  let g:airline_section_y = airline#section#create(['filetype'])
+  let g:airline_section_z = airline#section#create(['%p%% : %l/%L'])
+  call airline#update_statusline()
+endfunction
+autocmd VimEnter * call AirlineInit()
 
 " Snipmate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
