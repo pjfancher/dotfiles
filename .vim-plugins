@@ -30,8 +30,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
 
 " A light and configurable statusline/tabline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+
+" A light and configurable statusline/tabline for Vim
+Plugin 'itchyny/lightline.vim'
 
 " Insert mode auto-completion for quotes, parens, brackets, etc.
 Plugin 'Raimondi/delimitMate'
@@ -134,27 +137,83 @@ let g:EasyMotion_smartcase = 1
 
 " Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set laststatus=2
+"let g:airline_powerline_fonts=1
+"let g:airline_theme='bubblegum'
+"let g:airline#extensions#whitespace#enabled = 0
+"highlight clear SignColumn
+"
+"if 'pj-dev-1' != hostname()
+"    let g:airline_theme='light'
+"end
+"
+"
+"function! AirlineInit() 
+"  let g:airline_section_a = airline#section#create(['mode', ' ', 'paste'])
+"  let g:airline_section_b = airline#section#create(['branch'])
+"  let g:airline_section_c = airline#section#create(['hunks'])
+"  let g:airline_section_x = airline#section#create(['%f'])
+"  let g:airline_section_y = airline#section#create(['%{hostname()}'])
+"  let g:airline_section_z = airline#section#create(['%p%% : %l/%L'])
+"  call airline#update_statusline()
+"endfunction
+"autocmd VimEnter * call AirlineInit()
+
+
+" Lightline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set noshowmode
 set laststatus=2
-let g:airline_powerline_fonts=1
-let g:airline_theme='bubblegum'
-let g:airline#extensions#whitespace#enabled = 0
-highlight clear SignColumn
+let g:lightline = {
+\ 'colorscheme': 'wombat',
+\ 'active': {
+\   'left': [ [ 'mode', 'paste' ], [ 'fugitive' ], [ 'gitgutter' ] ],
+\   'right': [ [ 'lineinfo' ], [ 'hostname' ], [ 'relativepath' ] ]
+\ },
+\ 'component_function': {
+\   'fugitive': 'LightlineFugitive',
+\   'gitgutter': 'LightlineGitGutter',
+\   'hostname' : 'LightlineHostname'
+\ },
+\ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+\ 'subseparator': { 'left': "", 'right': ":" }
+\ }
 
-if 'pj-dev-1' != hostname()
-    let g:airline_theme='light'
-end
+let g:lightline.component = {
+\ 'lineinfo': '%p%% : %l/%L' }
 
-
-function! AirlineInit() 
-  let g:airline_section_a = airline#section#create(['mode', ' ', 'paste'])
-  let g:airline_section_b = airline#section#create(['branch'])
-  let g:airline_section_c = airline#section#create(['hunks'])
-  let g:airline_section_x = airline#section#create(['%f'])
-  let g:airline_section_y = airline#section#create(['%{hostname()}'])
-  let g:airline_section_z = airline#section#create(['%p%% : %l/%L'])
-  call airline#update_statusline()
+function LightlineHostname()
+    return hostname()
 endfunction
-autocmd VimEnter * call AirlineInit()
+
+function! LightlineFugitive()
+    return exists('*fugitive#head') ? printf( '%s%s', "\uE0A0 ", fugitive#head()) : ''
+endfunction
+
+function LightlineGitGutter() 
+    let hunks = exists('*GitGutterGetHunkSummary') ? GitGutterGetHunkSummary() : ''
+    let string = ''
+    if !empty(hunks)
+        for i in [0, 1, 2]
+            if (hunks[i] > 0)
+                if (i == 0)
+                    let symbol = '+'
+                elseif (i == 1)
+                    let symbol = '~'
+                elseif (i == 2)
+                    let symbol = '-'
+                endif
+                let string .= printf('%s%s ', symbol, hunks[i])
+            endif
+        endfor
+    endif
+    if (string == '')
+        return
+    else
+        return string
+    endif
+endfunction
+
 
 " Snipmate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
