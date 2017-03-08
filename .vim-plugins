@@ -165,7 +165,7 @@ let g:EasyMotion_smartcase = 1
 set noshowmode
 set laststatus=2
 let g:lightline = {
-\ 'colorscheme': 'wombat',
+\ 'colorscheme': 'seoul256',
 \ 'active': {
 \   'left': [ [ 'mode', 'paste' ], [ 'fugitive' ], [ 'gitgutter' ] ],
 \   'right': [ [ 'lineinfo' ], [ 'hostname' ], [ 'relativepath' ] ]
