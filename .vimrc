@@ -270,6 +270,7 @@ au BufRead,BufNewFile *.json set ft=json syntax=javascript
 au BufRead,BufNewFile *.jade set ft=jade syntax=jade
 au BufRead,BufNewFile *.go set ft=go syntax=go
 au BufRead,BufNewFile *.vcl set ft=vcl syntax=vcl
+au BufRead,BufNewFile *.vim-plugins set ft=vim syntax=vim
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
