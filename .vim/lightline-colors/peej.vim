@@ -52,8 +52,8 @@ let s:p.normal.warning  = [ [ s:yellow, s:base01 ] ]
 
 let prodservers=['digitalbrands.com', 'datingadvice.com']
 
-if index(prodservers, hostname()) 
-    let s:p.normal.middle   = [ [ s:white, s:red ] ]
-end
+"if index(prodservers, hostname() >= 0) 
+    "let s:p.normal.middle   = [ [ s:white, s:red ] ]
+"end
 
 let g:lightline#colorscheme#peej#palette = lightline#colorscheme#flatten(s:p)
