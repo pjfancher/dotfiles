@@ -8,8 +8,7 @@ install_plugins() {
     execute \
         "rm -rf '$VUNDLE_DIR' \
             && git clone --quiet '$VUNDLE_GIT_REPO_URL' '$VUNDLE_DIR' \
-            && printf '\n' | vim +PluginInstall +qall \
-            && ln -s $HOME/.vim/lightline-colors/* $HOME/.vim/bundle/lightline.vim/autoload/lightline/colorscheme/" \
+            && printf '\n' | vim +PluginInstall +qall" \
         "Installing plugins" \
         || return 1
 }
