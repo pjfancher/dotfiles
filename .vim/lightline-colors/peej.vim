@@ -22,6 +22,9 @@ let s:cyan    = [ '#87d7d7', 23 ]
 let s:green   = [ '#87af87', 108 ]
 let s:white   = [ '#d0d0d0', 252 ]
 
+let s:dbfg    = [ '#FFFFFF', 0 ]
+let s:dbbg    = [ '#FFFFFF', 202 ]
+
 let s:p                 = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [ s:base02, s:blue ], [ s:blue, s:base01 ] ]
 let s:p.normal.right    = [ [ s:base02, s:blue ], [ s:blue, s:base01 ] ]
@@ -50,10 +53,18 @@ let s:p.tabline.right   = copy(s:p.normal.right)
 let s:p.normal.error    = [ [ s:red, s:base02 ] ]
 let s:p.normal.warning  = [ [ s:yellow, s:base01 ] ]
 
-let prodservers=['digitalbrands.com', 'datingadvice.com']
+let hostname = hostname()
+let production = 0
 
-"if index(prodservers, hostname() >= 0) 
-    "let s:p.normal.middle   = [ [ s:white, s:red ] ]
-"end
+if( hostname == 'digitalbrands.com' )
+    let production = 1
+    let s:p.normal.right    = [ [ s:base02, s:blue ], [ s:dbfg, s:dbbg ] ]
+end
+
+if( production == 1 )
+    let s:p.normal.middle   = [ [ s:white, s:red ] ]
+    let s:p.insert.middle   = [ [ s:white, s:red ] ]
+end
+
 
 let g:lightline#colorscheme#peej#palette = lightline#colorscheme#flatten(s:p)
