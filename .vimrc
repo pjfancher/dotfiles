@@ -349,23 +349,25 @@ source ~/.vim/lightline-colors/peej.vim
 
 let g:lightline = {
 \ 'colorscheme': 'peej',
+\ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+\ 'subseparator': { 'left': "", 'right': "" },
 \ 'active': {
 \   'left': [ [ 'mode', 'paste' ], [ 'fugitive' ], [ 'gitgutter' ] ],
-\   'right': [ [ 'lineinfo' ], [ 'hostname' ], [ 'relativepath' ] ]
+\   'right': [ [ 'lineinfo' ], [ 'hostname' ], [ 'modified', 'relativepath' ] ]
 \ },
 \ 'component_function': {
 \   'fugitive': 'LightlineFugitive',
 \   'gitgutter': 'LightlineGitGutter',
 \   'hostname' : 'LightlineHostname'
 \ },
-\ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-\ 'subseparator': { 'left': "", 'right': ":" }
-\ }
-
-let g:lightline.component = { 'lineinfo': '%p%% : %l/%L' }
-let g:lightline.tab = {
-    \ 'active': [ 'filename', 'modified' ],
-    \ 'inactive': [ 'filename', 'modified' ] }
+\ 'tab' : {
+\   'active': [ 'filename', 'modified' ],
+\   'inactive': [ 'filename', 'modified' ] 
+\ },
+\ 'component' : {
+\   'lineinfo': '%p%% : %l/%L'
+\ },
+\}
 
 function LightlineHostname()
     return hostname()
