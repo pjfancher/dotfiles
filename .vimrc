@@ -362,9 +362,10 @@ let g:lightline = {
 \ 'subseparator': { 'left': "", 'right': ":" }
 \ }
 
-let g:lightline.component = {
-\ 'lineinfo': '%p%% : %l/%L'
-\}
+let g:lightline.component = { 'lineinfo': '%p%% : %l/%L' }
+let g:lightline.tab = {
+    \ 'active': [ 'filename', 'modified' ],
+    \ 'inactive': [ 'filename', 'modified' ] }
 
 function LightlineHostname()
     return hostname()
