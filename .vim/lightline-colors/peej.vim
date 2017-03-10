@@ -54,6 +54,7 @@ let s:p.normal.warning  = [ [ s:yellow, s:base01 ] ]
 
 " Production Server Colors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://jonasjacek.github.io/colors/
 let s:db_fg  = [ '#000000', 000 ]
 let s:db_bg  = [ '#FF5F00', 202 ]
 let s:da_fg  = [ '#121212', 233 ]

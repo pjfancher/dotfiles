@@ -7,6 +7,7 @@ local git_branch='$(git_prompt_info)$(git_prompt_status)'
 
 ########################################
 # DEFINE SERVER COLORS
+# https://jonasjacek.github.io/colors/
 ########################################
 local server_color=''
 local dev='$FG[065]'
