@@ -92,6 +92,8 @@ for [key, val] in items(servernames)
     if( hostname =~ val )
         let production = 1
         let s:p.normal.right = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
+        let s:p.insert.right = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
+        let s:p.insert.middle   = [ [ s:yellow, s:red ] ]
     end
 endfor
 
