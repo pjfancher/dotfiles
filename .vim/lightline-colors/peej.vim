@@ -5,25 +5,23 @@
 " Last Change: 3/2017
 " =============================================================================
 let s:base03  = [ '#151513', 233 ]
-let s:base02  = [ '#30302c', 236 ]
-let s:base01  = [ '#4e4e43', 239 ]
+let s:base02  = [ '#30302C', 236 ]
+let s:base01  = [ '#4E4E43', 239 ]
 let s:base00  = [ '#666656', 242  ]
 let s:base0   = [ '#808070', 244 ]
 let s:base1   = [ '#949484', 246 ]
-let s:base2   = [ '#a8a897', 248 ]
-let s:base3   = [ '#e8e8d3', 253 ]
-let s:yellow  = [ '#dee251', 229 ]
-let s:orange  = [ '#d7875f', 216 ]
-let s:red     = [ '#d68787', 124 ]
-let s:magenta = [ '#df5f87', 168 ]
-let s:peach   = [ '#d7afaf', 181 ]
-let s:blue    = [ '#87afaf', 109 ]
-let s:cyan    = [ '#87d7d7', 23 ]
-let s:green   = [ '#87af87', 108 ]
-let s:white   = [ '#d0d0d0', 252 ]
+let s:base2   = [ '#A8A897', 248 ]
+let s:base3   = [ '#E8E8D3', 253 ]
+let s:yellow  = [ '#DEE251', 229 ]
+let s:orange  = [ '#D7875F', 216 ]
+let s:red     = [ '#D68787', 124 ]
+let s:magenta = [ '#DF5F87', 168 ]
+let s:peach   = [ '#D7AFAF', 181 ]
+let s:blue    = [ '#87AFAF', 109 ]
+let s:cyan    = [ '#87D7D7', 23 ]
+let s:green   = [ '#87AF87', 108 ]
+let s:white   = [ '#D0D0D0', 252 ]
 
-let s:dbfg    = [ '#FFFFFF', 0 ]
-let s:dbbg    = [ '#FFFFFF', 202 ]
 
 let s:p                 = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [ s:base02, s:blue ], [ s:blue, s:base01 ] ]
@@ -53,18 +51,53 @@ let s:p.tabline.right   = copy(s:p.normal.right)
 let s:p.normal.error    = [ [ s:red, s:base02 ] ]
 let s:p.normal.warning  = [ [ s:yellow, s:base01 ] ]
 
+
+" Production Server Colors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let s:db_fg  = [ '#000000', 000 ]
+let s:db_bg  = [ '#FF5F00', 202 ]
+let s:da_fg  = [ '#121212', 233 ]
+let s:da_bg  = [ '#D787AF', 175 ]
+let s:pr_fg  = [ '#FF5FD7', 206 ]
+let s:pr_bg  = [ '#3A3A3A', 237 ]
+let s:cd_fg  = [ '#8A8A8A', 245 ]
+let s:cd_bg  = [ '#000087', 018 ]
+let s:bc_fg  = [ '#EEEEEE', 255 ]
+let s:bc_bg  = [ '#5F8700', 064 ]
+let s:cr_fg  = [ '#DADADA', 253 ]
+let s:cr_bg  = [ '#5F5F87', 060 ]
+let s:dc_fg  = [ '#000000', 000 ]
+let s:dc_bg  = [ '#D78700', 172 ]
+let s:ha_fg  = [ '#EEEEEE', 255 ]
+let s:ha_bg  = [ '#AF5F00', 130 ]
+let s:gvs_fg = [ '#00AFD7', 038 ]
+let s:gvs_bg = [ '#3A3A3A', 237 ]
+
 let hostname = hostname()
 let production = 0
 
-if( hostname == 'digitalbrands.com' )
-    let production = 1
-    let s:p.normal.right    = [ [ s:base02, s:blue ], [ s:dbfg, s:dbbg ] ]
-end
+let servernames = {
+    \'db': 'pj-dev-1', 
+    \'da': 'datingadvice', 
+    \'pr': 'printaholic', 
+    \'cd': 'cd-master-web', 
+    \'bc': 'badcredit', 
+    \'cr': 'cardreviews', 
+    \'dc': 'dealcrunch', 
+    \'ha': 'hostingadvice', 
+    \'gvs': 'gainesvilleshows', 
+\}
 
+for [key, val] in items(servernames)
+    if( hostname =~ val )
+        let production = 1
+        let s:p.normal.right = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
+    end
+endfor
+
+" Production Server Red Warning
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if( production == 1 )
-    let s:p.normal.middle   = [ [ s:white, s:red ] ]
-    let s:p.insert.middle   = [ [ s:white, s:red ] ]
 end
-
 
 let g:lightline#colorscheme#peej#palette = lightline#colorscheme#flatten(s:p)
