@@ -13,7 +13,7 @@ let s:base1   = [ '#949484', 246 ]
 let s:base2   = [ '#A8A897', 248 ]
 let s:base3   = [ '#E8E8D3', 253 ]
 let s:yellow  = [ '#DEE251', 229 ]
-let s:orange  = [ '#D7875F', 216 ]
+let s:orange  = [ '#D78700', 172 ]
 let s:red     = [ '#D68787', 124 ]
 let s:magenta = [ '#DF5F87', 168 ]
 let s:peach   = [ '#D7AFAF', 181 ]
@@ -36,9 +36,9 @@ let s:p.replace.left    = [ [ s:base02, s:magenta ], [ s:base3, s:base01 ] ]
 let s:p.replace.right   = [ [ s:base02, s:magenta ], [ s:base3, s:base01 ] ]
 let s:p.replace.middle  = [ [ s:magenta, s:base02 ] ]
 
-let s:p.visual.left     = [ [ s:base02, s:red ], [ s:red, s:base01 ] ]
-let s:p.visual.right    = [ [ s:base02, s:red ], [ s:red, s:base01 ] ]
-let s:p.visual.middle   = [ [ s:red, s:base02 ] ]
+let s:p.visual.left     = [ [ s:base02, s:orange ], [ s:orange, s:base01 ] ]
+let s:p.visual.right    = [ [ s:base02, s:orange ], [ s:orange, s:base01 ] ]
+let s:p.visual.middle   = [ [ s:orange, s:base02 ] ]
 
 let s:p.inactive.left   = [ [ s:base0, s:base02 ], [ s:base00, s:base02 ] ]
 let s:p.inactive.right  = [ [ s:base02, s:base00 ], [ s:base0, s:base02 ] ]
@@ -74,10 +74,8 @@ let s:gvs_fg = [ '#00AFD7', 038 ]
 let s:gvs_bg = [ '#3A3A3A', 237 ]
 
 let hostname = hostname()
-let production = 0
-
 let servernames = {
-    \'db': 'pj-dev-1', 
+    \'db': 'digitalbrands', 
     \'da': 'datingadvice', 
     \'pr': 'printaholic', 
     \'cd': 'cd-master-web', 
@@ -90,16 +88,10 @@ let servernames = {
 
 for [key, val] in items(servernames)
     if( hostname =~ val )
-        let production = 1
-        let s:p.normal.right = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
-        let s:p.insert.right = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
-        let s:p.insert.middle   = [ [ s:yellow, s:red ] ]
+        let s:p.normal.right  = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
+        let s:p.insert.right  = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
+        let s:p.insert.middle = [ [ s:white, s:red ] ]
     end
 endfor
-
-" Production Server Red Warning
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if( production == 1 )
-end
 
 let g:lightline#colorscheme#peej#palette = lightline#colorscheme#flatten(s:p)
