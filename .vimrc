@@ -126,10 +126,6 @@ noremap <Leader>b :buffer
 nmap <Leader>o o<Esc>k
 nmap <Leader>O O<Esc>j
 
-" Highlight Current Line
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <Leader><Leader> V
-
 " Dev Debug Snippets
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <Leader>pr vavyopr<Tab><Space><Esc>p
@@ -404,7 +400,7 @@ endfunction
 
 " Snipmate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-imap <Tab><Space> <Plug>snipMateNextOrTrigger
+imap <Leader><Leader> <Plug>snipMateNextOrTrigger
 
 
 " Tabular
