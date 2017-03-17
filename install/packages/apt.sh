@@ -33,7 +33,7 @@ packages=(
     optipng
     imagemagick
     finger
-    vim
+    vim-nox
     ctags
     tmux
     htop
