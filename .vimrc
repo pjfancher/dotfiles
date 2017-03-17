@@ -400,7 +400,9 @@ endfunction
 
 " Snipmate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-imap <Leader><Leader> <Plug>snipMateNextOrTrigger
+imap <F3> <Plug>snipMateNextOrTrigger
+imap <Tab><Space> <Plug>snipMateNextOrTrigger
+
 
 
 " Tabular
