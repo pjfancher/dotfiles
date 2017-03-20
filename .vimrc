@@ -306,6 +306,10 @@ nmap <C-l> gt
 nmap <C-h> gT
 
 
+" Allow delimitMate Expansion
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let delimitMate_expand_cr = 1
+
 " CtrlP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
