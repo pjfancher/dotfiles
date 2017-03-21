@@ -278,9 +278,7 @@ call vundle#begin()
 	source ~/.vim-plugins
 call vundle#end()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => PLUGINS LOADED
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PLUGIN CONFIGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -305,10 +303,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 nmap <C-l> gt
 nmap <C-h> gT
 
-
-" Allow delimitMate Expansion
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let delimitMate_expand_cr = 1
 
 " CtrlP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -339,6 +333,52 @@ nmap w <Plug>(easymotion-w)
 
 "Enable Smartcase
 let g:EasyMotion_smartcase = 1
+
+
+" Snipmate
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+imap <F3> <Plug>snipMateNextOrTrigger
+imap <Tab><Space> <Plug>snipMateNextOrTrigger
+
+
+" Tabular
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+vmap <Leader>aa :Tabularize /=><CR>
+nmap <Leader>aa :Tabularize /=><CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a: :Tabularize /:<CR>
+nmap <Leader>a: :Tabularize /:<CR>
+
+
+" Vim Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gc :Gcommit<CR>
+nmap <Leader>gb :Gblame<CR>
+nmap <Leader>gpm :!git push origin master<CR>
+nmap <Leader>gplm :!git pull origin master<CR>
+
+
+" Syntastic
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+
+
+" Split/Join
+" <Leader>S - split
+" <Leader>J - join
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:splitjoin_split_mapping = '<Leader>S'
+let g:splitjoin_join_mapping  = '<Leader>J'
 
 
 " Lightline
@@ -400,55 +440,6 @@ function LightlineGitGutter()
         return string
     endif
 endfunction
-
-
-" Snipmate
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-imap <F3> <Plug>snipMateNextOrTrigger
-imap <Tab><Space> <Plug>snipMateNextOrTrigger
-
-
-
-" Tabular
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap <Leader>aa :Tabularize /=><CR>
-nmap <Leader>aa :Tabularize /=><CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a: :Tabularize /:<CR>
-nmap <Leader>a: :Tabularize /:<CR>
-
-
-" Vim Fugitive
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <Leader>gs :Gstatus<CR>
-nmap <Leader>gc :Gcommit<CR>
-nmap <Leader>gb :Gblame<CR>
-nmap <Leader>gpm :!git push origin master<CR>
-nmap <Leader>gplm :!git pull origin master<CR>
-
-
-" Syntastic
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
-
-
-" Split/Join
-" <Leader>S - split
-" <Leader>J - join
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:splitjoin_split_mapping = '<Leader>S'
-let g:splitjoin_join_mapping  = '<Leader>J'
-
-
 
 " Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

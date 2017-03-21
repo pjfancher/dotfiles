@@ -32,8 +32,8 @@ Plugin 'terryma/vim-multiple-cursors'
 " A light and configurable statusline/tabline for Vim
 Plugin 'itchyny/lightline.vim'
 
-" Insert mode auto-completion for quotes, parens, brackets, etc.
-"Plugin 'Raimondi/delimitMate'
+" Vim plugin, insert or delete brackets, parens, quotes in pair
+Plugin 'jiangmiao/auto-pairs'
 
 " Text filtering and alignment
 Plugin 'godlygeek/tabular'
