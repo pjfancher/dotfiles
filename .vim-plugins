@@ -33,7 +33,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'itchyny/lightline.vim'
 
 " Insert mode auto-completion for quotes, parens, brackets, etc.
-Plugin 'Raimondi/delimitMate'
+"Plugin 'Raimondi/delimitMate'
 
 " Text filtering and alignment
 Plugin 'godlygeek/tabular'
