@@ -73,3 +73,6 @@ Plugin 'AndrewRadev/splitjoin.vim'
 
 " A better JSON for Vim
 Plugin 'elzr/vim-json'
+
+" A code-completion engine for Vim
+Plugin 'Valloric/YouCompleteMe'
