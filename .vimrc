@@ -176,13 +176,6 @@ xmap K 5k
 nmap L 5l
 xmap L 5l
 
-" Move in Insert Mode
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-imap <C-h> <C-o>h
-imap <C-j> <C-o>j
-imap <C-k> <C-o>k
-imap <C-l> <C-o>l
-
 " <Leader>r - Redraw Screen
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <Leader>r :redraw!<CR>
@@ -267,6 +260,7 @@ au BufRead,BufNewFile *.jade set ft=jade syntax=jade
 au BufRead,BufNewFile *.go set ft=go syntax=go
 au BufRead,BufNewFile *.vcl set ft=vcl syntax=vcl
 au BufRead,BufNewFile *.vim-plugins set ft=vim syntax=vim
+au BufRead,BufNewFile *.snippets set ft=snippets syntax=snippets
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -337,8 +331,13 @@ let g:EasyMotion_smartcase = 1
 
 " Snipmate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-imap <C-j> <esc>a<Plug>snipMateNextOrTrigger
+"imap <C-j> <esc>a<Plug>snipMateNextOrTrigger
 
+" Ultisnips
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Tabular
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

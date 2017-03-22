@@ -14,11 +14,8 @@ Plugin 'scrooloose/nerdcommenter.git'
 Plugin 'jwhitley/vim-matchit'
 
 " The ultimate snippet solution for Vim
-Plugin 'garbas/vim-snipmate'
-
-" Required libs for Snipmate
-Plugin 'marcweber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
+"Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
 
 " Quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
