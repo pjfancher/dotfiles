@@ -337,8 +337,7 @@ let g:EasyMotion_smartcase = 1
 
 " Snipmate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-imap <F3> <Plug>snipMateNextOrTrigger
-imap <Tab><Space> <Plug>snipMateNextOrTrigger
+imap <C-j> <esc>a<Plug>snipMateNextOrTrigger
 
 
 " Tabular
