@@ -23,3 +23,28 @@ public function get${1/\w+\s*/\u$0/}()`!p snip.rv = ': '+t[2] if isPHPScalarType
     return $this->$1;
 }
 endsnippet
+
+
+snippet ql "query loop"
+while( $$1_query->have_posts() ) : $$1_query->the_post(); 
+	$2
+endwhile; wp_reset_postdata();
+endsnippet
+
+snippet pql
+<?php while( $$1_query->have_posts() ) : $$1_query->the_post(); ?>
+	$2
+<?php endwhile; wp_reset_postdata(); ?>
+endsnippet
+
+snippet div "<div>"
+<div class="$1">
+	$2
+</div><!-- end .$1 -->
+endsnippet
+
+snippet span "<span>"
+<span class="$1">
+	$2
+</span><!-- end .$1 -->	
+endsnippet
