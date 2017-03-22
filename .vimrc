@@ -128,8 +128,8 @@ nmap <Leader>O O<Esc>j
 
 " Dev Debug Snippets
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <Leader>pr vavyopr<Tab><Space><Esc>p
-nmap <Leader>ppr vavyoppr<Tab><Space><Esc>p
+nmap <Leader>pr vavyopr<C-j><Esc>p
+nmap <Leader>ppr vavyoppr<C-j><Esc>p
 
 " Quick Fix Window Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
