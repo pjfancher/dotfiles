@@ -72,4 +72,4 @@ Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'elzr/vim-json'
 
 " A code-completion engine for Vim
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
