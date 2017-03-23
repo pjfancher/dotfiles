@@ -315,8 +315,8 @@ nmap <Leader>re :CtrlPMRU<CR>
 "
 " YouCompleteMe Menu Colors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-highlight Pmenu ctermfg=109 ctermbg=235
-highlight PmenuSel ctermfg=16 ctermbg=72
+highlight Pmenu ctermfg=109 ctermbg=236
+highlight PmenuSel ctermfg=16 ctermbg=109
 
 
 " EasyMotion
