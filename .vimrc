@@ -253,7 +253,7 @@ au BufWritePost * :redraw!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.md set filetype=markdown syntax=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
-au BufNewFile,BufRead *.less set filetype=less syntax=less
+au BufNewFile,BufRead *.less set filetype=css syntax=css
 au BufRead,BufNewFile *.js set ft=javascript syntax=javascript
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
 au BufRead,BufNewFile *.jade set ft=jade syntax=jade
@@ -311,6 +311,12 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
 nmap <Leader>re :CtrlPMRU<CR>
+
+"
+" YouCompleteMe Menu Colors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+highlight Pmenu ctermfg=109 ctermbg=235
+highlight PmenuSel ctermfg=16 ctermbg=72
 
 
 " EasyMotion
