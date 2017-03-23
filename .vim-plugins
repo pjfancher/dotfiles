@@ -13,10 +13,6 @@ Plugin 'scrooloose/nerdcommenter.git'
 " Extended matching with %
 Plugin 'jwhitley/vim-matchit'
 
-" The ultimate snippet solution for Vim
-"Plugin 'garbas/vim-snipmate'
-Plugin 'SirVer/ultisnips'
-
 " Quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
 
@@ -73,3 +69,7 @@ Plugin 'elzr/vim-json'
 
 " A code-completion engine for Vim
 Plugin 'Valloric/YouCompleteMe'
+"
+" The ultimate snippet solution for Vim
+"Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
