@@ -334,11 +334,11 @@ snippet do
 		${2:// code... }
 	} while (${1:/* condition */});
 snippet if
-	if (${1:/* condition */}) :
+	if ( ${1:/* condition */} ) :
 		${2:// code...}
 	endif;
 snippet ifil
-	<?php if (${1:/* condition */}): ?>
+	<?php if ( ${1:/* condition */} ): ?>
 		${2:<!-- code... -->}
 	<?php endif; ?>
 snippet ife
@@ -350,7 +350,7 @@ snippet ife
 	endif;
 	${4}
 snippet ifeil
-	<?php if (${1:/* condition */}): ?>
+	<?php if ( ${1:/* condition */} ): ?>
 		${2:<!-- html... -->}
 	<?php else: ?>
 		${3:<!-- html... -->}
@@ -361,11 +361,11 @@ snippet else
 		${1:// code...}
 	}
 snippet elseif
-	elseif (${1:/* condition */}) {
+	elseif ( ${1:/* condition */} ) {
 		${2:// code...}
 	}
 snippet switch
-	switch ($${1:variable}) {
+	switch ( $${1:variable} ) {
 		case '${2:value}':
 			${3:// code...}
 			break;
@@ -379,7 +379,7 @@ snippet case
 		${2:// code...}
 		break;${3}
 snippet for
-	for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++}) :
+	for ( $${2:i} = 0; $$2 < ${1:count}; $$2${3:++} ) :
 		${4: // code...}
 	endfor;
 snippet foreach
