@@ -290,6 +290,7 @@ au VimEnter * call StartUp()
 let NERDTreeShowLineNumbers=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+let NERDTreeMinimalUI = 1
 
 
 " Vimify NerdTree Tab Navigation
