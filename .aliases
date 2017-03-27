@@ -7,10 +7,10 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias c='clear'
 alias h='history'
-alias ex='exit';
-alias snippets='vim ~/.vim/snippets/';
-alias vimrc='vim ~/.vimrc'; # Open vimrc
-alias vimplugins='vim ~/.vim-plugins'; # Open vim-plugins
+alias ex='exit'
+alias snippets='vim ~/.vim/snippets/'
+alias vimrc='vim ~/.vimrc' # Open vimrc
+alias vimplugins='vim ~/.vim-plugins' # Open vim-plugins
 alias latest='vim $(ls -t | head -1)' # Open latest file in directory
 
 # LS ALIASES
