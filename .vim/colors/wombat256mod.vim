@@ -87,11 +87,6 @@ hi String		ctermfg=107		cterm=none		guifg=#95e454	gui=italic
 hi Comment		ctermfg=244		cterm=none		guifg=#9c998e	gui=italic
 hi Todo			ctermfg=101		cterm=none		guifg=#857b6f	gui=italic
 
-hi NERDTreeDir		ctermfg=111		 cterm=none
-hi NERDTreeCWD		ctermfg=65 ctermbg=232
-hi NERDTreeExecFile ctermfg=84
-
-
 " Links
 hi! link FoldColumn		Folded
 hi! link CursorColumn	CursorLine

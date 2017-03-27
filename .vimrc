@@ -292,6 +292,13 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeMinimalUI = 1
 
+hi NERDTreeDir		ctermfg=111
+hi NERDTreeDirSlash ctermfg=111
+hi NERDTreeOpenable ctermfg=111
+hi NERDTreeClosable ctermfg=111
+hi NERDTreeCWD		ctermfg=65 ctermbg=232
+hi NERDTreeExecFile ctermfg=83
+
 
 " Vimify NerdTree Tab Navigation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
