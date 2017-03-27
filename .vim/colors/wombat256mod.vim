@@ -1,11 +1,11 @@
 " Vim color file
-" Original Maintainer:  Lars H. Nielsen (dengmao@gmail.com)
-" Last Change:  2010-07-23
+" Original Maintainer:	Lars H. Nielsen (dengmao@gmail.com)
+" Last Change:	2010-07-23
 "
 " Modified version of wombat for 256-color terminals by
-"   David Liang (bmdavll@gmail.com)
+"	David Liang (bmdavll@gmail.com)
 " based on version by
-"   Danila Bespalov (danila.bespalov@gmail.com)
+"	Danila Bespalov (danila.bespalov@gmail.com)
 
 set background=dark
 
@@ -84,11 +84,11 @@ hi Identifier	ctermfg=186		cterm=none		guifg=#cae982	gui=none
 hi Type			ctermfg=186		cterm=none		guifg=#d4d987	gui=none
 hi Special		ctermfg=229		cterm=none		guifg=#eadead	gui=none
 hi String		ctermfg=107		cterm=none		guifg=#95e454	gui=italic
-hi Comment		ctermfg=244     cterm=none		guifg=#9c998e	gui=italic
+hi Comment		ctermfg=244		cterm=none		guifg=#9c998e	gui=italic
 hi Todo			ctermfg=101		cterm=none		guifg=#857b6f	gui=italic
 
-hi NERDTreeDir      ctermfg=111      cterm=none
-hi NERDTreeCWD      ctermfg=65 ctermbg=232
+hi NERDTreeDir		ctermfg=111		 cterm=none
+hi NERDTreeCWD		ctermfg=65 ctermbg=232
 hi NERDTreeExecFile ctermfg=84
 
 

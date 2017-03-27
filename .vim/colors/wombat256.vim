@@ -1,11 +1,11 @@
 " Vim color file
-" Original Maintainer:  Lars H. Nielsen (dengmao@gmail.com)
-" Last Change:  2010-07-23
+" Original Maintainer:	Lars H. Nielsen (dengmao@gmail.com)
+" Last Change:	2010-07-23
 "
 " Modified version of wombat for 256-color terminals by
-"   David Liang (bmdavll@gmail.com)
+"	David Liang (bmdavll@gmail.com)
 " based on version by
-"   Danila Bespalov (danila.bespalov@gmail.com)
+"	Danila Bespalov (danila.bespalov@gmail.com)
 
 set background=dark
 
