@@ -17,7 +17,6 @@ set backspace=2
 set omnifunc=csscomplete#CompleteCSS
 
 " Sets your path variable to current directory
-"set path=$PWD/**
 set path=.,**
 
 " Allows pastetoggle to work in Insert mode
@@ -35,6 +34,8 @@ set updatetime=250
 " Set ctags location
 set tags=./.git/tags
 
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => SEARCHING - help from http://amix.dk/vim/vimrc.html
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -48,6 +49,7 @@ set smartcase
 set incsearch
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => TEXT, TAB & INDENT
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -57,18 +59,19 @@ set expandtab
 " Be smart when using tabs
 set	smarttab		
 
-" 1 Tab == 4spaces
+" 1 Tab == 4 spaces
 set tabstop=4
 set shiftwidth=4
 
 " Turns on auto-indentation
 set ai
 
-" does the right thing (mostly) in programs
+" Does the right thing (mostly) in programs
 set smartindent
 
-" highlight on the line your cursor is currently on.
+" Highlight on the line your cursor is currently on.
 set cursorline
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -83,12 +86,11 @@ colorscheme wombat256mod
 
 " Set utf8 as standard encoding
 set encoding=utf8
-"set guifont=Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete\ Mono\ 11
-"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
 
 " Get 256 Colors
 let &t_Co=256
 set t_Co=256
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -105,10 +107,6 @@ set t_Co=256
 " <LEADER>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = "\<Space>"
-
-" Edit and auto-update this config file and plugins
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <silent>  ;v  :tabnew $VIMRC<CR>
 
 " Quickfix for TO-DOs and FIX-MEs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -155,12 +153,12 @@ noremap <Leader>w :w<CR>
 noremap <Leader>q :q<CR>
 noremap <Leader>wq :wq<CR>
 
-" move vertically by visual line  -- won't skip over wrapped lines
+" Move vertically by visual line  -- won't skip over wrapped lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap j gj
 nnoremap k gk
 
-" move to beginning/end of line
+" Move to beginning/end of line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap B ^
 nnoremap E $
@@ -194,6 +192,7 @@ inoremap <C-s> <c-o>:w<CR>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => F KEYS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -216,6 +215,7 @@ noremap <F4>  %^y$%a// pxx
 noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => FILES, BACKUPS & UNDO
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -236,6 +236,7 @@ if exists("&undodir")
 endif
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => AUTOCOMMANDS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -253,7 +254,7 @@ au BufWritePost * :redraw!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.md set filetype=markdown syntax=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
-au BufNewFile,BufRead *.less set filetype=css syntax=css
+au BufNewFile,BufRead *.less set filetype=less syntax=less
 au BufRead,BufNewFile *.js set ft=javascript syntax=javascript
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
 au BufRead,BufNewFile *.jade set ft=jade syntax=jade
@@ -261,6 +262,7 @@ au BufRead,BufNewFile *.go set ft=go syntax=go
 au BufRead,BufNewFile *.vcl set ft=vcl syntax=vcl
 au BufRead,BufNewFile *.vim-plugins set ft=vim syntax=vim
 au BufRead,BufNewFile *.snippets set ft=snippets syntax=snippets
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -273,10 +275,12 @@ call vundle#begin()
 call vundle#end()
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PLUGIN CONFIGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NerdTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto Open NERDTree when no file on command line
@@ -287,11 +291,18 @@ function! StartUp()
  end
 endfunction
 au VimEnter * call StartUp()
-let NERDTreeShowLineNumbers=1
+
+" NERDTree Dir Arrows
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+
+" NERDTree Show Line Numbers
+let NERDTreeShowLineNumbers=1
+"
+" NERDTree hide 'Press ? for Help' and up directory
 let NERDTreeMinimalUI = 1
 
+" NERDTreee Colors
 hi NERDTreeDir		ctermfg=111
 hi NERDTreeDirSlash ctermfg=111
 hi NERDTreeOpenable ctermfg=111
@@ -299,13 +310,14 @@ hi NERDTreeClosable ctermfg=111
 hi NERDTreeCWD		ctermfg=65 ctermbg=232
 hi NERDTreeExecFile ctermfg=83
 
-
 " Vimify NerdTree Tab Navigation
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <C-l> gt
 nmap <C-h> gT
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
@@ -319,14 +331,20 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
 nmap <Leader>re :CtrlPMRU<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YouCompleteMe Menu Colors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 highlight Pmenu ctermfg=109 ctermbg=236
 highlight PmenuSel ctermfg=16 ctermbg=109
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " EasyMotion
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "EasyMotion Search
@@ -341,18 +359,20 @@ nmap w <Plug>(easymotion-w)
 
 "Enable Smartcase
 let g:EasyMotion_smartcase = 1
-
-
-" Snipmate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"imap <C-j> <esc>a<Plug>snipMateNextOrTrigger
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ultisnips
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tabular
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap <Leader>aa :Tabularize /=><CR>
@@ -361,8 +381,11 @@ vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a: :Tabularize /:<CR>
 nmap <Leader>a: :Tabularize /:<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim Fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <Leader>gs :Gstatus<CR>
@@ -370,8 +393,11 @@ nmap <Leader>gc :Gcommit<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gpm :!git push origin master<CR>
 nmap <Leader>gplm :!git pull origin master<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set statusline+=%#warningmsg#
@@ -383,16 +409,22 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Split/Join
 " <Leader>S - split
 " <Leader>J - join
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:splitjoin_split_mapping = '<Leader>S'
 let g:splitjoin_join_mapping  = '<Leader>J'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set noshowmode
@@ -421,14 +453,17 @@ let g:lightline = {
 \ },
 \}
 
+" Lightline Hostname
 function LightlineHostname()
     return hostname()
 endfunction
 
+" Lightline Fugitive
 function! LightlineFugitive()
     return exists('*fugitive#head') ? printf( '%s%s', "\uE0A0 ", fugitive#head()) : ''
 endfunction
 
+" Lightline GitGutter
 function LightlineGitGutter() 
     let hunks = exists('*GitGutterGetHunkSummary') ? GitGutterGetHunkSummary() : ''
     let string = ''
@@ -452,27 +487,4 @@ function LightlineGitGutter()
         return string
     endif
 endfunction
-
-" Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set laststatus=2
-"let g:airline_powerline_fonts=1
-"let g:airline_theme='bubblegum'
-"let g:airline#extensions#whitespace#enabled = 0
-"highlight clear SignColumn
-"
-"if 'pj-dev-1' != hostname()
-"    let g:airline_theme='light'
-"end
-"
-"
-"function! AirlineInit() 
-"  let g:airline_section_a = airline#section#create(['mode', ' ', 'paste'])
-"  let g:airline_section_b = airline#section#create(['branch'])
-"  let g:airline_section_c = airline#section#create(['hunks'])
-"  let g:airline_section_x = airline#section#create(['%f'])
-"  let g:airline_section_y = airline#section#create(['%{hostname()}'])
-"  let g:airline_section_z = airline#section#create(['%p%% : %l/%L'])
-"  call airline#update_statusline()
-"endfunction
-"autocmd VimEnter * call AirlineInit()

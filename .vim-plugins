@@ -71,5 +71,4 @@ Plugin 'elzr/vim-json'
 Plugin 'Valloric/YouCompleteMe'
 "
 " The ultimate snippet solution for Vim
-"Plugin 'garbas/vim-snipmate'
 Plugin 'SirVer/ultisnips'
