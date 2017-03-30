@@ -281,7 +281,7 @@ call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NerdTree
+" NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto Open NERDTree when no file on command line
 function! StartUp()
@@ -302,17 +302,35 @@ let NERDTreeShowLineNumbers=1
 " NERDTree hide 'Press ? for Help' and up directory
 let NERDTreeMinimalUI = 1
 
-" NERDTreee Colors
-hi NERDTreeDir		ctermfg=111
-hi NERDTreeDirSlash ctermfg=111
-hi NERDTreeOpenable ctermfg=111
-hi NERDTreeClosable ctermfg=111
-hi NERDTreeCWD		ctermfg=65 ctermbg=232
-hi NERDTreeExecFile ctermfg=83
-
 " Vimify NerdTree Tab Navigation
 nmap <C-l> gt
 nmap <C-h> gT
+
+" NERDTree Basic Colors
+hi NERDTreeDir		ctermfg=68
+hi NERDTreeDirSlash ctermfg=68
+hi NERDTreeOpenable ctermfg=68
+hi NERDTreeClosable ctermfg=68
+hi NERDTreeCWD		ctermfg=65 ctermbg=232
+hi NERDTreeExecFile ctermfg=83
+
+" NERDTree Filetype Highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+" NERDTree Filetype Colors
+call NERDTreeHighlightFile('lock', 'white', '196', 'white', 'red')
+call NERDTreeHighlightFile('php', '153', 'none', '153', 'none')
+call NERDTreeHighlightFile('css', '222', 'none', '222', 'none')
+call NERDTreeHighlightFile('less', '222', 'none', '222', 'none')
+call NERDTreeHighlightFile('js', '114', 'none', '114', 'none')
+call NERDTreeHighlightFile('gif', '198', 'none', '198', 'none')
+call NERDTreeHighlightFile('jpg', '198', 'none', '198', 'none')
+call NERDTreeHighlightFile('jpeg', '198', 'none', '198', 'none')
+call NERDTreeHighlightFile('png', '198', 'none', '198', 'none')
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
