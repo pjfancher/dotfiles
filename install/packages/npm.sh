@@ -11,7 +11,7 @@ is_ubuntu || return 1
 print_in_purple "\n   NPM\n   ------------------------------\n"
 
 # Install NVM
-curl -s https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh > /dev/null 2>&1
+curl -s https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | sh > /dev/null 2>&1
 print_success "NVM Installed"
 
 # Install Node
