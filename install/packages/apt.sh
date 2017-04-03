@@ -24,6 +24,7 @@ packages=(
     php5-dev
     phpmyadmin
     build-essential
+    npm
     #letsencrypt
     #apt-transport-https
     #ca-certificates
