@@ -107,6 +107,9 @@ set t_Co=256
 " <LEADER>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = "\<Space>"
+:map <F12> <nop>
+:map! <F12> <nop>
+let maplocalleader = "\<F12>"
 
 " Quickfix for TO-DOs and FIX-MEs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -126,8 +129,8 @@ nmap <Leader>O O<Esc>j
 
 " Dev Debug Snippets
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <Leader>pr vavyopr<C-j><Esc>p
-nmap <Leader>ppr vavyoppr<C-j><Esc>p
+nmap <Leader>d vavyod<C-j><Esc>p
+nmap <Leader>pd vavyopd<C-j><Esc>p
 
 " Quick Fix Window Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -150,8 +153,13 @@ inoremap kj <esc>
 cmap W w
 cmap Q q
 noremap <Leader>w :w<CR>
+imap <LocalLeader>w <esc>:w<CR>i
+
 noremap <Leader>q :q<CR>
+imap <LocalLeader>q <esc>:q<CR>
+
 noremap <Leader>wq :wq<CR>
+imap <LocalLeader>wq <esc>:wq<CR>
 
 " Move vertically by visual line  -- won't skip over wrapped lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -323,8 +331,8 @@ endfunction
 " NERDTree Filetype Colors
 call NERDTreeHighlightFile('lock', 'white', '196', 'white', 'red')
 call NERDTreeHighlightFile('php', '153', 'none', '153', 'none')
-call NERDTreeHighlightFile('css', '222', 'none', '222', 'none')
-call NERDTreeHighlightFile('less', '222', 'none', '222', 'none')
+call NERDTreeHighlightFile('css', '157', 'none', '222', 'none')
+call NERDTreeHighlightFile('less', '157', 'none', '222', 'none')
 call NERDTreeHighlightFile('js', '114', 'none', '114', 'none')
 call NERDTreeHighlightFile('gif', '198', 'none', '198', 'none')
 call NERDTreeHighlightFile('jpg', '198', 'none', '198', 'none')
@@ -332,6 +340,13 @@ call NERDTreeHighlightFile('jpeg', '198', 'none', '198', 'none')
 call NERDTreeHighlightFile('png', '198', 'none', '198', 'none')
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDCommenter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <LocalLeader><Space> :call NERDComment(0,"toggle")<CR>
+vnoremap <LocalLeader><Space> :call NERDComment(0,"toggle")<CR>
 
 
 
@@ -385,8 +400,11 @@ let g:EasyMotion_smartcase = 1
 " Ultisnips
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsExpandTrigger="<C-j>"
+imap <LocalLeader><Space> <C-j>
+
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
