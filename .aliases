@@ -11,6 +11,7 @@ alias ex='exit'
 alias snippets='vim ~/.vim/snippets/'
 alias vimrc='vim ~/.vimrc' # Open vimrc
 alias vimplugins='vim ~/.vim-plugins' # Open vim-plugins
+alias aliases='vim ~/.aliases' # Open aliases
 alias latest='vim $(ls -t | head -1)' # Open latest file in directory
 
 # LS ALIASES
@@ -113,3 +114,13 @@ alias tial="tail";
 alias ctags-gen="ctags -R -f .git/tags ."
 alias weather='curl http://wttr.in/32601';
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# SUFFIX ALIASES ( if extension: open with )
+##########################################
+alias -s log="tail -f"
+alias -s php="vim"
+alias -s css="vim"
+alias -s less="vim"
+alias -s js="vim"
+alias -s md="vim"
+alias -s sh="vim"
