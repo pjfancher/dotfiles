@@ -16,5 +16,5 @@ fi
 
 # Clone the repo and run the install script
 cd $HOME \
-&& git clone --quiet --recursive https://github.com/db-pj/dotfiles &> /dev/null \
+&& git clone --quiet https://github.com/db-pj/dotfiles &> /dev/null \
 && . $HOME/dotfiles/install.sh
