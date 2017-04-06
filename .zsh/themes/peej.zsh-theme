@@ -84,13 +84,21 @@ export LS_COLORS='no=38;05;245:fi=38;05;07:di=38;05;68:ln=38;05;06:pi=40;33:so=0
 # ZSH SYNTAX HIGHLIGHTING
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
 ########################################
-ZSH_HIGHLIGHT_STYLES[command]='fg=194'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=241'
 ZSH_HIGHLIGHT_STYLES[alias]='fg=194'
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=194'
+ZSH_HIGHLIGHT_STYLES[command]='fg=194'
+#ZSH_HIGHLIGHT_STYLES[alias]='none'
+#ZSH_HIGHLIGHT_STYLES[builtin]='none'
+#ZSH_HIGHLIGHT_STYLES[command]='none'
+
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=229'
 ZSH_HIGHLIGHT_STYLES[path]='fg=68'
+ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=68'
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=68'
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=131'
-ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=179'
 ZSH_HIGHLIGHT_STYLES[globbing]='fg=175'
-ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=33'
-ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=33'
+
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=229'
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=229'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=229'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=229'
