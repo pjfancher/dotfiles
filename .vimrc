@@ -117,8 +117,6 @@ nmap <Leader>t :Ag \(TODO\\|FIXME\) themes/<CR>
 
 " Find/Edit/Buffers Shortcuts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-noremap <Leader>f :find
-noremap <Leader>e :edit 
 noremap <Leader>B :buffers<CR>
 noremap <Leader>b :buffer 
 
@@ -130,7 +128,12 @@ nmap <Leader>O O<Esc>j
 " Dev Debug Snippets
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <Leader>d vavyod<C-j><Esc>p
+nmap <LocalLeader>d vavyod<C-j><Esc>p
 nmap <Leader>pd vavyopd<C-j><Esc>p
+nmap <LocalLeader>pd vavyopd<C-j><Esc>p
+
+nmap <Leader>pr vavyod<C-j><Esc>p
+nmap <Leader>ppr vavyopd<C-j><Esc>p
 
 " Quick Fix Window Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -148,10 +151,18 @@ nmap <CR> O<Esc>
 inoremap jk <esc>
 inoremap kj <esc>
 
+
+
+" Build local assets
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 " Write/Quit Shortcuts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 cmap W w
 cmap Q q
+cmap q1 q!
+
 noremap <Leader>w :w<CR>
 imap <LocalLeader>w <esc>:w<CR>i
 
@@ -160,6 +171,14 @@ imap <LocalLeader>q <esc>:q<CR>
 
 noremap <Leader>wq :wq<CR>
 imap <LocalLeader>wq <esc>:wq<CR>
+
+
+" Insert Mode LocalLeader Mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Insert ; at end of line and go to new line
+imap <LocalLeader>; <esc>A;<CR> 
+
 
 " Move vertically by visual line  -- won't skip over wrapped lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -202,22 +221,29 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => F KEYS
+" => F KEYS -- with Leader/LocalLeader backups
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Build current site assets
-noremap <F1> :!./build-assets<CR>
+" F1 
+" Write File & Build Local Assets
+noremap <F1> :w<CR>:!./build-assets<CR>
+nmap <Leader>b <F1>
+map <LocalLeader>b <esc><F1>
 
-" Toggle paste mode
+" F2 -- Toggle paste mode
 noremap <F2> :set invpaste paste?<CR>
+nmap <Leader>p <F2>
+map <LocalLeader>p <esc><F2>
 
-" Toggle line numbers
+" F3 -- Toggle line numbers
 noremap <F3> :set nonumber!<CR>
+nmap <Leader>n <F3>
+map <LocalLeader>n <esc><F3>
 
-" Add CSS closing comment
+" F4 -- Add CSS closing comment
 noremap <F4>  %^y$%a// pxx
+nmap <Leader>l <F4>
+map <LocalLeader>l <esc><F4>
 
-" Remove Highlighting
-"noremap <F5> :noh<CR>
 
 " Converts echo to `fwrite( $stdout )`
 noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
