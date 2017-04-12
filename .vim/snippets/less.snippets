@@ -78,6 +78,12 @@ snippet hover
 	&:hover {
 		${1}
 	}// &:hover
+
+snippet active
+	&:active {
+		${1}
+	}// &:active
+
 snippet bs
 	.box-shadow(${1});
 
@@ -958,7 +964,7 @@ snippet ta:l
 snippet ta:r
 	text-align: right;
 snippet td
-	text-decoration: ${1};
+	text-decoration: ${1:underline};
 snippet td:l
 	text-decoration: line-through;
 snippet td:n

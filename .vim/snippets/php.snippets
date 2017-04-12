@@ -31,8 +31,18 @@ snippet i
 	}
 snippet t.
 	$this->${1}
+
 snippet f
-	function ${1:foo}(${2:array }${3:$bar}) {
+	/* ${1}
+	*****************************************************************************/
+	function ${2}(${3}) {
+		${4}
+	}
+
+snippet function
+	/* ${1}
+	*****************************************************************************/
+	function ${2}(${3}) {
 		${4}
 	}
 
@@ -41,15 +51,19 @@ snippet gpm
 	echo get_post_meta( get_the_ID(), '${1}', true );
 
 snippet get_image
-	echo wp_get_attachment_image( get_field( '${1}' ), 'full', null, array( 'alt' => get_the_title(), 'title' => get_the_title() ) );
+	echo wp_get_attachment_image( get_field( '${1}' ), 'full', null, array( 'alt' => ${2:get_the_title()}, 'title' => ${3:get_the_title()} ) );
 
 snippet php_get_image
-	<?php echo wp_get_attachment_image( get_field( '${1}' ), 'full', null, array( 'alt' => get_the_title(), 'title' => get_the_title() ) ); ?>
+	<?php echo wp_get_attachment_image( get_field( '${1}' ), 'full', null, array( 'alt' => ${2:get_the_title()}, 'title' => ${3:get_the_title()} ) ); ?>
+
 snippet get_field
-	get_field( '${1}', get_the_ID() );
+	echo get_field( '${1}', ${2:get_the_ID()} );
+
+snippet gf
+	echo get_field( '${1}', ${2:get_the_ID()} );
 
 snippet php_get_field
-	<?php echo get_field( '${1}', get_the_ID() ); ?>
+	<?php echo get_field( '${1}', ${2:get_the_ID()} ); ?>
 
 snippet get_option
 	get_field( '${1}', 'option' );
@@ -99,7 +113,6 @@ snippet lt
 	include( locate_template( 'template-parts/${2}/${3}.php' ) );
 	
 snippet setup_query
-	extract( $args, EXTR_SKIP );
 	$defaults = array( 
 		'post_type' => '${2}',
 		'posts_per_page' => -1,
@@ -149,6 +162,10 @@ snippet pcb
 
 snippet fw
 	fwrite( $stdout, ${1} );
+
+
+snippet e
+	echo ${1}
 
 # method
 snippet m
