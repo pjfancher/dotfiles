@@ -57,10 +57,10 @@ snippet php_get_image
 	<?php echo wp_get_attachment_image( get_field( '${1}' ), 'full', null, array( 'alt' => ${2:get_the_title()}, 'title' => ${3:get_the_title()} ) ); ?>
 
 snippet get_field
-	echo get_field( '${1}', ${2:get_the_ID()} );
+	get_field( '${1}', ${2:get_the_ID()} );
 
 snippet gf
-	echo get_field( '${1}', ${2:get_the_ID()} );
+	get_field( '${1}', ${2:get_the_ID()} );
 
 snippet php_get_field
 	<?php echo get_field( '${1}', ${2:get_the_ID()} ); ?>
@@ -143,23 +143,19 @@ snippet pd
 snippet box
 	/* ${1}
 	*****************************************************************************/
-
 snippet phpbox
 	<?php
 	/* ${1}
 	*****************************************************************************/
 	?>
-
 snippet cb
 	/* ${1}
 	*****************************************************************************/
-
 snippet pcb
 	<?php
 	/* ${1}
 	*****************************************************************************/
 	?>
-
 snippet fw
 	fwrite( $stdout, ${1} );
 

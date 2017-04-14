@@ -63,11 +63,11 @@ set	smarttab
 set tabstop=4
 set shiftwidth=4
 
-" Turns on auto-indentation
-set ai
-
 " Does the right thing (mostly) in programs
 set smartindent
+"
+" Turns on auto-indentation
+set autoindent
 
 " Highlight on the line your cursor is currently on.
 set cursorline
@@ -178,6 +178,7 @@ imap <LocalLeader>wq <esc>:wq<CR>
 
 " Insert ; at end of line and go to new line
 imap <LocalLeader>; <esc>A;<CR> 
+imap <LocalLeader>p <esc>:set invpaste paste?<CR>i
 
 
 " Move vertically by visual line  -- won't skip over wrapped lines
