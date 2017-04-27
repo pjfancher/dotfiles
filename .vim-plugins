@@ -64,6 +64,9 @@ Plugin 'robmiller/vim-movar'
 " Simplifies the transition between multiline and single-line code"
 Plugin 'AndrewRadev/splitjoin.vim'
 
+" vim plugin to interact with tmux
+Plugin 'benmills/vimux'
+
 " A better JSON for Vim
 Plugin 'elzr/vim-json'
 
