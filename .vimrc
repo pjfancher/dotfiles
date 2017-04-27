@@ -226,7 +226,9 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " F1 
 " Write File & Build Local Assets
-noremap <F1> :w<CR>:!./build-assets<CR>
+"noremap <F1> :w<CR>:!./build-assets<CR>
+let g:VimuxHeight = "10"
+noremap <F1> :w<CR>:VimuxPromptCommand<CR>./build-assets<CR>
 nmap <Leader>b <F1>
 map <LocalLeader>b <esc><F1>
 
@@ -250,6 +252,15 @@ map <LocalLeader>l <esc><F4>
 noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => SPLITS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => FILES, BACKUPS & UNDO
@@ -327,6 +338,10 @@ function! StartUp()
 endfunction
 au VimEnter * call StartUp()
 
+" Vimify NerdTree Tab Navigation
+" nmap <C-l> gt
+" nmap <C-h> gT
+
 " NERDTree Dir Arrows
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
@@ -336,10 +351,6 @@ let NERDTreeShowLineNumbers=1
 "
 " NERDTree hide 'Press ? for Help' and up directory
 let NERDTreeMinimalUI = 1
-
-" Vimify NerdTree Tab Navigation
-nmap <C-l> gt
-nmap <C-h> gT
 
 " NERDTree Basic Colors
 hi NERDTreeDir		ctermfg=68
