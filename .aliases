@@ -60,6 +60,7 @@ alias gc='git checkout'
 alias gcm='git checkout master'
 alias gcb='git checkout -b'
 alias ga='git add -A .'
+alias gca='git commit --amend'
 alias grm='git rm $(git ls-files --deleted)  '
 alias ni='git commit -m "New Images"';
 alias gl='git log --pretty=format:"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]" --decorate --date=relative'
