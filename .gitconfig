@@ -4,6 +4,6 @@
 [core]
 	mergeoptions = --no-edit
 	editor = vim
-    hooksPath = $HOME/dotfiles/.git-hooks
+    hooksPath = "$HOME/dotfiles/.git-hooks"
 [credential]
 	helper = cache --timeout=86400
