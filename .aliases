@@ -55,7 +55,9 @@ alias gplm='git pull origin master'
 alias gpb='git push origin $(current-branch)'
 alias gplb='git pull origin $(current-branch)'
 alias gma='git commit -am'
-alias gm='git commit -m'
+function gm() {
+    git commit -m '[$(current-branch)] $1'
+}
 alias gc='git checkout'
 alias gcm='git checkout master'
 alias gcb='git checkout -b'
