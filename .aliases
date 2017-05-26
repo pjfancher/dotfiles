@@ -13,6 +13,7 @@ alias vimrc='vim ~/.vimrc' # Open vimrc
 alias vimplugins='vim ~/.vim-plugins' # Open vim-plugins
 alias aliases='vim ~/.aliases' # Open aliases
 alias latest='vim $(ls -t | head -1)' # Open latest file in directory
+alias wd='watch -n .1 ls -lah' #watch current dir
 
 # LS ALIASES
 ##########################################
@@ -71,6 +72,7 @@ alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" -
 ##########################################
 alias monsoon='php ~/monsoon-php/monsoon.php'
 alias ack="ack-grep"
+alias serve="python -m SimpleHTTPServer"
 
 # SERVICES
 ##########################################
@@ -88,7 +90,6 @@ alias ha='mosh 23.253.111.148'
 alias cr='mosh cardrates.com'
 alias crp='mosh cardratespreview.com'
 alias db='mosh digitalbrands.com'
-alias wd='ssh weirddads@weirddads.com'
 alias dc='mosh dealcrunch.com'
 alias docs='mosh docentuser@db-docs.com'
 
