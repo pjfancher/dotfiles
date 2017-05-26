@@ -92,7 +92,6 @@ let &t_Co=256
 set t_Co=256
 
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MAPPINGS
 " cmap handles command-line mappings
@@ -151,10 +150,12 @@ nmap <CR> O<Esc>
 inoremap jk <esc>
 inoremap kj <esc>
 
-
-
-" Build local assets
+" Indent Line Shortcuts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <Leader>, V<<esc>
+nmap <LocalLeader>, V<<esc>
+nmap <Leader>. V><esc>
+nmap <LocalLeader>. V><esc>
 
 
 " Write/Quit Shortcuts
@@ -244,8 +245,8 @@ map <LocalLeader>n <esc><F3>
 
 " F4 -- Add CSS closing comment
 noremap <F4>  %^y$%a// pxx
-nmap <Leader>l <F4>
-map <LocalLeader>l <esc><F4>
+nmap <Leader>c <F4>
+map <LocalLeader>c <esc><F4>
 
 
 " Converts echo to `fwrite( $stdout )`
