@@ -164,8 +164,7 @@ snippet fw
 
 
 snippet e
-	echo ${1}
-
+	echo ${1};${2}
 # method
 snippet m
 	${1:abstract }${2:protected}${3: static} function ${4:foo}(${5:array }${6:$bar})
@@ -421,6 +420,10 @@ snippet for
 		${4: // code...}
 	endfor;
 snippet foreach
+	foreach ( $${1:variable} as $${2:value} ) :
+		${3:// code...}
+	endforeach;
+snippet fe
 	foreach ( $${1:variable} as $${2:value} ) :
 		${3:// code...}
 	endforeach;
