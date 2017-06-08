@@ -424,7 +424,7 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
 "Override s for EasyMotion Search
-nmap s <Plug>(easymotion-overwin-f)
+nmap s <Plug>(easymotion-overwin-f2)
 
 "Override w for EasyMotion Word Search
 nmap w <Plug>(easymotion-w)

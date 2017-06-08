@@ -9,6 +9,12 @@ hash git >/dev/null 2>&1 || {
   sudo apt-get install git
 }
 
+# Check for zsh
+hash zsh >/dev/null 2>&1 || {
+  echo "Error: zsh is not installed. Trying to install..."
+  sudo apt-get install zsh
+}
+
 # Delete current dotfiles dir if there is one
 if [ -d ~/dotfiles ]; then
   rm -rf $HOME/dotfiles
