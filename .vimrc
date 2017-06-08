@@ -304,7 +304,7 @@ au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
 au BufNewFile,BufRead *.less set filetype=less syntax=less
 au BufRead,BufNewFile *.js set ft=javascript syntax=javascript
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
-au BufRead,BufNewFile *.jade set ft=jade syntax=jade
+au BufRead,BufNewFile *.jade set ft=pug syntax=pug
 au BufRead,BufNewFile *.go set ft=go syntax=go
 au BufRead,BufNewFile *.vcl set ft=vcl syntax=vcl
 au BufRead,BufNewFile *.vim-plugins set ft=vim syntax=vim
