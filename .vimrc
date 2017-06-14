@@ -174,6 +174,33 @@ noremap <Leader>wq :wq<CR>
 imap <LocalLeader>wq <esc>:wq<CR>
 
 
+" Paste
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+imap <LocalLeader>p :set paste!<CR>
+nmap <LocalLeader>p :set paste!<CR>
+vmap <LocalLeader>p :set paste!<CR>
+nmap <Leader>p :set paste!<CR>
+vmap <Leader>p :set paste!<CR>
+
+
+" Add ; at end-of-line
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+imap <LocalLeader>; <Esc>A;
+nmap <LocalLeader>; <Esc>A;
+nmap <Leader>; <Esc>A;
+
+
+" NERDTree Tab
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+imap <LocalLeader>t <Esc>gti
+nmap <LocalLeader>t gt
+vmap <LocalLeader>t gt
+
+imap <LocalLeader>r <Esc>gTi
+nmap <LocalLeader>r gT
+vmap <LocalLeader>r gT
+
+
 " Insert Mode LocalLeader Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -234,9 +261,9 @@ nmap <Leader>b <F1>
 map <LocalLeader>b <esc><F1>
 
 " F2 -- Toggle paste mode
-noremap <F2> :set invpaste paste?<CR>
-nmap <Leader>p <F2>
-map <LocalLeader>p <esc><F2>
+"noremap <F2> :set invpaste paste?<CR>
+"nmap <Leader>p <F2>
+"map <LocalLeader>p <esc><F2>
 
 " F3 -- Toggle line numbers
 noremap <F3> :set nonumber!<CR>
