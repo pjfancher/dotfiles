@@ -9,6 +9,9 @@ snippet cb
 snippet /
 	/* ${1}
 	*****************************************************************************/
+
+snippet l
+	logger.info('${1}: ' + JSON.stringify(${2}));
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
 	function(${3:first_argument}) {
