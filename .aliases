@@ -37,7 +37,7 @@ alias doit='sudo $(history -p \!\!)'
 alias bashrc='source $HOME/.bashrc'
 alias zshrc='source $HOME/.zshrc'
 
-# TMUX ALIASES
+# TMUX
 ##########################################
 alias tmux='tmux -2' #Force tmux to assume the terminal supports 256 colours
 alias tmux-reload='tmux source-file ~/.tmux.conf';
@@ -45,7 +45,7 @@ alias mon='tmuxp load site-monitor'        # Site Monitor Layout
 alias monk='tmux kill-session -t monitor'  # Exit Site Monitor Layout
 alias monx='monk'
 
-# GIT ALIASES
+# GIT
 ##########################################
 alias current-branch='git rev-parse --abbrev-ref HEAD'
 alias gb='git branch'
@@ -67,6 +67,15 @@ alias ni='git commit -m "New Images"';
 alias gl='git log --pretty=format:"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]" --decorate --date=relative'
 #alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate --numstat'
+
+
+# DOCKER
+##########################################
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
+alias dcb="docker-compose build"
+alias dcr="docker-compose run"
+
 
 # PROGRAMS
 ##########################################
