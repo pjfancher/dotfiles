@@ -31,6 +31,18 @@ while( $$1_query->have_posts() ) : $$1_query->the_post();
 endwhile; wp_reset_postdata();
 endsnippet
 
+snippet usort "usort"
+usort( $$1, function( $a, $b  ) {
+	return $a->$2 < $b->$2;
+});
+endsnippet
+
+snippet susort "usort using a string"
+usort( $$1, function( $a, $b  ) {
+	return strcmp( $a->$2, $b->$2);
+});
+endsnippet
+
 snippet pql
 <?php while( $$1_query->have_posts() ) : $$1_query->the_post(); ?>
 	$2
