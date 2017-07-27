@@ -53,9 +53,6 @@ set incsearch
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => TEXT, TAB & INDENT
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces insted of tabs
-set expandtab
-
 " Be smart when using tabs
 set	smarttab		
 
@@ -205,7 +202,6 @@ vmap <LocalLeader>r gT
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Insert ; at end of line and go to new line
-imap <LocalLeader>; <esc>A;<CR> 
 imap <LocalLeader>p <esc>:set invpaste paste?<CR>i
 
 
@@ -259,6 +255,8 @@ let g:VimuxHeight = "10"
 noremap <F1> :w<CR>:VimuxPromptCommand<CR>./build-assets<CR>
 nmap <Leader>b <F1>
 map <LocalLeader>b <esc><F1>
+map <LocalLeader><LocalLeader> <esc><F1>
+imap <LocalLeader><LocalLeader> <esc><F1>
 
 " F2 -- Toggle paste mode
 "noremap <F2> :set invpaste paste?<CR>
@@ -272,7 +270,7 @@ map <LocalLeader>n <esc><F3>
 
 " F4 -- Add CSS closing comment
 noremap <F4>  %^y$%a// pxx
-nmap <Leader>c <F4>
+nmap <Leader>l <F4>
 map <LocalLeader>l <esc><F4>
 imap <LocalLeader>l <esc><F4>a
 
@@ -478,12 +476,21 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tabular
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap <Leader>aa :Tabularize /=><CR>
-nmap <Leader>aa :Tabularize /=><CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a: :Tabularize /:<CR>
-nmap <Leader>a: :Tabularize /:<CR>
+    " Align =
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    map <Leader>aa :Tabularize /=><CR>
+    map <Leader>a= :Tabularize /=<CR>
+    map <Leader>= :Tabularize /=<CR>
+    map <LocalLeader>= :Tabularize /=<CR>
+
+    " Align :
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    map <Leader>: vi{:Tabularize /:<CR>
+    map <LocalLeader>: vi{:Tabularize /:<CR>
+    imap <LocalLeader>: <esc>vi{:Tabularize /:<CR>i
+
+    vmap <Leader>a: :Tabularize /:<CR>
+    nmap <Leader>a: :Tabularize /:<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
