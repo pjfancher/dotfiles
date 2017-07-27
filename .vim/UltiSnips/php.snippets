@@ -24,11 +24,16 @@ public function get${1/\w+\s*/\u$0/}()`!p snip.rv = ': '+t[2] if isPHPScalarType
 }
 endsnippet
 
-
 snippet ql "query loop"
 while( $$1_query->have_posts() ) : $$1_query->the_post(); 
 	$2
 endwhile; wp_reset_postdata();
+endsnippet
+
+snippet pql
+<?php while( $$1_query->have_posts() ) : $$1_query->the_post(); ?>
+	$2
+<?php endwhile; wp_reset_postdata(); ?>
 endsnippet
 
 snippet usort "usort"
@@ -43,12 +48,6 @@ usort( $$1, function( $a, $b  ) {
 });
 endsnippet
 
-snippet pql
-<?php while( $$1_query->have_posts() ) : $$1_query->the_post(); ?>
-	$2
-<?php endwhile; wp_reset_postdata(); ?>
-endsnippet
-
 snippet div "<div>"
 <div class="$1">
 	$2
@@ -56,7 +55,5 @@ snippet div "<div>"
 endsnippet
 
 snippet span "<span>"
-<span class="$1">
-	$2
-</span><!-- end .$1 -->	
+<span class="$1">$2</span>
 endsnippet

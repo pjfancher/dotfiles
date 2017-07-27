@@ -12,136 +12,104 @@ snippet mobile-media
 	@media ( max-width: @mobileWidth ) {
 		${1}
 	}// @media mobile
-
 snippet tablet-media
 	//TABLET
 	@media ( max-width: @tabletWidth ) {
 		${1}
 	}// @media tablet
-
 snippet mobile
 	//IS MOBILE WIDTH
 	.is-mobile-width({
 		 ${1}
 	});// is-mobile-width
-
 snippet tablet
 	//IS TABLET WIDTH OR LOWER
 	.is-tablet-width({
 		 ${1}
 	});//is-tablet-width
-
 snippet content
 	//IS MAIN CONTENT WIDTH OR LESS
 	.is-content-width({
 		 ${1}
 	});//is-content-width
-
 snippet pr
 	position: relative;
-	
 snippet pa
 	position: absolute;
-
 snippet sz
 	.size(${1:height}, ${2:width});
-
 snippet sq
 	.square(${1}px);${2}
-
 snippet ff
 	font-family: @${1:headingsFontFamily};${2}
-
 snippet fs
 	font-size: ${1}px;${2}
-
 snippet lh
 	line-height: ${1:1.2};
-
 snippet ls
 	letter-spacing: ${1};
-
 snippet m
 	margin: ${1};${2}
-
 snippet p
 	padding: ${1};${2}
-
 snippet border
 	border: ${1}px solid @${2};${3}
-
 snippet hov
 	&:hover {
 		${1}
 	}// &:hover
-
 snippet hover
 	&:hover {
 		${1}
 	}// &:hover
-
 snippet active
 	&:active {
 		${1}
 	}// &:active
-
 snippet bs
 	.box-shadow(${1});
-
 snippet br
 	.border-radius(${1:4px});
-
 snippet mh
 	min-height: ${1};${2}
-
 snippet mw
 	min-width: ${1};${2}
-
 snippet af
 	&:after {
 		${1}
 	}// &:after
-
 snippet bf
 	&:before {
 		${1}
 	}// &:before
-
 snippet before
 	&:before {
 		${1}	
 	}// &:before
-
 snippet after
 	&:after {
 		${1}	
 	}// &:after
-
 snippet lc
 	&:last-child {
 		${1}	
 	}// &:last-child
-
 snippet fc
 	&:first-child {
 		${1}	
 	}// &:first-child
-
 snippet i
 	font-style: italic;
-
 snippet bff
 	font-family: @baseFontFamily;
-
 snippet hff
 	font-family: @headingsFontFamily;
-
 snippet aff
 	font-family: @altFontFamily;
-
 snippet sff
 	font-family: @serifFontFamily;
-
+snippet saff
+	font-family: @sansFontFamily;
 snippet center
 	position: absolute;
 	margin: auto;
@@ -149,44 +117,56 @@ snippet center
 	left: 0;
 	bottom: 0;
 	right: 0;
-
 snippet !
 	 !important
-
 snippet vh
 	visibility: hidden;
-
 snippet vv
 	visibility: visible;
-
 snippet arrow-up
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
 	width: 0; 
 	height: 0; 
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 10px solid white;
-
+	border-bottom: 10px solid @${1};
 snippet arrow-down
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
 	width: 0; 
 	height: 0; 
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-top: 10px solid white;
-
+	border-top: 10px solid @${1};
 snippet arrow-right
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
 	width: 0; 
 	height: 0; 
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
-	border-left: 10px solid white;
-
+	border-left: 10px solid @${1};
 snippet arrow-left
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
 	width: 0; 
 	height: 0; 
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent; 
-	border-right: 10px solid white; 
-
+	border-right: 10px solid @${1}; 
 snippet bdi:m+
 	-moz-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
 snippet bdi:m
@@ -438,7 +418,6 @@ snippet bds:w
 	border-style: wave;
 snippet bt
 	border-top: ${1:1px} solid @${2};
-
 snippet bb
 	border-bottom: ${1:1px} solid @${2};
 snippet bdtc
@@ -561,19 +540,14 @@ snippet cur:t
 	cursor: text;
 snippet d
 	display: ${1};
-
 snippet db
 	display: block;
-
 snippet dn
 	display: none;
-
 snippet di
 	display: inline;
-
 snippet dib
 	display: inline-block;
-
 snippet d:mib
 	display: -moz-inline-box;
 snippet d:mis
