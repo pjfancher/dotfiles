@@ -103,6 +103,7 @@ alias db='mosh digitalbrands.com'
 alias dc='mosh dealcrunch.com'
 alias docs='mosh docentuser@db-docs.com'
 alias docker-dev='mosh 165.227.72.251'
+alias dev='mosh 165.227.98.170'
 
 # PERMISSIONS
 ##########################################
