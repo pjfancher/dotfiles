@@ -167,6 +167,19 @@ snippet arrow-left
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent; 
 	border-right: 10px solid @${1}; 
+snippet iphone5
+	/* iPhone 5 Portrait
+	*****************************************************************************/
+	@media only screen 
+	and (min-device-width : 320px) 
+	and (max-device-width : 320px) 
+	and (orientation : portrait) {
+		${1}
+	}	
+snippet lsp
+	list-style-position: ${1:inside}
+snippet lst
+	list-style-type: ${1:disc}
 snippet bdi:m+
 	-moz-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
 snippet bdi:m

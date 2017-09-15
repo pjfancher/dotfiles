@@ -178,6 +178,8 @@ snippet ob
 		include( locate_template( 'template-parts/${1}/${2}' ) );
 		$output = ob_get_contents();
 	ob_end_clean();
+snippet gsf
+	get_sub_field( '${1}' );
 # method
 snippet m
 	${1:abstract }${2:protected}${3: static} function ${4:foo}(${5:array }${6:$bar})

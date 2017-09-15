@@ -173,7 +173,8 @@ imap <LocalLeader>wq <esc>:wq<CR>
 
 " Paste
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-imap <LocalLeader>p :set paste!<CR>
+"imap <LocalLeader>p :set paste!<CR>
+imap <LocalLeader>p <esc>:set invpaste paste?<CR>i
 nmap <LocalLeader>p :set paste!<CR>
 vmap <LocalLeader>p :set paste!<CR>
 nmap <Leader>p :set paste!<CR>
@@ -200,10 +201,6 @@ vmap <LocalLeader>r gT
 
 " Insert Mode LocalLeader Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Insert ; at end of line and go to new line
-imap <LocalLeader>p <esc>:set invpaste paste?<CR>i
-
 
 " Move vertically by visual line  -- won't skip over wrapped lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
