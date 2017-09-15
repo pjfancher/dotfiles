@@ -128,6 +128,9 @@ alias tial="tail";
 alias ctags-gen="ctags -R -f .git/tags ."
 alias weather='curl http://wttr.in/32601';
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias colors="{spectrum_ls && spectrum_bls} | less"
+alias colors-fg="spectrum_ls | less"
+alias colors-bg="spectrum_bls | less"
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
