@@ -20,7 +20,8 @@ let colors_name = "wombat256mod"
 
 
 " General colors
-hi Normal		ctermfg=252		ctermbg=234		cterm=none		guifg=#e3e0d7	guibg=#242424	gui=none
+"hi Normal		ctermfg=252		ctermbg=234		cterm=none		guifg=#e3e0d7	guibg=#242424	gui=none
+hi Normal		ctermfg=252		ctermbg=233		cterm=none		guifg=#e3e0d7	guibg=#121212	gui=none
 hi Cursor		ctermfg=234		ctermbg=228		cterm=none		guifg=#242424	guibg=#eae788	gui=none
 hi Visual		ctermfg=251		ctermbg=239		cterm=none		guifg=#c3c6ca	guibg=#554d4b	gui=none
 hi VisualNOS	ctermfg=251		ctermbg=236		cterm=none		guifg=#c3c6ca	guibg=#303030	gui=none
