@@ -372,7 +372,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 " NERDTree Show Line Numbers
 let NERDTreeShowLineNumbers=1
-"
+
 " NERDTree hide 'Press ? for Help' and up directory
 let NERDTreeMinimalUI = 1
 
@@ -400,6 +400,11 @@ call NERDTreeHighlightFile('gif', '198', 'none', '198', 'none')
 call NERDTreeHighlightFile('jpg', '198', 'none', '198', 'none')
 call NERDTreeHighlightFile('jpeg', '198', 'none', '198', 'none')
 call NERDTreeHighlightFile('png', '198', 'none', '198', 'none')
+
+" NERDTree Toggle
+map <LocalLeader><Tab> :NERDTreeToggle<CR>
+nmap <Leader><Tab> :NERDTreeToggle<CR>
+vmap <Leader><Tab> :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
