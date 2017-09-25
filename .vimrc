@@ -320,12 +320,12 @@ au BufWinEnter * silent! loadview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufWritePost * :redraw!
 
-" Set Filetypes
+" Custon Settings for Specific  Filetypes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.md set filetype=markdown syntax=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
 au BufNewFile,BufRead *.less set filetype=less syntax=less
-au BufRead,BufNewFile *.js set ft=javascript syntax=javascript
+au BufRead,BufNewFile *.js set ft=javascript syntax=javascript tabstop=2 shiftwidth=4
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
 au BufRead,BufNewFile *.jade set ft=pug syntax=pug
 au BufRead,BufNewFile *.go set ft=go syntax=go
