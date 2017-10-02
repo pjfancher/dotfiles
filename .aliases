@@ -131,6 +131,9 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias color="{spectrum_ls && spectrum_bls} | less"
 alias color-fg="spectrum_ls | less"
 alias color-bg="spectrum_bls | less"
+alias buildsite="./build-site.sh"
+alias buildassets="cd build && ./build-assets.sh && cd -"
+alias buildhtml="cd build && ./build-html.sh && cd -"
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
