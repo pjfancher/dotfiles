@@ -266,7 +266,7 @@ nmap <Leader>n <F3>
 map <LocalLeader>n <esc><F3>
 
 " F4 -- Add CSS closing comment
-noremap <F4>  %^y$%a// pxx
+noremap <F4>  %^y$%a // pxx
 nmap <Leader>l <F4>
 map <LocalLeader>l <esc><F4>
 imap <LocalLeader>l <esc><F4>a
