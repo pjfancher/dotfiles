@@ -132,8 +132,11 @@ alias color="{spectrum_ls && spectrum_bls} | less"
 alias color-fg="spectrum_ls | less"
 alias color-bg="spectrum_bls | less"
 alias buildsite="./build-site.sh"
-alias buildassets="cd build && ./build-assets.sh && cd -"
-alias buildhtml="cd build && ./build-html.sh && cd -"
+alias buildassets="cd build && ./build-assets.sh && cd - > /dev/null"
+alias buildhtml="cd build && ./build-html.sh && cd - > /dev/null"
+alias bs="buildsite"
+alias ba="buildassets"
+alias bh="buildhtml"
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
