@@ -481,19 +481,19 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     " Align =
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    map <Leader>aa :Tabularize /=><CR>
-    map <Leader>a= :Tabularize /=<CR>
-    map <Leader>= :Tabularize /=<CR>
-    map <LocalLeader>= :Tabularize /=<CR>
+    map <Leader>aa :Tabularize /=>.*/<CR>
+    map <Leader>a= :Tabularize /=.*/<CR>
+    map <Leader>= :Tabularize /=.*/<CR>
+    map <LocalLeader>= :Tabularize /=.*/<CR>
 
     " Align :
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    map <Leader>: vi{:Tabularize /:<CR>
-    map <LocalLeader>: vi{:Tabularize /:<CR>
-    imap <LocalLeader>: <esc>vi{:Tabularize /:<CR>i
+    map <Leader>: vi{:Tabularize /:.*/<CR>
+    map <LocalLeader>: vi{:Tabularize /:.*/<CR>
+    imap <LocalLeader>: <esc>vi{:Tabularize /:.*/<CR>i
 
-    vmap <Leader>a: :Tabularize /:<CR>
-    nmap <Leader>a: :Tabularize /:<CR>
+    vmap <Leader>a: :Tabularize /:.*/<CR>
+    nmap <Leader>a: :Tabularize /:.*/<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
