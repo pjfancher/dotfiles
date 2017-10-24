@@ -20,7 +20,7 @@ snippet gm "PHP Class Getter" b
  */
 public function get${1/\w+\s*/\u$0/}()`!p snip.rv = ': '+t[2] if isPHPScalarTypesEnabled() else ''`
 {
-    return $this->$1;
+	return $this->$1;
 }
 endsnippet
 

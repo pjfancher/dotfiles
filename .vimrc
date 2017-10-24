@@ -54,7 +54,7 @@ set incsearch
 " => TEXT, TAB & INDENT
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Be smart when using tabs
-set	smarttab		
+"set	smarttab		
 
 " 1 Tab == 4 spaces
 set tabstop=4
@@ -68,6 +68,9 @@ set autoindent
 
 " Highlight on the line your cursor is currently on.
 set cursorline
+
+" Show tabs, spaces, eol as characters when :set list is enabled
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 
 
@@ -271,9 +274,14 @@ nmap <Leader>l <F4>
 map <LocalLeader>l <esc><F4>
 imap <LocalLeader>l <esc><F4>a
 
+" Show all non-white space characters
+noremap <F5> :set list!<CR>
+nmap <Leader>v <F5>
+map <LocalLeader>v <esc><F5>
+imap <LocalLeader>v <esc><F5>
 
 " Converts echo to `fwrite( $stdout )`
-noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
+"noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -324,14 +332,23 @@ au BufWritePost * :redraw!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.md set filetype=markdown syntax=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
-au BufNewFile,BufRead *.less set filetype=less syntax=less
-au BufRead,BufNewFile *.js set ft=javascript syntax=javascript tabstop=2 shiftwidth=4
+au BufNewFile,BufRead *.less set filetype=less syntax=less tabstop=4
+au BufRead,BufNewFile *.js set ft=javascript syntax=javascript tabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
 au BufRead,BufNewFile *.jade set ft=pug syntax=pug
 au BufRead,BufNewFile *.go set ft=go syntax=go
 au BufRead,BufNewFile *.vcl set ft=vcl syntax=vcl
 au BufRead,BufNewFile *.vim-plugins set ft=vim syntax=vim
 au BufRead,BufNewFile *.snippets set ft=snippets syntax=snippets
+au BufRead,BufNewFile *.php set tabstop=4
+
+" The following adds a potential replacement on '-' (ASCII 45) in PHP files.
+" The carriage return will be replaced by the original text.
+" This can be used in a PHP file as in the following example.
+"
+"   Old text                  Command     New text ~
+"   print 'Hello *world!'     yss-        <?php print 'Hello world!' ?>
+au FileType php let b:surround_45 = "<?php \r ?>"
 
 
 
@@ -374,7 +391,10 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeShowLineNumbers=1
 
 " NERDTree hide 'Press ? for Help' and up directory
-let NERDTreeMinimalUI = 1
+let NERDTreeMinimalUI=1
+
+" Disable collapse on the same line directories that have only one child directory
+let NERDTreeCascadeSingleChildDir=0
 
 " NERDTree Basic Colors
 hi NERDTreeDir		ctermfg=68
@@ -393,6 +413,7 @@ endfunction
 " NERDTree Filetype Colors
 call NERDTreeHighlightFile('lock', 'white', '196', 'white', 'red')
 call NERDTreeHighlightFile('php', '153', 'none', '153', 'none')
+call NERDTreeHighlightFile('html', '151', 'none', '151', 'none')
 call NERDTreeHighlightFile('css', '157', 'none', '222', 'none')
 call NERDTreeHighlightFile('less', '157', 'none', '222', 'none')
 call NERDTreeHighlightFile('js', '114', 'none', '114', 'none')
@@ -479,21 +500,21 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tabular
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " Align =
-    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    map <Leader>aa :Tabularize /=>.*/<CR>
-    map <Leader>a= :Tabularize /=.*/<CR>
-    map <Leader>= :Tabularize /=.*/<CR>
-    map <LocalLeader>= :Tabularize /=.*/<CR>
+" Align =
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <Leader>aa :Tabularize /=>.*/<CR>
+map <Leader>a= :Tabularize /=.*/<CR>
+map <Leader>= :Tabularize /=.*/<CR>
+map <LocalLeader>= :Tabularize /=.*/<CR>
 
-    " Align :
-    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    map <Leader>: vi{:Tabularize /:.*/<CR>
-    map <LocalLeader>: vi{:Tabularize /:.*/<CR>
-    imap <LocalLeader>: <esc>vi{:Tabularize /:.*/<CR>i
+" Align :
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <Leader>: vi{:Tabularize /:.*/<CR>
+map <LocalLeader>: vi{:Tabularize /:.*/<CR>
+imap <LocalLeader>: <esc>vi{:Tabularize /:.*/<CR>i
 
-    vmap <Leader>a: :Tabularize /:.*/<CR>
-    nmap <Leader>a: :Tabularize /:.*/<CR>
+vmap <Leader>a: :Tabularize /:.*/<CR>
+nmap <Leader>a: :Tabularize /:.*/<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -534,6 +555,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:splitjoin_split_mapping = '<Leader>S'
 let g:splitjoin_join_mapping  = '<Leader>J'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:undotree_WindowLayout=2
 
 
 
