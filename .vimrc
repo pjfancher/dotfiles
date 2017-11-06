@@ -556,8 +556,6 @@ let g:splitjoin_split_mapping = '<Leader>S'
 let g:splitjoin_join_mapping  = '<Leader>J'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:undotree_WindowLayout=2
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
