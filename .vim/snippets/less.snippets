@@ -70,10 +70,14 @@ snippet bs
 	.box-shadow(${1});
 snippet br
 	.border-radius(${1:4px});
-snippet mh
+snippet mih
 	min-height: ${1};${2}
-snippet mw
+snippet mah
+	max-height: ${1};${2}
+snippet miw
 	min-width: ${1};${2}
+snippet maw
+	max-width: ${1};${2}
 snippet af
 	&:after {
 		${1}
@@ -783,18 +787,6 @@ snippet m:0
 	margin: 0;
 snippet m:a
 	margin: auto;
-snippet mah
-	max-height: ${1};
-snippet mah:n
-	max-height: none;
-snippet maw
-	max-width: ${1};
-snippet maw:n
-	max-width: none;
-snippet mih
-	min-height: ${1};
-snippet miw
-	min-width: ${1};
 snippet op
 	opacity: ${1};
 snippet op:ie
