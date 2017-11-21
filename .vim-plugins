@@ -78,3 +78,6 @@ Plugin 'SirVer/ultisnips'
 
 " Display number of search matches & index of a current match
 Plugin 'google/vim-searchindex'
+
+" Vim plugin that displays tags in a window, ordered by scope
+Plugin 'majutsushi/tagbar'
