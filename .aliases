@@ -137,6 +137,7 @@ alias buildhtml="cd build && ./build-html.sh && cd - > /dev/null"
 alias bs="buildsite"
 alias ba="buildassets"
 alias bh="buildhtml"
+alias er="tail -f ../../logs/error.log"
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
