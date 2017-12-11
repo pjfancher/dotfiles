@@ -81,3 +81,6 @@ Plugin 'google/vim-searchindex'
 
 " Vim plugin that displays tags in a window, ordered by scope
 Plugin 'majutsushi/tagbar'
+
+" ansi escape sequences concealed, but highlighted as specified (conceal) 
+Plugin 'powerman/vim-plugin-AnsiEsc'
