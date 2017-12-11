@@ -138,6 +138,7 @@ alias bs="buildsite"
 alias ba="buildassets"
 alias bh="buildhtml"
 alias er="tail -f ../../logs/error.log"
+alias perm="stat --format '%a' $1"
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
