@@ -14,6 +14,7 @@ alias vimplugins='vim ~/.vim-plugins' # Open vim-plugins
 alias aliases='vim ~/.aliases' # Open aliases
 alias latest='vim $(ls -t | head -1)' # Open latest file in directory
 alias wd='watch -n .1 ls -lah' #watch current dir
+alias dotfiles='cd ~/dotfiles/'
 
 # LS ALIASES
 ##########################################
@@ -110,6 +111,7 @@ alias dev='mosh 165.227.98.170'
 alias setperm='sudo chgrp -R www-data public_html/ && sudo chmod -R g+w public_html/ && sudo find public_html/ -type d -exec sudo chmod g+s {} \; && sudo chown -R www-data public_html/'
 alias setdbdev='sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;'
 alias www-data='sudo chown -R www-data:www-data *';
+alias db-admin='sudo chown -R db-admin:db-admin *';
 
 # WORDPRESS
 ##########################################
