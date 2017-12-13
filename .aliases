@@ -18,9 +18,9 @@ alias dotfiles='cd ~/dotfiles/'
 
 # LS ALIASES
 ##########################################
-alias l='ls -lFh'
-alias ll='ls -alFh'
-alias la='ls -lah'
+alias l='ls -lFh --group-directories-first'
+alias ll='ls -alFh --group-directories-first'
+alias la='ls -lah --group-directories-first'
 
 # GREP
 ##########################################
