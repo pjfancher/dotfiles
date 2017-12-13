@@ -281,7 +281,7 @@ map <LocalLeader>v <esc><F5>
 imap <LocalLeader>v <esc><F5>
 
 " Converts echo to `fwrite( $stdout )`
-"noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
+noremap <F6> ^dwifwrite( $stdout, <Esc>$i )<Esc>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
