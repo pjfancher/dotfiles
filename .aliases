@@ -17,9 +17,9 @@ alias wd='watch -n .1 ls -lah' #watch current dir
 
 # LS ALIASES
 ##########################################
-alias l='ls -lFh'
-alias ll='ls -alFh'
-alias la='ls -lah'
+alias l='ls -lFh --group-directories-first'
+alias ll='ls -alFh --group-directories-first'
+alias la='ls -lah --group-directories-first'
 
 # GREP
 ##########################################
@@ -138,6 +138,7 @@ alias bs="buildsite"
 alias ba="buildassets"
 alias bh="buildhtml"
 alias er="tail -f ../../logs/error.log"
+alias perm="stat --format '%a' $1"
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
