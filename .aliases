@@ -16,6 +16,12 @@ alias latest='vim $(ls -t | head -1)' # Open latest file in directory
 alias wd='watch -n .1 ls -lah' #watch current dir
 alias dotfiles='cd ~/dotfiles/'
 
+# mv, rm cp
+##########################################
+alias mv='mv -v'
+alias rm='rm -i -v'
+alias cp='cp -v'
+
 # LS ALIASES
 ##########################################
 alias l='ls -lFh --group-directories-first'
