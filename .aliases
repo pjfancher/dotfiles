@@ -119,7 +119,6 @@ alias dev='mosh 165.227.98.170'
 
 # PERMISSIONS
 ##########################################
-alias setperm='sudo chgrp -R www-data public_html/ && sudo chmod -R g+w public_html/ && sudo find public_html/ -type d -exec sudo chmod g+s {} \; && sudo chown -R www-data public_html/'
 alias setdbdev='sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;'
 alias www-data='sudo chown -R www-data:www-data *';
 alias db-admin='sudo chown -R db-admin:db-admin *';
