@@ -111,17 +111,19 @@ alias dc='mosh dealcrunch.com'
 alias docs='mosh docentuser@db-docs.com'
 alias docker-dev='mosh 165.227.72.251'
 alias dev='mosh 165.227.98.170'
+alias dev-1604='mosh 165.227.183.22'
 
 # PERMISSIONS
 ##########################################
 alias setdbdev='sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;'
 alias www-data='sudo chown -R www-data:www-data *';
-alias db-admin='sudo chown -R db-admin:db-admin *';
+#alias db-admin='sudo chown -R db-admin:db-admin *';
 
 # WORDPRESS
 ##########################################
-alias w3tc="wp plugin toggle w3-total-cache"
+alias w3tc="wp-cli plugin toggle w3-total-cache"
 alias ss="time monsoon && gplm && w3tc"
+#alias ss="time monsoon && gplm"
 
 # VARNISH
 ##########################################

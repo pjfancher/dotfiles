@@ -10,8 +10,19 @@ function f() {
     find . -name "$1" 2>&1 | grep -v 'Permission denied'
 }
 
+# Set permisions script on dir arg
 function setperm(){
 	sudo chgrp -R www-data "$1" && sudo chmod -R g+w "$1" && sudo find "$1" -type d -exec sudo chmod g+s {} \; && sudo chown -R www-data "$1"
+}
+
+# Recursively set given directory to www-data ownership
+function www-data(){
+    sudo chown -R www-data:www-data "$1"
+}
+
+# Recursively set given directory to db-admin ownership
+function db-admin(){
+    sudo chown -R db-admin:db-admin "$1"
 }
 
 # Determine size of a file or total size of a directory
