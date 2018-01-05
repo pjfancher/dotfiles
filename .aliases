@@ -16,6 +16,11 @@ alias latest='vim $(ls -t | head -1)' # Open latest file in directory
 alias wd='watch -n .1 ls -lah' #watch current dir
 alias dotfiles='cd ~/dotfiles/'
 
+# Trash
+##########################################
+alias tr='trash'
+alias rt='restore-trash'
+
 # mv, rm cp
 ##########################################
 alias mv='mv -v'
