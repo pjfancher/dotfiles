@@ -347,9 +347,8 @@ au BufRead,BufNewFile *.php set tabstop=4
 " This can be used in a PHP file as in the following example.
 "
 "   Old text                  Command     New text ~
-"   print 'Hello *world!'     yss-        <?php print 'Hello world!' ?>
-au FileType php let b:surround_45 = "<?php \r ?>"
-
+"   print 'Hello *world!'     yss<        <?php print 'Hello world!' ?>
+au FileType php let b:surround_60 = "<?php \r ?>"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
