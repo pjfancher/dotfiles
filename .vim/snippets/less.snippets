@@ -66,6 +66,10 @@ snippet active
 	&:active {
 		${1}
 	} // &:active
+snippet focus
+	&:focus {
+		${1}
+	} // &:focus
 snippet bs
 	.box-shadow(${1});
 snippet br
@@ -88,19 +92,19 @@ snippet bf
 	} // &:before
 snippet before
 	&:before {
-		${1}	
+		${1}
 	} // &:before
 snippet after
 	&:after {
-		${1}	
+		${1}
 	} // &:after
 snippet lc
 	&:last-child {
-		${1}	
+		${1}
 	} // &:last-child
 snippet fc
 	&:first-child {
-		${1}	
+		${1}
 	} // &:first-child
 snippet img
 	img {
@@ -137,8 +141,8 @@ snippet arrow-up
 	left: 0;
 	display: block;
 	content: '';
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-bottom: 10px solid @${1};
@@ -148,8 +152,8 @@ snippet arrow-down
 	left: 0;
 	display: block;
 	content: '';
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-top: 10px solid @${1};
@@ -159,8 +163,8 @@ snippet arrow-right
 	left: 0;
 	display: block;
 	content: '';
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
 	border-left: 10px solid @${1};
@@ -170,17 +174,17 @@ snippet arrow-left
 	left: 0;
 	display: block;
 	content: '';
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent; 
-	border-right: 10px solid @${1}; 
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid @${1};
 snippet iphone5
 	/* iPhone 5 Portrait
 	*****************************************************************************/
-	@media only screen 
-	and (min-device-width : 320px) 
-	and (max-device-width : 320px) 
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 320px)
 	and (orientation : portrait) {
 		${1}
 	}	
