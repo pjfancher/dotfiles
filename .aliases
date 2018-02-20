@@ -112,12 +112,11 @@ alias coupons='ssh 166.78.136.18'
 alias bc='mosh 166.78.243.119'
 alias ha='mosh 23.253.111.148'
 alias cr='mosh cardrates.com'
+alias cr-1604='mosh 64.91.229.108'
 alias crp='mosh cardratespreview.com'
 alias db='mosh digitalbrands.com'
-alias dc='mosh dealcrunch.com'
+alias dc='mosh 104.239.165.198'
 alias docs='mosh docentuser@db-docs.com'
-alias docker-dev='mosh 165.227.72.251'
-alias dev='mosh 165.227.98.170'
 alias dev-docker='mosh 165.227.183.22'
 
 # PERMISSIONS
@@ -125,6 +124,15 @@ alias dev-docker='mosh 165.227.183.22'
 alias setdbdev='sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;'
 alias www-data='sudo chown -R www-data:www-data *';
 #alias db-admin='sudo chown -R db-admin:db-admin *';
+
+# BUILD
+##########################################
+alias buildsite="./build-site.sh"
+alias buildassets="cd build && ./build-assets.sh && cd - > /dev/null"
+alias buildhtml="cd build && ./build-html.sh && cd - > /dev/null"
+alias bs="buildsite"
+alias ba="buildassets"
+alias bh="buildhtml"
 
 # WORDPRESS
 ##########################################
@@ -147,13 +155,6 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias color="{spectrum_ls && spectrum_bls} | less"
 alias color-fg="spectrum_ls | less"
 alias color-bg="spectrum_bls | less"
-alias buildsite="./build-site.sh"
-alias buildassets="cd build && ./build-assets.sh && cd - > /dev/null"
-alias buildhtml="cd build && ./build-html.sh && cd - > /dev/null"
-alias bs="buildsite"
-alias ba="buildassets"
-alias bh="buildhtml"
-alias er="tail -f ../../logs/error.log"
 alias perm="stat --format '%a' $1"
 
 # SUFFIX ALIASES ( if extension: open with )
