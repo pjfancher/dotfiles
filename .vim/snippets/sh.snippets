@@ -1,6 +1,6 @@
 # Shebang. Executing bash via /usr/bin/env makes scripts more portable.
 snippet #!
-	#! /bin/bash
+	#!/bin/bash
 	
 snippet if
 	if [[ ${1:condition} ]]; then
@@ -42,6 +42,18 @@ snippet go
 snippet sdir
 	SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # getopt
+
+snippet pbox
+	printf "
+	==========================================================
+	\t\t${1}
+	==========================================================\n\n"
+
+snippet p/
+	printf "
+	==========================================================
+	\t\t${1}
+	==========================================================\n\n"
 
 snippet box
 	# ${1}
