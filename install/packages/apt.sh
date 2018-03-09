@@ -23,6 +23,7 @@ packages=(
     php5-cgi
     php5-dev
     phpmyadmin
+    mysql-server
     build-essential
     npm
     #letsencrypt
