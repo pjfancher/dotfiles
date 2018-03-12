@@ -9,7 +9,7 @@ To install all dot files and plugins: `curl -L peej.io | bash`
 ![screen](http://i.imgur.com/RRC54fI.png)
 
 ## Custom Setup
-* Clone the repo: `git clone https://github.com/db-pj/dotfiles` 
+* Clone the repo: `git clone https://github.com/pjfancher/dotfiles` 
 * Replace all dot files in the root directory with your own dot files.
 * Run `./install.sh`
 
