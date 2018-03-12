@@ -82,6 +82,29 @@ alias gl='git log --pretty=format:"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]
 alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate --numstat'
 
 
+# Set Dev Function
+##########################################
+function setdev() {
+    case "$1" in
+    'dn')
+        DESIGNATOR='da'
+        SITE_NAME='DatingNews.com'
+        cd $DN_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
+    'cr')
+        DESIGNATOR='cr'
+        SITE_NAME='CardRates.com'
+        cd $CR_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
+    esac
+}
+
+alias sd=setdev
+
 # DOCKER
 ##########################################
 alias dcu="docker-compose up"
