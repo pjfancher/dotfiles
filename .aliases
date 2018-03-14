@@ -100,6 +100,13 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
+    'ha')
+        DESIGNATOR='ha'
+        SITE_NAME='HostingAdvice.com'
+        cd $HA_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     esac
 }
 
