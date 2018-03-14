@@ -32,7 +32,7 @@ case ${(%):-%M} in
     *printaholic* ) server_color=$pr;;
     *cd-master-web* ) server_color=$cd;;
     *badcredit* ) server_color=$bc;;
-    *cardreviews* ) server_color=$cr;;
+    *cardrates* ) server_color=$cr;;
     *hostingadvice* ) server_color=$ha;;
     *dealcrunch* ) server_color=$dc;;
     *gainesvilleshows* ) server_color=$gvs;;
