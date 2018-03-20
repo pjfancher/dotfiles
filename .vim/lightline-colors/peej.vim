@@ -85,7 +85,7 @@ let servernames = {
     \'pr': 'printaholic', 
     \'cd': 'cd-master-web', 
     \'bc': 'badcredit', 
-    \'cr': 'cardreviews', 
+    \'cr': 'cardrates', 
     \'dc': 'dealcrunch', 
     \'ha': 'hostingadvice', 
     \'gvs': 'gainesvilleshows', 
@@ -93,8 +93,10 @@ let servernames = {
 
 for [key, val] in items(servernames)
     if( hostname =~ val )
-        let s:p.normal.right  = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
-        let s:p.insert.right  = [ [ s:base02, s:blue ], [ s:{key}_fg, s:{key}_bg ] ]
+        let s:p.normal.right  = [ [ s:white, s:red ], [ s:{key}_fg, s:{key}_bg ] ]
+        let s:p.normal.left  = [ [ s:white, s:red ], [ s:{key}_fg, s:{key}_bg ] ]
+        let s:p.insert.right  = [ [ s:white, s:red ], [ s:{key}_fg, s:{key}_bg ] ]
+        let s:p.insert.left  = [ [ s:white, s:red ], [ s:{key}_fg, s:{key}_bg ] ]
         let s:p.insert.middle = [ [ s:white, s:red ] ]
     end
 endfor
