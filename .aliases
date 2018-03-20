@@ -107,6 +107,13 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
+    'bc')
+        DESIGNATOR='bc'
+        SITE_NAME='BadCredit.org'
+        cd $BC_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     esac
 }
 
@@ -140,7 +147,7 @@ alias da='mosh datingadvice.com'
 alias pr='mosh printaholic.com'
 alias coupons='ssh 166.78.136.18'
 alias bc='mosh 166.78.243.119'
-alias ha='mosh 23.253.111.148'
+alias ha='mosh hostingadvice.com'
 alias cr='mosh cardrates.com'
 alias cr-1604='mosh 64.91.229.108'
 alias crp='mosh cardratespreview.com'
