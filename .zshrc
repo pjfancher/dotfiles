@@ -124,3 +124,5 @@ if [ -f '/home/pj/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/pj/
 
 # Disable Suspended Output to allow remapping of Ctrl-s in vim
 stty -ixon
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
