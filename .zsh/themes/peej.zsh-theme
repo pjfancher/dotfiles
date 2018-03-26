@@ -20,6 +20,7 @@ local cr='$BG[060]$FG[253]'
 local dc='$BG[172]$FG[000]'
 local ha='$BG[130]$FG[255]'
 local gvs='$BG[237]$FG[038]'
+local dn='$BG[197]$FG[235]'
 
 
 
@@ -36,6 +37,7 @@ case ${(%):-%M} in
     *hostingadvice* ) server_color=$ha;;
     *dealcrunch* ) server_color=$dc;;
     *gainesvilleshows* ) server_color=$gvs;;
+    *datingnews* ) server_color=$dn;;
     *) server_color=$dev;;
 esac
 
