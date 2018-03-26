@@ -48,8 +48,7 @@ main() {
 	if hash chsh >/dev/null 2>&1; then
 	  print_success "\n   Changing your default shell to zsh...\n\t"
 	  sudo chsh -s $(which zsh)
-	  print_success 'Shell changed to zsh!'
-	  print_warning 'Log out and log back in to complete shell switch'
+	  print_success 'Shell changed to zsh! Log out and log back in to complete shell switch.'
 	# Else, suggest the user do so manually.
 	else
 	  print_error "I can't change your shell automatically because this system does not have chsh.\n"
