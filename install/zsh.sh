@@ -56,7 +56,7 @@ main() {
 	#fi
 	#else
 	 #print_success 'Zsh is current shell'
-	print_warning 'To change your sell to zsh run this command:\nchsh -s $(which zsh)'
+	print_warning 'To change your sell to zsh run this command:\n\tchsh -s $(which zsh)'
   fi
 
   env zsh
