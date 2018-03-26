@@ -46,7 +46,7 @@ main() {
   if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
 	# If this platform provides a "chsh" command (not Cygwin), do it, man!
 	if hash chsh >/dev/null 2>&1; then
-	  print_success "\n   Changing your default shell to zsh...\n\t"
+	  print_success "Changing your default shell to zsh...\n\t"
 	  sudo chsh -s $(which zsh)
 	  print_success 'Shell changed to zsh! Log out and log back in to complete shell switch.'
 	# Else, suggest the user do so manually.
