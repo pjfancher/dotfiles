@@ -47,7 +47,7 @@ main() {
 	# If this platform provides a "chsh" command (not Cygwin), do it, man!
 	if hash chsh >/dev/null 2>&1; then
 	  print_success "\n   Changing your default shell to zsh...\n\t"
-	  chsh -s $(which zsh)
+	  sudo chsh -s $(which zsh)
 	  print_success 'Shell changed to zsh!'
 	  print_warning 'Log out and log back in to complete shell switch'
 	# Else, suggest the user do so manually.
