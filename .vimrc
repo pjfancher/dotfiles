@@ -252,7 +252,7 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " Write File & Build Local Assets
 "noremap <F1> :w<CR>:!./build-assets<CR>
 let g:VimuxHeight = "10"
-noremap <F1> :w<CR>:VimuxPromptCommand<CR>cd build/ && clear && ./build-assets.sh && cd - > /dev/null<CR>
+noremap <F1> :w<CR>:VimuxPromptCommand<CR>home && clear && ba<CR>
 nmap <Leader>b <F1>
 map <LocalLeader>b <esc><F1>
 map <LocalLeader><LocalLeader> <esc><F1>

@@ -32,6 +32,7 @@ alias cp='cp -v'
 alias l='ls -lFh --group-directories-first'
 alias ll='ls -alFh --group-directories-first'
 alias la='ls -lah --group-directories-first'
+alias sl='ls'
 
 # GREP
 ##########################################
