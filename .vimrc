@@ -314,6 +314,30 @@ if exists("&undodir")
 endif
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom Commands
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Convert Spaces to Tabs
+:command Tabs call SetTabs()
+function! SetTabs()
+	set list
+	set shiftwidth=4
+	normal ggVG
+	retab!
+	normal gg
+endfunction
+
+" Remove Trailing Whitespace
+:command Spaces call RemoveSpaces()
+function! RemoveSpaces()
+	set list
+	%s/\s\+$//e
+endfunction
+
+" Set Tabs and Remove Spaces
+:command Format call SetTabs() | call RemoveSpaces()
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => AUTOCOMMANDS
@@ -328,7 +352,12 @@ au BufWinEnter * silent! loadview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufWritePost * :redraw!
 
-" Custon Settings for Specific  Filetypes
+" Remove trailing whitespace on save
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"autocmd Filetype php,js,sh,yml autocmd BufWritePre <buffer> %s/\s\+$//e
+
+
+" Custom Settings for Specific  Filetypes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.md set filetype=markdown syntax=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
