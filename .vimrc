@@ -137,8 +137,8 @@ nmap <Leader>ppr vavyopd<C-j><Esc>p
 " Quick Fix Window Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Home> :cp<CR>
-nnoremap <End>  :cn<CR>
-nnoremap <bar>  :ccl<CR>
+nnoremap <End>	:cn<CR>
+nnoremap <bar>	:ccl<CR>
 
 " Insert newline stay in NORMAL mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -307,10 +307,10 @@ set history=1000
 
 " Persistent UNDO
 if exists("&undodir")
-	set undofile                " Save undo's after file closes
-	set undodir=~/.vim/undodir  " where to save undo histories
-	set undolevels=1000         " How many undos
-	set undoreload=10000        " number of lines to save for undo
+	set undofile				" Save undo's after file closes
+	set undodir=~/.vim/undodir	" where to save undo histories
+	set undolevels=1000			" How many undos
+	set undoreload=10000		" number of lines to save for undo
 endif
 
 
@@ -325,7 +325,6 @@ function! SetTabs()
 	set shiftwidth=4
 	normal ggVG
 	retab!
-	normal gg
 endfunction
 
 " Remove Trailing Whitespace
@@ -357,7 +356,7 @@ au BufWritePost * :redraw!
 "autocmd Filetype php,js,sh,yml autocmd BufWritePre <buffer> %s/\s\+$//e
 
 
-" Custom Settings for Specific  Filetypes
+" Custom Settings for Specific	Filetypes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.md set filetype=markdown syntax=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
@@ -375,8 +374,8 @@ au BufRead,BufNewFile *.php set tabstop=4
 " The carriage return will be replaced by the original text.
 " This can be used in a PHP file as in the following example.
 "
-"   Old text                  Command     New text ~
-"   print 'Hello *world!'     yss<        <?php print 'Hello world!' ?>
+"	Old text				  Command	  New text ~
+"	print 'Hello *world!'	  yss<		  <?php print 'Hello world!' ?>
 au FileType php let b:surround_60 = "<?php \r ?>"
 
 
@@ -434,8 +433,8 @@ hi NERDTreeExecFile ctermfg=83
 
 " NERDTree Filetype Highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+	exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+	exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
 " NERDTree Filetype Colors
@@ -474,12 +473,12 @@ let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
 let g:ctrlp_by_filename = 1
 let g:ctrlp_open_new_file = 't'
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](plugins|uploads|images|backups|cache|ewww|upgrade|w3tc-config)$',
+  \ 'dir':	'\v[\/](plugins|uploads|images|backups|cache|ewww|upgrade|w3tc-config)$',
   \ }
 let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>'],
-    \ }
+	\ 'AcceptSelection("e")': ['<c-t>'],
+	\ 'AcceptSelection("t")': ['<cr>'],
+	\ }
 nmap <Leader>re :CtrlPMRU<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -602,55 +601,55 @@ let g:lightline = {
 \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
 \ 'subseparator': { 'left': "", 'right': "" },
 \ 'active': {
-\   'left': [ [ 'mode', 'paste' ], [ 'fugitive' ], [ 'gitgutter' ] ],
-\   'right': [ [ 'lineinfo' ], [ 'hostname' ], [ 'modified', 'relativepath' ] ]
+\	'left': [ [ 'mode', 'paste' ], [ 'fugitive' ], [ 'gitgutter' ] ],
+\	'right': [ [ 'lineinfo' ], [ 'hostname' ], [ 'modified', 'relativepath' ] ]
 \ },
 \ 'component_function': {
-\   'fugitive': 'LightlineFugitive',
-\   'gitgutter': 'LightlineGitGutter',
-\   'hostname' : 'LightlineHostname'
+\	'fugitive': 'LightlineFugitive',
+\	'gitgutter': 'LightlineGitGutter',
+\	'hostname' : 'LightlineHostname'
 \ },
 \ 'tab' : {
-\   'active': [ 'filename', 'modified' ],
-\   'inactive': [ 'filename', 'modified' ] 
+\	'active': [ 'filename', 'modified' ],
+\	'inactive': [ 'filename', 'modified' ] 
 \ },
 \ 'component' : {
-\   'lineinfo': '%p%% : %l/%L'
+\	'lineinfo': '%p%% : %l/%L'
 \ },
 \}
 
 " Lightline Hostname
 function LightlineHostname()
-    return hostname()
+	return hostname()
 endfunction
 
 " Lightline Fugitive
 function! LightlineFugitive()
-    return exists('*fugitive#head') ? printf( '%s%s', "\uE0A0 ", fugitive#head()) : ''
+	return exists('*fugitive#head') ? printf( '%s%s', "\uE0A0 ", fugitive#head()) : ''
 endfunction
 
 " Lightline GitGutter
 function LightlineGitGutter() 
-    let hunks = exists('*GitGutterGetHunkSummary') ? GitGutterGetHunkSummary() : ''
-    let string = ''
-    if !empty(hunks)
-        for i in [0, 1, 2]
-            if (hunks[i] > 0)
-                if (i == 0)
-                    let symbol = '+'
-                elseif (i == 1)
-                    let symbol = '~'
-                elseif (i == 2)
-                    let symbol = '-'
-                endif
-                let string .= printf('%s%s ', symbol, hunks[i])
-            endif
-        endfor
-    endif
-    if (string == '')
-        return
-    else
-        return string
-    endif
+	let hunks = exists('*GitGutterGetHunkSummary') ? GitGutterGetHunkSummary() : ''
+	let string = ''
+	if !empty(hunks)
+		for i in [0, 1, 2]
+			if (hunks[i] > 0)
+				if (i == 0)
+					let symbol = '+'
+				elseif (i == 1)
+					let symbol = '~'
+				elseif (i == 2)
+					let symbol = '-'
+				endif
+				let string .= printf('%s%s ', symbol, hunks[i])
+			endif
+		endfor
+	endif
+	if (string == '')
+		return
+	else
+		return string
+	endif
 endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
