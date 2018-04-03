@@ -126,3 +126,6 @@ if [ -f '/home/pj/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/pj/
 stty -ixon
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+# ~/.local/bin in PATH
+export PATH=~/.local/bin:$PATH
