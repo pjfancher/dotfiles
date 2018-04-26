@@ -7,31 +7,6 @@ snippet cb
 snippet /
 	/* ${1}
 	*****************************************************************************/
-snippet mobile-media
-	//MOBILE
-	@media ( max-width: @mobileWidth ) {
-		${1}
-	} // @media mobile
-snippet tablet-media
-	//TABLET
-	@media ( max-width: @tabletWidth ) {
-		${1}
-	} // @media tablet
-snippet mobile
-	//IS MOBILE WIDTH
-	.is-mobile-width({
-		 ${1}
-	}); // is-mobile-width
-snippet tablet
-	//IS TABLET WIDTH OR LOWER
-	.is-tablet-width({
-		 ${1}
-	}); //is-tablet-width
-snippet content
-	//IS MAIN CONTENT WIDTH OR LESS
-	.is-content-width({
-		 ${1}
-	}); //is-content-width
 snippet pr
 	position: relative;
 snippet pa
@@ -189,6 +164,28 @@ snippet iphone5
 	and (orientation : portrait) {
 		${1}
 	} // iphone5
+snippet smalltablet
+	/* Small Tablets
+	*****************************************************************************/
+	@media only screen
+	and (max-device-width : 767px)
+	and (orientation : portrait) {
+		${1}
+	} // @media
+snippet portrait
+	/* Portrait
+	*****************************************************************************/
+	@media only screen
+	and (orientation : portrait) {
+		${1}
+	} // @media portrait
+snippet landscape
+	/* Landscape
+	*****************************************************************************/
+	@media only screen
+	and (orientation : landscape) {
+		${1}
+	} // @media landscape
 snippet lsp
 	list-style-position: ${1:inside}
 snippet lst

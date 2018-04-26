@@ -319,7 +319,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Convert Spaces to Tabs
-:command Tabs call SetTabs()
+:command T call SetTabs()
 function! SetTabs()
 	set list
 	set shiftwidth=4
@@ -328,7 +328,7 @@ function! SetTabs()
 endfunction
 
 " Remove Trailing Whitespace
-:command Spaces call RemoveSpaces()
+:command S call RemoveSpaces()
 function! RemoveSpaces()
 	set list
 	%s/\s\+$//e
