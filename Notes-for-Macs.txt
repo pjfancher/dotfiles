@@ -7,6 +7,10 @@ Alfred
 Divvy
 Karabiner-Elements (caps key => F12, use all Function keys as standard function keys)
 
+Add Ons:
+http://www.packal.org/workflow/alfred-drive-workflow
+
+
 System:
 brew
 zsh
