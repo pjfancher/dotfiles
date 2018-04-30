@@ -17,6 +17,7 @@
 * zsh https://gist.github.com/derhuerst/12a1558a4b408b3b2b6e#file-mac-md
 * mosh https://mosh.org/
 * dotfiles `curl -L peej.io | bash`
+* Update vim `brew install vim --with-override-system-vi`
 
 ### Fonts:
 * Hack https://github.com/source-foundry/Hack#macos
