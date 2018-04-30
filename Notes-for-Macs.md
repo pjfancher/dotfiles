@@ -15,6 +15,7 @@
 ### System:
 * brew https://brew.sh/
 * zsh https://gist.github.com/derhuerst/12a1558a4b408b3b2b6e#file-mac-md
+* mosh https://mosh.org/
 
 ### Fonts:
 * Hack https://github.com/source-foundry/Hack#macos
