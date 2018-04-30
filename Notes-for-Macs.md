@@ -16,6 +16,7 @@
 * brew https://brew.sh/
 * zsh https://gist.github.com/derhuerst/12a1558a4b408b3b2b6e#file-mac-md
 * mosh https://mosh.org/
+* dotfiles `curl -L peej.io | bash`
 
 ### Fonts:
 * Hack https://github.com/source-foundry/Hack#macos
