@@ -7,7 +7,7 @@ ask_for_sudo
 
 # Load Scripts
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-  && . "install/packages/utilities.sh" \
+  && . "install/utilities/utilities.sh" \
   && cd $HOME
 
 #Complete
