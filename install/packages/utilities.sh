@@ -7,7 +7,7 @@
 is_ubuntu || return 1
 
 ask_for_sudo
-print_in_purple "\n   Apt-Get\n   ------------------------------\n"
+print_in_purple "\n   Utilities\n   ------------------------------\n"
 
 # Define needed packages
 packages=(
