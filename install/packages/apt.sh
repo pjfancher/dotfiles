@@ -15,13 +15,13 @@ packages=(
     software-properties-common
     python-pip
     python-dev
-    php5 
-    php5-gd 
-    php5-mysql 
-    php5-curl
-    php5-cli
-    php5-cgi
-    php5-dev
+    php
+    php7.0-gd 
+    php7.0-mysql 
+    php7.0-curl
+    php7.0-cli
+    php7.0-cgi
+    php7.0-dev
     phpmyadmin
     mysql-server
     build-essential
