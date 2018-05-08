@@ -10,7 +10,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
   && . "install/packages/lamp" \
   && . "install/packages/pip.sh" \
   && . "install/packages/npm.sh" \
-  && . "install/packages/utilities.sh" \
   && cd $HOME
 
 #Complete
