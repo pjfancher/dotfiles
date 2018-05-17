@@ -144,19 +144,30 @@ alias rv='sudo service varnish reload'
 
 # SITES
 ##########################################
-alias da='mosh datingadvice.com'
-alias pr='mosh printaholic.com'
-alias coupons='ssh 166.78.136.18'
-alias bc='mosh badcredit.org'
-alias ha='mosh hostingadvice.com'
-alias cr='mosh cardrates.com'
-alias crp='mosh cardratespreview.com'
-alias db='mosh digitalbrands.com'
-alias dc='mosh 104.239.165.198'
-alias docs='mosh docentuser@db-docs.com'
-alias dev-docker='mosh 165.227.183.22'
-alias dev-1204='mosh 45.55.97.168'
-alias dev-1604='mosh 104.236.238.33'
+USER='pj'
+DA='209.59.129.135'
+PR='166.78.123.101'
+COUPONS='166.78.136.18'
+BC='50.28.104.211'
+HA='69.16.249.15'
+CR='64.91.229.108'
+DB='166.78.123.224'
+DC='104.239.165.198'
+
+alias da="mosh $USER@$DA"
+alias pr="mosh $USER@$PR"
+alias coupons="ssh $USER@$COUPONS"
+alias bc="mosh $USER@$BC"
+alias ha="mosh $USER@$HA"
+alias cr="mosh $USER@$CR"
+alias crp="mosh $USER@cardratespreview.com"
+alias db="mosh $USER@$DB"
+alias dc="mosh $USER@$DB"
+alias docs="mosh docentuser@db-docs.com"
+
+alias dev-docker="mosh 165.227.183.22"
+alias dev-1204="mosh 45.55.97.168"
+alias dev-1604="mosh 104.236.238.33"
 
 # PERMISSIONS
 ##########################################
