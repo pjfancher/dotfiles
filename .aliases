@@ -153,6 +153,7 @@ HA='69.16.249.15'
 CR='64.91.229.108'
 DB='166.78.123.224'
 DC='104.239.165.198'
+DN='64.91.233.2'
 
 alias da="mosh $USER@$DA"
 alias pr="mosh $USER@$PR"
@@ -163,6 +164,7 @@ alias cr="mosh $USER@$CR"
 alias crp="mosh $USER@cardratespreview.com"
 alias db="mosh $USER@$DB"
 alias dc="mosh $USER@$DC"
+alias dn="mosh $USER@$DN"
 alias docs="mosh docentuser@db-docs.com"
 
 alias dev-docker="mosh 165.227.183.22"
