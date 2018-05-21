@@ -162,7 +162,7 @@ alias ha="mosh $USER@$HA"
 alias cr="mosh $USER@$CR"
 alias crp="mosh $USER@cardratespreview.com"
 alias db="mosh $USER@$DB"
-alias dc="mosh $USER@$DB"
+alias dc="mosh $USER@$DC"
 alias docs="mosh docentuser@db-docs.com"
 
 alias dev-docker="mosh 165.227.183.22"
