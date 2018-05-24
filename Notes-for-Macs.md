@@ -1,5 +1,5 @@
 ### Apps:
-* Chrome
+* Chrome https://www.google.com/chrome/
 * Firefox https://www.mozilla.org/en-US/firefox/new/
 * iTerm2 https://www.iterm2.com/
 * itsycal https://www.mowglii.com/itsycal/
