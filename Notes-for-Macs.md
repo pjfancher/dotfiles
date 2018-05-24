@@ -1,6 +1,6 @@
 ### Apps:
 * Chrome
-* Firefox
+* Firefox https://www.mozilla.org/en-US/firefox/new/
 * iTerm2 https://www.iterm2.com/
 * itsycal https://www.mowglii.com/itsycal/
 * Alfred https://www.alfredapp.com/ *(Powerpack activation in personal email)*
