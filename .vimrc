@@ -270,9 +270,9 @@ map <LocalLeader>n <esc><F3>
 
 " F4 -- Add CSS closing comment
 noremap <F4>  %^y$%a // <Esc>pxx
-nmap <Leader>l <F4>
-map <LocalLeader>l <esc><F4>
-imap <LocalLeader>l <esc><F4>a
+nmap <Leader>c <F4>
+map <LocalLeader>c <esc><F4>
+imap <LocalLeader>c <esc><F4>a
 
 " Show all non-white space characters
 noremap <F5> :set list!<CR>
