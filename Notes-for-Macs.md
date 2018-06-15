@@ -1,6 +1,6 @@
 ### Apps:
-* Chrome
-* Firefox
+* Chrome https://www.google.com/chrome/
+* Firefox https://www.mozilla.org/en-US/firefox/new/
 * iTerm2 https://www.iterm2.com/
 * itsycal https://www.mowglii.com/itsycal/
 * Alfred https://www.alfredapp.com/ *(Powerpack activation in personal email)*
@@ -14,7 +14,7 @@
 
 ### System:
 * brew https://brew.sh/
-* zsh https://gist.github.com/derhuerst/12a1558a4b408b3b2b6e#file-mac-md
+* zsh https://gist.github.com/derhuerst/12a1558a4b408b3b2b6e#installing-zsh-on-a-mac
 * mosh https://mosh.org/
 * dotfiles `curl -L peej.io | bash`
 
