@@ -87,6 +87,13 @@ snippet stdout
 		${1}
 	fclose( $stdout );
 
+snippet timer
+	$start = time();
+
+	$end     = time();
+	$seconds = $end - $start;
+	$time    = gmdate( "H:i:s", $seconds  );
+
 snippet get_template
 	/* ${1} 
 	*****************************************************************************/
