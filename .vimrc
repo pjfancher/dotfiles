@@ -370,13 +370,14 @@ au BufRead,BufNewFile *.vim-plugins set ft=vim syntax=vim
 au BufRead,BufNewFile *.snippets set ft=snippets syntax=snippets
 au BufRead,BufNewFile *.php set tabstop=4
 
-" The following adds a potential replacement on '-' (ASCII 45) in PHP files.
+" The following adds a potential replacement on 'p' (ASCII 112) in PHP files.
 " The carriage return will be replaced by the original text.
 " This can be used in a PHP file as in the following example.
+" :echo char2nr("p") to get ASCII
 "
 "	Old text				  Command	  New text ~
-"	print 'Hello *world!'	  yss<		  <?php print 'Hello world!' ?>
-au FileType php let b:surround_60 = "<?php \r ?>"
+"	print 'Hello *world!'	  yssp		  <?php print 'Hello world!' ?>
+au FileType php let b:surround_112 = "<?php \r ?>"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
