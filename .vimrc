@@ -653,4 +653,3 @@ function LightlineGitGutter()
 		return string
 	endif
 endfunction
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
