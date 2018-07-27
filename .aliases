@@ -136,11 +136,12 @@ alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias dcb="docker-compose build"
 alias dcr="docker-compose run"
-alias dl="docker-compose logs -f"
-alias dps="docker ps"
-alias dsr="dstop && dremove"
-dstop() { docker stop $(docker ps -aq); }
-dremove() { docker rm $(docker ps -a -q); }
+alias dl="docker-compose logs -f" #Docker logs
+alias dps="docker ps" #Docker process list
+alias dsr="dstop && dremove" # Stop and remove all docker containers
+dstop() { docker stop $(docker ps -aq); } #Stop all docker containers
+dremove() { docker rm $(docker ps -a -q); } #Remove all docker containers
+dcc(){ docker-compose exec $1 bash } #Login into given Docker container
 
 
 # PROGRAMS

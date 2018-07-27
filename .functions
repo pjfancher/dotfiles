@@ -39,11 +39,6 @@ function fs() {
     fi;
 }
 
-# Login into given Docker container
-function dcc(){
-	docker-compose exec $1 bash
-}
-
 # Create a data URL from a file
 function dataurl() {
     local mimeType=$(file -b --mime-type "$1");
