@@ -180,6 +180,7 @@ alias db="mosh $USER@$DB"
 alias dc="mosh $USER@$DC"
 alias dn="mosh $USER@$DN"
 alias docs="mosh docentuser@db-docs.com"
+alias gvs="mosh $USER@gainesvilleshows.com"
 
 alias dev-docker="mosh 165.227.183.22"
 alias dev-1204="mosh 45.55.97.168"
