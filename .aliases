@@ -49,6 +49,7 @@ alias doit='sudo $(history -p \!\!)'
 ##########################################
 alias bashrc='source $HOME/.bashrc'
 alias zshrc='source $HOME/.zshrc'
+alias ssa='cdg && source site-aliases.sh'
 
 # TMUX
 ##########################################
