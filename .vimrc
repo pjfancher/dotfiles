@@ -270,9 +270,9 @@ map <LocalLeader>n <esc><F3>
 
 " F4 -- Add CSS closing comment
 noremap <F4>  %^y$%a // <Esc>pxx
-nmap <Leader>l <F4>
-map <LocalLeader>l <esc><F4>
-imap <LocalLeader>l <esc><F4>a
+nmap <Leader>c <F4>
+map <LocalLeader>c <esc><F4>
+imap <LocalLeader>c <esc><F4>a
 
 " Show all non-white space characters
 noremap <F5> :set list!<CR>
@@ -337,6 +337,15 @@ endfunction
 " Set Tabs and Remove Spaces
 :command Format call SetTabs() | call RemoveSpaces()
 
+" Converts Tabs to JS style Spaces
+:command JST call SetJSTabs()
+function! SetJSTabs()
+	set tabstop=2
+	set shiftwidth=2
+	set expandtab
+	retab!
+endfunction
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => AUTOCOMMANDS
@@ -361,7 +370,7 @@ au BufWritePost * :redraw!
 au BufRead,BufNewFile *.md set filetype=markdown syntax=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
 au BufNewFile,BufRead *.less set filetype=less syntax=less tabstop=4
-au BufRead,BufNewFile *.js set ft=javascript syntax=javascript tabstop=2 shiftwidth=2
+au BufRead,BufNewFile *.js set ft=javascript syntax=javascript tabstop=2 shiftwidth=2 expandtab
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
 au BufRead,BufNewFile *.jade set ft=pug syntax=pug
 au BufRead,BufNewFile *.go set ft=go syntax=go
@@ -370,13 +379,14 @@ au BufRead,BufNewFile *.vim-plugins set ft=vim syntax=vim
 au BufRead,BufNewFile *.snippets set ft=snippets syntax=snippets
 au BufRead,BufNewFile *.php set tabstop=4
 
-" The following adds a potential replacement on '-' (ASCII 45) in PHP files.
+" The following adds a potential replacement on 'p' (ASCII 112) in PHP files.
 " The carriage return will be replaced by the original text.
 " This can be used in a PHP file as in the following example.
+" :echo char2nr("p") to get ASCII
 "
 "	Old text				  Command	  New text ~
-"	print 'Hello *world!'	  yss<		  <?php print 'Hello world!' ?>
-au FileType php let b:surround_60 = "<?php \r ?>"
+"	print 'Hello *world!'	  yssp		  <?php print 'Hello world!' ?>
+au FileType php let b:surround_112 = "<?php \r ?>"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -652,4 +662,3 @@ function LightlineGitGutter()
 		return string
 	endif
 endfunction
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
