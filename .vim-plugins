@@ -10,6 +10,9 @@ Plugin 'scrooloose/nerdtree.git'
 " Vim plugin for intensely orgasmic commenting
 Plugin 'scrooloose/nerdcommenter.git'
 
+" A plugin for NERDTree that allows for chmod'ing files
+Plugin 'EvanDotPro/nerdtree-chmod'
+
 " Extended matching with %
 Plugin 'jwhitley/vim-matchit'
 
