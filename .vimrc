@@ -571,6 +571,12 @@ nmap <Leader>gplm :!git pull origin master<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Leader>t :TagbarOpenAutoClose<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim Polygot
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" graphql was causing errors opening js files. Disabling.
+let g:polyglot_disabled = ['graphql']
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntastic
