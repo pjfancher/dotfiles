@@ -217,13 +217,14 @@ alias purge='curl -X PURGE $1';
 alias less-upgrade='sudo npm install -g less@1.7.4'
 alias less-downgrade='sudo npm install -g less@1.3.3'
 alias tial="tail";
-alias ctags-gen="ctags -R -f .git/tags ."
-alias weather='curl http://wttr.in/32601';
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias color="{spectrum_ls && spectrum_bls} | less"
-alias color-fg="spectrum_ls | less"
-alias color-bg="spectrum_bls | less"
-alias perm="stat --format '%a' $1"
+alias ctags-gen="ctags -R -f .git/tags ." #Generate ctags
+alias weather='curl http://wttr.in/32601'; #Show current weather
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com" #Show IP Address
+alias color="{spectrum_ls && spectrum_bls} | less" #All colors
+alias color-fg="spectrum_ls | less" #Foregroud colors
+alias color-bg="spectrum_bls | less" #Background colors
+alias perm="stat --format '%a' $1" #Show file permision numbers
+alias ubuntu="lsb_release -a" #Show Ubuntu version
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
