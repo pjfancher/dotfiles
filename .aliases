@@ -14,6 +14,7 @@ alias vimplugins='vim ~/.vim-plugins' # Open vim-plugins
 alias aliases='vim ~/.aliases' # Open aliases
 alias latest='vim $(ls -t | head -1)' # Open latest file in directory
 alias wd='watch -n .1 ls -lah' #watch current dir
+alias cf="ls -l | wc -l" #count files in current dir
 alias dotfiles='cd ~/dotfiles/'
 
 # Trash
