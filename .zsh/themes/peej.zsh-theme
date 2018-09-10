@@ -45,7 +45,7 @@ esac
 ########################################
 # GIT PROMPT 
 ########################################
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[245]%}→ %{$FG[010]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[245]%}→ %{$FG[028]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 #ZSH_THEME_GIT_PROMPT_DIRTY=" %{$FG[009]%}✗ %{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$FG[028]%}✔ %{$reset_color%}"
