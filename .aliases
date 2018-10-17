@@ -85,6 +85,7 @@ alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" -
 alias gls='git log --date=short --pretty=format:"%C(124)%ad %C(24)%h %C(34)%an %C(252)%s%C(178)%d"'
 
 # Get to the top of a git tree
+##########################################
 cdg () {
   TEMP_PWD=`pwd`
   while ! [ -d .git ]; do
@@ -94,6 +95,7 @@ cdg () {
 }
 
 # Gets the scp path for a file
+##########################################
 getscp () {
   { echo $(ip); echo ":"; echo $(readlink -f $1); } | tr -d "\n"
 }
