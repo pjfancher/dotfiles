@@ -322,9 +322,10 @@ endif
 :command T call SetTabs()
 function! SetTabs()
 	set list
+	set tabstop=4
 	set shiftwidth=4
-	normal ggVG
-	retab!
+	set noexpandtab
+	%retab!
 endfunction
 
 " Remove Trailing Whitespace
