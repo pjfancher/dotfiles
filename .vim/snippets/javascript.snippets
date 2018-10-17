@@ -13,7 +13,13 @@ snippet l
 	logger.info('${1}: ' + JSON.stringify(${2}));
 
 snippet ie
+	if (err) { console.log(err); }
+
+snippet ier
 	if (err) { return console.log(err); }
+
+snippet pe
+	process.exit(0);
 
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
