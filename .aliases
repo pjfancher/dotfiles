@@ -19,7 +19,7 @@ alias dotfiles='cd ~/dotfiles/'
 
 # Trash
 ##########################################
-alias tr='trash'
+#alias tr='trash'
 alias rt='restore-trash'
 
 # mv, rm cp
@@ -93,6 +93,10 @@ cdg () {
   OLDPWD=$TEMP_PWD
 }
 
+# Gets the scp path for a file
+getscp () {
+  { echo $(ip); echo ":"; echo $(readlink -f $1); } | tr -d "\n"
+}
 
 # Set Dev Function
 ##########################################
