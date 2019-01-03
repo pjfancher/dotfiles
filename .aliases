@@ -132,6 +132,13 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
+    'db')
+        DESIGNATOR='bd'
+        SITE_NAME='DigitalBrands.com'
+        cd $DB_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     esac
 }
 
