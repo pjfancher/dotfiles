@@ -19,6 +19,8 @@ snippet ff
 	font-family: @${1:headingsFontFamily};${2}
 snippet fs
 	font-size: ${1}px;${2}
+snippet it
+	font-style: italic;
 snippet lh
 	line-height: ${1:1.2};
 snippet ls
@@ -172,6 +174,14 @@ snippet iphone5
 	and (orientation : portrait) {
 		${1}
 	} // iphone5
+snippet smallphone
+	/* Small Phone Portrait
+	*****************************************************************************/
+	@media only screen
+	and (max-device-width : 375px)
+	and (orientation : portrait) {
+		${1}
+	} // smallphone
 snippet smalltablet
 	/* Small Tablets
 	*****************************************************************************/
@@ -1063,6 +1073,8 @@ snippet t:a
 	top: auto;
 snippet va
 	vertical-align: ${1};
+snippet vat
+	vertical-align: top;
 snippet va:bl
 	vertical-align: baseline;
 snippet va:b
