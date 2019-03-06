@@ -47,6 +47,11 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$HOME/.zsh
 
+# Treat the ‘#’, ‘~’ and ‘^’ characters as part of patterns for filename generation, etc. 
+# (An initial unquoted ‘~’ always produces named directory expansion.)
+# http://zsh.sourceforge.net/Doc/Release/Options.html
+setopt extended_glob
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
