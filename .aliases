@@ -197,9 +197,11 @@ alias dn="mosh $USER@$DN"
 alias docs="mosh docentuser@db-docs.com"
 alias gvs="mosh $USER@gainesvilleshows.com"
 
-alias dev-docker="mosh 165.227.183.22"
-alias dev-1204="mosh 45.55.97.168"
-alias dev-1604="mosh 104.236.238.33"
+alias dev-docker="mosh $USER@165.227.183.22"
+alias dev-1204="mosh $USER@45.55.97.168"
+alias dev-1604="mosh $USER@104.236.238.33"
+
+alias careeners="ssh careeners@careeners.com"
 
 # PERMISSIONS
 ##########################################
