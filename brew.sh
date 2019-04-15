@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Abort on error
-set -e
-
 # Ask for the administrator password upfront.
 sudo -v
 
@@ -33,8 +30,6 @@ brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install moreutils
 brew install findutils
-brew install zsh
-brew install mosh
 
 # Casks
 ##############################################################################
