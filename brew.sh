@@ -7,7 +7,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Checks if Homebrew is installed
-echo "Checking if Homebrew is already installed..."; 
+echo "Checking if Homebrew is already installed...";
 
 if test ! $(which brew); then
   echo "Installing Homebrew...";
@@ -16,18 +16,18 @@ else
   echo "Homebrew is already installed...";
 fi
 
+echo "Setting Homebrew permissions...."
+BREW_PREFIX=$(brew --prefix)
+chown -R $USER $BREW_PREFIX/*
+
 echo "Updating and upgrading Homebrew..."; echo;
 yes | brew update &> /dev/null
 yes | brew upgrade &> /dev/null
-
-# Save Homebrew’s installed location.
-BREW_PREFIX=$(brew --prefix)
 
 
 # Brew Utils
 ##############################################################################
 brew install coreutils
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install moreutils
 brew install findutils
 
