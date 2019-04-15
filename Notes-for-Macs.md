@@ -24,3 +24,4 @@
 ### Dev:
 * Blisk https://blisk.io/
 * Screaming Frog https://www.screamingfrog.co.uk/seo-spider/ *(License key in work email)*
+* Postman https://www.getpostman.com/downloads/
