@@ -5,7 +5,7 @@ verify_osx
 clear
 
 . "$HOME/dotfiles/install/banner.sh" \
-"\n\nSetting Up Mac OS X\n\n"
+&& "\n\nSetting Up Mac OS X\n\n"
 
 # Load Scripts
 cd "$(dirname "${BASH_SOURCE[0]}")" \
