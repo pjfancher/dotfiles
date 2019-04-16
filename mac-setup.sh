@@ -4,7 +4,7 @@ verify_osx
 
 clear
 
-. "$HOME/install/banner.sh" \
+. "$HOME/dotfiles/install/banner.sh" \
 print_in_purple "\n\nSetting Up Mac OS X\n\n"
 
 # Load Scripts
