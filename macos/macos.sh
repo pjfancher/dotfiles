@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+. "$HOME/dotfiles/install/utils.sh"
+
+if ! is_osx; then
+	echo "This setup script must be run on Mac OSX"
+	exit 0;
+fi
+
+COMPUTER_NAME="PJ's Mac"
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -11,7 +20,6 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 
-COMPUTER_NAME="PJ's Mac"
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "$COMPUTER_NAME"
 sudo scutil --set HostName "$COMPUTER_NAME"
