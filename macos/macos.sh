@@ -3,6 +3,9 @@
 . "$HOME/dotfiles/install/utils.sh"
 verify_osx
 
+
+osascript -e 'display notification "Setting Mac OS X Preferences" with title "Mac OS X Setup"'
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
