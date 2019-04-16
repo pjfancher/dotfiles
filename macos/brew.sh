@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
 . "$HOME/dotfiles/install/utils.sh"
-
-if ! is_osx; then
-	echo "This setup script must be run on Mac OSX"
-	exit 0;
-fi
+verify_osx
 
 # Ask for the administrator password upfront.
 sudo -v

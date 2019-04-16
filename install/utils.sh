@@ -359,6 +359,13 @@ function is_osx() {
   [[ "$OSTYPE" =~ ^darwin ]] || return 1
 }
 
+function verify_osx() {
+  if ! is_osx; then
+    print_in_red "\nError: This setup script must be run on Mac OS X\n"
+    exit 0;
+  fi
+}
+
 function is_ubuntu() {
   [[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu ]] || return 1
 }
