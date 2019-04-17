@@ -34,6 +34,12 @@ brew install coreutils
 brew install moreutils
 brew install findutils
 
+# Brew Apps
+##############################################################################
+brew install tmux
+brew install htop
+brew install tig
+
 # Casks
 ##############################################################################
 brew tap caskroom/cask

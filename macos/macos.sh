@@ -19,9 +19,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX
 ##############################################################################
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
-
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
@@ -32,7 +29,54 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
-	
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Show the /Volumes folder
+sudo chflags nohidden /Volumes
+
+
+# Keyboard/Mouse
+##############################################################################
+
+# Enable Function Keys
+defaults write -g com.apple.keyboard.fnState -bool true
+
+# Mouse Tracking
+defaults write -g com.apple.mouse.scaling -float 1.5
+
+# Turn Off Natual Scrolling
+defaults write -g com.apple.swipescrolldirection -bool false
+
+# Multi-Touch Mouse Settings
+defaults write com.apple.AppleMultitouchMouse.MouseButtonDivision -int 55
+defaults write com.apple.AppleMultitouchMouse.MouseButtonMode -string "TwoButton"
+defaults write com.apple.AppleMultitouchMouse.MouseHorizontalScroll -bool true
+defaults write com.apple.AppleMultitouchMouse.MouseMomentumScroll -bool true
+defaults write com.apple.AppleMultitouchMouse.MouseOneFingerDoubleTapGesture -int 0
+defaults write com.apple.AppleMultitouchMouse.MouseTwoFingerDoubleTapGesture -int 3
+defaults write com.apple.AppleMultitouchMouse.MouseTwoFingerHorizSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchMouse.MouseVerticalScroll -bool true
+
+
+# Dock
+##############################################################################
+defaults write -g com.apple.springing.delay -float 0.5
+defaults write -g com.apple.springing.enabled -bool true
+
+
+# Sound
+##############################################################################
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# No Beeping
+defaults write -g com.apple.sound.beep.flash -bool false
+
+# Increase sound quality for Bluetooth headphones/headsets
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 # Chrome
 ##############################################################################
