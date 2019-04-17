@@ -30,9 +30,15 @@ alias cp='cp -v'
 
 # LS ALIASES
 ##########################################
-alias l='ls -lFh --group-directories-first'
-alias ll='ls -alFh --group-directories-first'
-alias la='ls -lah --group-directories-first'
+if [[ is_osx ]]; then
+	alias l='ls -lFh'
+	alias ll='ls -alFh'
+	alias la='ls -lah'
+else
+	alias l='ls -lFh --group-directories-first'
+	alias ll='ls -alFh --group-directories-first'
+	alias la='ls -lah --group-directories-first'
+fi
 alias sl='ls'
 
 # GREP
