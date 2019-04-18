@@ -59,7 +59,6 @@ brew cask install iterm2
 brew cask install alfred
 brew cask install dropbox
 brew cask install itsycal
-brew cask install divvy
 brew cask install karabiner-elements
 
 # Dev
