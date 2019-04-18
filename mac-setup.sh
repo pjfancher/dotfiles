@@ -7,8 +7,8 @@ print_in_purple "\n\nSetting Up Mac OS X\n\n"
 
 # Load Scripts
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-  && . "macos/macos.sh" \
   && . "macos/brew.sh" \
+  && . "macos/macos.sh" \
   && cd $HOME
 
 # Complete
