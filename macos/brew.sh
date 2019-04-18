@@ -36,6 +36,7 @@ brew install findutils
 
 # Brew Apps
 ##############################################################################
+brew install mosh
 brew install tmux
 brew install htop
 brew install tig
