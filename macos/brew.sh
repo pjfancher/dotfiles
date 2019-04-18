@@ -37,6 +37,8 @@ brew install findutils
 # Brew Apps
 ##############################################################################
 brew install cmake
+brew install python
+brew install vim
 brew install mosh
 brew install tmux
 brew install htop
