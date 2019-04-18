@@ -40,9 +40,13 @@ brew install cmake
 brew install python
 brew install vim
 brew install mosh
+brew install wget
 brew install tmux
 brew install htop
 brew install tig
+brew install ag
+brew install ncdu
+brew install dtrx
 
 # Casks
 ##############################################################################
