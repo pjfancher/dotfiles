@@ -36,6 +36,19 @@ chflags nohidden ~/Library
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
 
+# Finder
+##############################################################################
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowPreviewPane -bool true
+defaults write com.apple.finder ShowSidebar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Restart Finder
+killall -HUP Finder
 
 # Keyboard/Mouse
 ##############################################################################
@@ -50,21 +63,22 @@ defaults write -g com.apple.mouse.scaling -float 1.5
 defaults write -g com.apple.swipescrolldirection -bool false
 
 # Multi-Touch Mouse Settings
-defaults write com.apple.AppleMultitouchMouse.MouseButtonDivision -int 55
-defaults write com.apple.AppleMultitouchMouse.MouseButtonMode -string "TwoButton"
-defaults write com.apple.AppleMultitouchMouse.MouseHorizontalScroll -bool true
-defaults write com.apple.AppleMultitouchMouse.MouseMomentumScroll -bool true
-defaults write com.apple.AppleMultitouchMouse.MouseOneFingerDoubleTapGesture -int 0
-defaults write com.apple.AppleMultitouchMouse.MouseTwoFingerDoubleTapGesture -int 3
-defaults write com.apple.AppleMultitouchMouse.MouseTwoFingerHorizSwipeGesture -int 2
-defaults write com.apple.AppleMultitouchMouse.MouseVerticalScroll -bool true
+defaults write com.apple.AppleMultitouchMouse MouseButtonDivision -int 55
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode -string "TwoButton"
+defaults write com.apple.AppleMultitouchMouse MouseHorizontalScroll -bool true
+defaults write com.apple.AppleMultitouchMouse MouseMomentumScroll -bool true
+defaults write com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture -int 0
+defaults write com.apple.AppleMultitouchMouse MouseTwoFingerDoubleTapGesture -int 3
+defaults write com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchMouse MouseVerticalScroll -bool true
 
 
 # Dock
 ##############################################################################
-defaults write -g com.apple.springing.delay -float 0.5
-defaults write -g com.apple.springing.enabled -bool true
-
+defaults write -g com.apple.dock autohide -bool true
+defaults write -g com.apple.dock largesize -int 75
+defaults write -g com.apple.dock magnification -bool true
+defaults write -g com.apple.dock mod-count -int 38
 
 # Sound
 ##############################################################################
