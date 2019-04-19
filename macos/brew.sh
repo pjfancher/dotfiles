@@ -36,9 +36,17 @@ brew install findutils
 
 # Brew Apps
 ##############################################################################
+brew install cmake
+brew install python
+brew install vim
+brew install mosh
+brew install wget
 brew install tmux
 brew install htop
 brew install tig
+brew install ag
+brew install ncdu
+brew install dtrx
 
 # Casks
 ##############################################################################
@@ -57,7 +65,6 @@ brew cask install iterm2
 brew cask install alfred
 brew cask install dropbox
 brew cask install itsycal
-brew cask install divvy
 brew cask install karabiner-elements
 
 # Dev
