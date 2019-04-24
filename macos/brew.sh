@@ -3,6 +3,8 @@
 . "$HOME/dotfiles/install/utils.sh"
 verify_osx
 
+osascript -e 'display notification "Installing Homebrew Packages" with title "Homebrew"'
+
 # Ask for the administrator password upfront.
 sudo -v
 
