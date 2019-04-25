@@ -247,6 +247,7 @@ alias color-fg="spectrum_ls | less" #Foregroud colors
 alias color-bg="spectrum_bls | less" #Background colors
 alias perm="stat --format '%a' $1" #Show file permision numbers
 alias ubuntu="lsb_release -a" #Show Ubuntu version
+alias lts="lsb_release -a" #Show Ubuntu version
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
