@@ -40,6 +40,7 @@ brew install findutils
 ##############################################################################
 brew install cmake
 brew install python
+brew install npm
 brew install vim
 brew install mosh
 brew install wget
