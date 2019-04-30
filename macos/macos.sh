@@ -91,6 +91,7 @@ defaults write -g com.apple.dock autohide -bool true
 defaults write -g com.apple.dock largesize -int 75
 defaults write -g com.apple.dock magnification -bool true
 defaults write -g com.apple.dock mod-count -int 38
+killall Dock
 
 # Hot corners
 # Possible values:
