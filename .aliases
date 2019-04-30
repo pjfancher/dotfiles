@@ -189,6 +189,7 @@ CR='64.91.229.108'
 DB='178.128.147.0'
 DC='104.239.165.198'
 DN='64.91.233.2'
+RM='64.91.241.174'
 
 alias da="mosh $USER@$DA"
 alias pr="mosh $USER@$PR"
@@ -200,6 +201,7 @@ alias crp="mosh $USER@cardratespreview.com"
 alias db="mosh $USER@$DB"
 alias dc="mosh $USER@$DC"
 alias dn="mosh $USER@$DN"
+alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
 alias gvs="mosh $USER@gainesvilleshows.com"
 
