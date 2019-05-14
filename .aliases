@@ -105,7 +105,7 @@ cdg () {
 scpget () {
   { echo $(getip); echo ":"; echo $(readlink -f $1); } | tr -d "\n"
 }
-alias getscp =scpget
+alias getscp=scpget
 
 # Set Dev Function
 ##########################################
