@@ -166,6 +166,16 @@ snippet arrow-left
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
 	border-right: 10px solid @${1};
+snippet tablet
+	/* Tablet Portrait
+	*****************************************************************************/
+	@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px)
+	and (orientation : portrait) {
+		${1}
+	} // tablet
+
 snippet iphone5
 	/* iPhone 5 Portrait
 	*****************************************************************************/
