@@ -370,7 +370,9 @@ au BufWritePost * :redraw!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.md set filetype=markdown syntax=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown syntax=markdown
-au BufNewFile,BufRead *.less set filetype=less syntax=less tabstop=4
+au BufRead,BufNewFile *.less set filetype=less syntax=less tabstop=4
+au BufRead,BufNewFile *.scss set filetype=scss syntax=scss tabstop=4
+au BufRead,BufNewFile *.sass set filetype=scss syntax=scss tabstop=4
 au BufRead,BufNewFile *.js set ft=javascript syntax=javascript tabstop=2 shiftwidth=2 expandtab
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
 au BufRead,BufNewFile *.jade set ft=pug syntax=pug
@@ -454,6 +456,8 @@ call NERDTreeHighlightFile('php', '153', 'none', '153', 'none')
 call NERDTreeHighlightFile('html', '151', 'none', '151', 'none')
 call NERDTreeHighlightFile('css', '157', 'none', '222', 'none')
 call NERDTreeHighlightFile('less', '157', 'none', '222', 'none')
+call NERDTreeHighlightFile('scss', '157', 'none', '222', 'none')
+call NERDTreeHighlightFile('sass', '157', 'none', '222', 'none')
 call NERDTreeHighlightFile('js', '114', 'none', '114', 'none')
 call NERDTreeHighlightFile('json', '029', 'none', '029', 'none')
 call NERDTreeHighlightFile('gif', '198', 'none', '198', 'none')
