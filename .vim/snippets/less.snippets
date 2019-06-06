@@ -175,7 +175,14 @@ snippet tablet
 	and (orientation : portrait) {
 		${1}
 	} // tablet
-
+snippet mobile
+	/* Mobile
+	*****************************************************************************/
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 812px) {
+		${1}
+	}// mobile
 snippet iphone5
 	/* iPhone 5 Portrait
 	*****************************************************************************/
