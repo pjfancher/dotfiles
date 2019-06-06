@@ -133,6 +133,13 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
+    'hr')
+        DESIGNATOR='hr'
+        SITE_NAME='HostingReport.com'
+        cd $HR_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     'bc')
         DESIGNATOR='bc'
         SITE_NAME='BadCredit.org'
