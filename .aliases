@@ -61,7 +61,7 @@ alias ssa='cdg && source site-aliases.sh'
 # TMUX
 ##########################################
 alias tmux='tmux -2' #Force tmux to assume the terminal supports 256 colours
-alias ta='tmux attach'
+alias ta='tmux attach -d'
 alias tmux-reload='tmux source-file ~/.tmux.conf';
 alias mon='tmuxp load site-monitor'        # Site Monitor Layout
 alias monk='tmux kill-session -t monitor'  # Exit Site Monitor Layout
@@ -130,6 +130,13 @@ function setdev() {
         DESIGNATOR='ha'
         SITE_NAME='HostingAdvice.com'
         cd $HA_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
+    'hr')
+        DESIGNATOR='hr'
+        SITE_NAME='HostingReport.com'
+        cd $HR_HOME_DIR
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
