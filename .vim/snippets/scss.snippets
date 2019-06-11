@@ -1,5 +1,263 @@
 extends css
 
+snippet /
+	/* ${1}
+	*****************************************************************************/
+	${0}
+snippet pr
+	position: relative;
+snippet pa
+	position: absolute;
+snippet d
+	display: ${1};
+snippet db
+	display: block;
+snippet dn
+	display: none;
+snippet di
+	display: inline;
+snippet dib
+	display: inline-block;
+snippet dt
+	display: table;
+snippet sz
+	@include size(${1:height}px, ${2:width}px);
+snippet sq
+	@include square(${1}px);${2}
+snippet ff
+	font-family: $${1:headingsFontFamily};${2}
+snippet fs
+	font-size: ${1}px;${2}
+snippet fw
+	font-weight: ${1:bold};
+snippet it
+	font-style: italic;
+snippet lh
+	line-height: ${1:1.3};
+snippet ls
+	letter-spacing: ${1};
+snippet ta
+	text-align: ${1:center};
+snippet td
+	text-decoration: ${1:underline};
+snippet tt
+	text-transform: ${1:uppercase};
+snippet m
+	margin: ${1};${2}
+snippet p
+	padding: ${1};${2}
+snippet w
+	width: ${1};
+snippet h
+	height: ${1};
+snippet c
+	color: $${1:gray};
+snippet border
+	border: ${1}px solid $${2};${3}
+snippet bol
+	border-left: ${1}px solid $${2};${3}
+snippet bor
+	border-right: ${1}px solid $${2};${3}
+snippet bob
+	border-bottom: ${1}px solid $${2};${3}
+snippet bot
+	border-top: ${1}px solid $${2};${3}
+snippet hov
+	&:hover {
+		${1}
+	} // &:hover
+snippet hover
+	&:hover {
+		${1}
+	} // &:hover
+snippet active
+	&:active {
+		${1}
+	} // &:active
+snippet focus
+	&:focus {
+		${1}
+	} // &:focus
+snippet bs
+	.box-shadow(${1});
+snippet br
+	.border-radius(${1:4px});
+snippet mih
+	min-height: ${1};${2}
+snippet mah
+	max-height: ${1};${2}
+snippet miw
+	min-width: ${1};${2}
+snippet maw
+	max-width: ${1};${2}
+snippet af
+	&:after {
+		${1}
+	} // &:after
+snippet bf
+	&:before {
+		${1}
+	} // &:before
+snippet before
+	&:before {
+		${1}
+	} // &:before
+snippet after
+	&:after {
+		${1}
+	} // &:after
+snippet lc
+	&:last-child {
+		${1}
+	} // &:last-child
+snippet fc
+	&:first-child {
+		${1}
+	} // &:first-child
+snippet img
+	img {
+		${1}
+	} // img
+snippet i
+	font-style: italic;
+snippet bff
+	font-family: $baseFontFamily;
+snippet hff
+	font-family: $headingsFontFamily;
+snippet aff
+	font-family: $altFontFamily;
+snippet sff
+	font-family: $serifFontFamily;
+snippet saff
+	font-family: $sansFontFamily;
+snippet bc
+	background-color: $${1:white};
+snippet bgi
+	background-image: url(${1});
+snippet center
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+snippet !
+	 !important
+snippet vh
+	visibility: hidden;
+snippet vv
+	visibility: visible;
+snippet oh
+	overflow: hidden;
+snippet arrow-up
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid $${1};
+snippet arrow-down
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid $${1};
+snippet arrow-right
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid $${1};
+snippet arrow-left
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid $${1};
+snippet tablet
+	/* Tablet Portrait
+	*****************************************************************************/
+	@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px)
+	and (orientation : portrait) {
+		${1}
+	} // tablet
+snippet mobile
+	/* Mobile
+	*****************************************************************************/
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 812px) {
+		${1}
+	}// mobile
+snippet iphone5
+	/* iPhone 5 Portrait
+	*****************************************************************************/
+	@media only screen
+	and (max-device-width : 320px)
+	and (orientation : portrait) {
+		${1}
+	} // iphone5
+snippet smallphone
+	/* Small Phone Portrait
+	*****************************************************************************/
+	@media only screen
+	and (max-device-width : 375px)
+	and (orientation : portrait) {
+		${1}
+	} // smallphone
+snippet smalltablet
+	/* Small Tablets
+	*****************************************************************************/
+	@media only screen
+	and (max-device-width : 767px)
+	and (orientation : portrait) {
+		${1}
+	} // @media
+snippet st
+	/* Small Tablets
+	*****************************************************************************/
+	@media only screen
+	and (max-device-width : 767px)
+	and (orientation : portrait) {
+		${1}
+	} // @media
+snippet portrait
+	/* Portrait
+	*****************************************************************************/
+	@media only screen
+	and (orientation : portrait) {
+		${1}
+	} // @media portrait
+snippet landscape
+	/* Landscape
+	*****************************************************************************/
+	@media only screen
+	and (orientation : landscape) {
+		${1}
+	} // @media landscape
+snippet cp
+	cursor: pointer;
 snippet $
 	$${1:variable}: ${0:value};
 snippet imp
