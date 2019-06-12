@@ -23,7 +23,7 @@ snippet dt
 snippet sz
 	@include size(${1:height}px, ${2:width}px);
 snippet sq
-	@include square(${1}px);${2}
+	@include square(${1}px);
 snippet ff
 	font-family: $${1:headingsFontFamily};${2}
 snippet fs
@@ -38,14 +38,32 @@ snippet ls
 	letter-spacing: ${1};
 snippet ta
 	text-align: ${1:center};
+snippet tw
+	text-wrap: ${1};
 snippet td
 	text-decoration: ${1:underline};
 snippet tt
 	text-transform: ${1:uppercase};
 snippet m
 	margin: ${1};${2}
+snippet mb
+	margin-bottom: ${1};
+snippet ml
+	margin-left: ${1};
+snippet mr
+	margin-right: ${1};
+snippet mt
+	margin-top: ${1};
 snippet p
 	padding: ${1};${2}
+snippet pb
+	padding-bottom: ${1};
+snippet pl
+	padding-left: ${1};
+snippet pt
+	padding-top: ${1};
+snippet op
+	opacity: ${1};
 snippet w
 	width: ${1};
 snippet h
@@ -149,6 +167,10 @@ snippet vv
 	visibility: visible;
 snippet oh
 	overflow: hidden;
+snippet lsp
+	list-style-position: ${1:inside}
+snippet lst
+	list-style-type: ${1:disc}
 snippet arrow-up
 	position: absolute;
 	top: 0;
@@ -300,3 +322,5 @@ snippet while
 	@while ${1:$i} ${2:>} ${3:0} {
 		${0}
 	}
+snippet z
+	z-index: ${1};
