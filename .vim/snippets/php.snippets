@@ -113,6 +113,16 @@ snippet lt
 	/* ${1}
 	*****************************************************************************/
 	include( locate_template( 'template-parts/${2}/${3}.php' ) );
+
+snippet locate_view
+	/* ${1}
+	*****************************************************************************/
+	include( locate_template( 'views/parts/${2}/${3}.php' ) );
+
+snippet lv
+	/* ${1}
+	*****************************************************************************/
+	include( locate_template( 'views/parts/${2}/${3}.php' ) );
 	
 snippet setup_query
 	$defaults = array(
@@ -1016,7 +1026,7 @@ snippet html
 	${1}
 	</html>
 snippet i
-	<i class="sprite ${1}">${2}</i>
+	<span class="icon ${1}">${2}</span>
 snippet iframe
 	<iframe src="${1}" frameborder="0"></iframe>${2}
 snippet iframe.

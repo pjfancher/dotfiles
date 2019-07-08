@@ -21,9 +21,9 @@ snippet dib
 snippet dt
 	display: table;
 snippet sz
-	@include size(${1:height}px, ${2:width}px);
+	@include size(${1:height}, ${2:width});
 snippet sq
-	@include square(${1}px);
+	@include square(${1});
 snippet ff
 	font-family: $${1:headingsFontFamily};${2}
 snippet fs
@@ -60,6 +60,8 @@ snippet pb
 	padding-bottom: ${1};
 snippet pl
 	padding-left: ${1};
+snippet par
+	padding-right: ${1};
 snippet pt
 	padding-top: ${1};
 snippet op
@@ -97,9 +99,9 @@ snippet focus
 		${1}
 	} // &:focus
 snippet bs
-	.box-shadow(${1});
+	box-shadow: ${1:horz} ${2:vert} ${3:blur} ${4:spread} ${5:color};
 snippet br
-	.border-radius(${1:4px});
+	border-radius: ${1:4px};
 snippet mih
 	min-height: ${1};${2}
 snippet mah
@@ -171,6 +173,10 @@ snippet lsp
 	list-style-position: ${1:inside}
 snippet lst
 	list-style-type: ${1:disc}
+snippet va
+	vertical-align: ${1};
+snippet vat
+	vertical-align: top;
 snippet arrow-up
 	position: absolute;
 	top: 0;
