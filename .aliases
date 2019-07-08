@@ -90,6 +90,7 @@ alias ni='git commit -m "New Images"';
 alias gl='git log --pretty=format:"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]" --decorate --date=relative --graph'
 alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" --decorate --numstat'
 alias gls='git log --date=short --pretty=format:"%C(124)%ad %C(24)%h %C(34)%an %C(252)%s%C(178)%d"'
+alias gitclean='git gc --prune=now --aggressive'
 
 # Get to the top of a git tree
 ##########################################
@@ -172,6 +173,7 @@ alias dsr="dstop && dremove" # Stop and remove all docker containers
 dstop() { docker stop $(docker ps -aq); } #Stop all docker containers
 dremove() { docker rm $(docker ps -a -q); } #Remove all docker containers
 dcc(){ docker-compose exec $1 bash } #Login into given Docker container
+alias dockerclean='docker system prune --all --volumes --force'
 
 
 # PROGRAMS
