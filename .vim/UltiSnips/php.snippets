@@ -60,7 +60,7 @@ snippet . "."
 </div><!-- end .$1 -->
 endsnippet
 
-snippet col "<div>"
+snippet col "col"
 <div class="col-$1">
 	$2
 </div><!-- end .col-$1 -->
@@ -68,4 +68,8 @@ endsnippet
 
 snippet span "<span>"
 <span class="$1">$2</span>
+endsnippet
+
+snippet img "<img>" 
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/public/images/$1" alt="$2" title="$2" />$3
 endsnippet
