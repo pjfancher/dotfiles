@@ -46,6 +46,7 @@ brew install mosh
 brew install wget
 brew install tmux
 brew install htop
+brew install bat
 brew install tig
 brew install ag
 brew install ncdu
