@@ -134,3 +134,5 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 # ~/.local/bin in PATH
 export PATH=~/.local/bin:$PATH
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

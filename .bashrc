@@ -109,3 +109,5 @@ stty -ixon
 export NVM_DIR="/home/pj/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 #nvm use iojs
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
