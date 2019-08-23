@@ -1,6 +1,5 @@
 snippet <?
-	<?php
-
+	<?php ${1}
 snippet php
 	<?php
 	${1}
@@ -136,7 +135,7 @@ snippet setup_query
 	return $query;
 
 snippet repeater
-	while( have_rows( '${1}' ) ) : the_row();
+	while ( have_rows( '${1}' ) ) : the_row();
 		echo get_sub_field( '${2}' );
 	endwhile;
 
@@ -187,9 +186,8 @@ snippet e
 	echo ${1};${2}
 snippet ob
 	ob_start();
-		include( locate_template( 'template-parts/${1}/${2}' ) );
-		$output = ob_get_contents();
-	ob_end_clean();
+	include( locate_template( 'template-parts/${1}/${2}' ) );
+	$output = ob_get_clean();
 snippet gsf
 	get_sub_field( '${1}' );
 snippet st
