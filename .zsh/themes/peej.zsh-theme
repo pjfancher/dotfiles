@@ -21,6 +21,7 @@ local dc='$BG[172]$FG[000]'
 local ha='$BG[130]$FG[255]'
 local gvs='$BG[237]$FG[038]'
 local dn='$BG[197]$FG[235]'
+local hr='$BG[15]$FG[20]'
 
 
 
@@ -38,6 +39,7 @@ case ${(%):-%M} in
     *dealcrunch* ) server_color=$dc;;
     *gainesvilleshows* ) server_color=$gvs;;
     *datingnews* ) server_color=$dn;;
+    *hostingreport* ) server_color=$hr;;
     *) server_color=$dev;;
 esac
 
