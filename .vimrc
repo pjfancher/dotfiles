@@ -328,6 +328,16 @@ function! SetTabs()
 	%retab!
 endfunction
 
+" Convert Tabs to JS style Tabs
+:command JT call SetJSTabs()
+function! SetJSTabs()
+	set list
+	set tabstop=2
+	set shiftwidth=2
+	set noexpandtab
+	%retab!
+endfunction
+
 " Remove Trailing Whitespace
 :command S call RemoveSpaces()
 function! RemoveSpaces()
@@ -337,15 +347,6 @@ endfunction
 
 " Set Tabs and Remove Spaces
 :command Format call SetTabs() | call RemoveSpaces()
-
-" Converts Tabs to JS style Spaces
-:command JST call SetJSTabs()
-function! SetJSTabs()
-	set tabstop=2
-	set shiftwidth=2
-	set expandtab
-	retab!
-endfunction
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
