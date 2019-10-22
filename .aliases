@@ -92,6 +92,12 @@ alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]" -
 alias gls='git log --date=short --pretty=format:"%C(124)%ad %C(24)%h %C(34)%an %C(252)%s%C(178)%d"'
 alias gitclean='git gc --prune=now --aggressive'
 
+
+# Python
+##########################################
+alias python='python3.8'
+alias py='python'
+
 # Get to the top of a git tree
 ##########################################
 cdg () {

@@ -382,6 +382,7 @@ au BufRead,BufNewFile *.vcl set ft=vcl syntax=vcl
 au BufRead,BufNewFile *.vim-plugins set ft=vim syntax=vim
 au BufRead,BufNewFile *.snippets set ft=snippets syntax=snippets
 au BufRead,BufNewFile *.php set tabstop=4
+au BufRead,BufNewFile *.py set filetype=python syntax=python tabstop=4
 
 " The following adds a potential replacement on 'p' (ASCII 112) in PHP files.
 " The carriage return will be replaced by the original text.
