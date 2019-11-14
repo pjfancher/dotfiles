@@ -30,6 +30,7 @@ packages=(
     tig
     ack-grep
     silversearcher-ag
+	bat
 )
 
 # Remove packages already installed from list
