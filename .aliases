@@ -154,6 +154,13 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
+    'da')
+        DESIGNATOR='da'
+        SITE_NAME='DatingAdvice.com'
+        cd $DA_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     'db')
         DESIGNATOR='bd'
         SITE_NAME='DigitalBrands.com'
@@ -198,20 +205,15 @@ alias rv='sudo service varnish reload'
 ##########################################
 USER='pj'
 DA='209.59.129.135'
-PR='166.78.123.101'
-COUPONS='166.78.136.18'
 BC='50.28.104.211'
 HA='69.16.249.15'
 HR='50.28.106.148'
 CR='64.91.229.108'
 DB='178.128.147.0'
-DC='104.239.165.198'
 DN='64.91.233.2'
 RM='64.91.241.174'
 
 alias da="mosh $USER@$DA"
-alias pr="mosh $USER@$PR"
-alias coupons="ssh $USER@$COUPONS"
 alias bc="mosh $USER@$BC"
 alias ha="mosh $USER@$HA"
 alias hr="mosh $USER@$HR"
