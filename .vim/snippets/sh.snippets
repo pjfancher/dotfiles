@@ -38,6 +38,17 @@ snippet go
 			${4:#staments};;
 		esac
 	done
+snippet prod
+	# Checks if $IS_PRODUCTION environmental variable is set and is true
+	if [ -v IS_PRODUCTION ] && [ $IS_PRODUCTION ]; then
+
+		# PRODUCTION ENVIRONMENT
+		${1}
+	else
+
+		# DEV ENVIRONMENT
+		${2}
+	fi
 # Set SCRIPT_DIR variable to directory script is located.
 snippet sdir
 	SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
