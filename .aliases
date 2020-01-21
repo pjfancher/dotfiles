@@ -185,7 +185,7 @@ alias dps="docker ps" #Docker process list
 alias dsr="dstop && dremove" # Stop and remove all docker containers
 dstop() { docker stop $(docker ps -aq); } #Stop all docker containers
 dremove() { docker rm $(docker ps -a -q); } #Remove all docker containers
-dcc(){ docker-compose exec $1 bash } #Login into given Docker container
+dcc(){ docker-compose exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" $1 bash } #Login into given Docker container
 alias dockerclean='docker system prune --all --volumes --force'
 
 
@@ -204,7 +204,7 @@ alias rv='sudo service varnish reload'
 # SITES
 ##########################################
 USER='pj'
-DA='209.59.129.135'
+DA='50.28.104.181'
 BC='50.28.104.211'
 HA='69.16.249.15'
 HR='50.28.106.148'
