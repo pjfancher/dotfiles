@@ -73,3 +73,30 @@ endsnippet
 snippet img "<img>" 
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/images/$1" alt="$2" title="$2" />$3
 endsnippet
+
+snippet cf "cf_the_img"
+<?php cf_the_img(['width' => $1, 'height' => $2, 'alt' => $3]); ?>
+endsnippet
+
+snippet cfp "cf_the_img with post id"
+<?php cf_the_img(['post' => $1, width' => $2, 'height' => $3, 'alt' => $4]); ?>
+endsnippet
+
+snippet cfi "cf_the_img with image attr"
+<?php cf_the_img(['image' => '$1', 'width' => $2, 'height' => $3, 'alt' => $4]); ?>
+endsnippet
+
+snippet cfe "cf_the_img with external image URL"
+<?php cf_the_img(['image' => $1, 'width' => $2, 'height' => $3, 'alt' => $4, 'use_public_dir' => false]); ?>
+endsnippet
+
+snippet cfa "cf_the_img with get_field"
+<?php cf_the_img(['attach' => get_field( '$1', '$2' ), 'width' => $3, 'height' => $4, 'alt' => $5]); ?>
+endsnippet
+
+snippet cfv "cf_the_img replacing get_avatar"
+<?php 
+$avatar_url = reset( get_user_meta($author->ID, 'simple_local_avatar', true)  );
+cf_the_img(['image' => $avatar_url, 'width' => $1, 'height' => $1, 'alt' => $author->display_name, 'use_public_dir' => false]);
+?>
+endsnippet
