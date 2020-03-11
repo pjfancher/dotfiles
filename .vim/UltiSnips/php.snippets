@@ -79,7 +79,7 @@ snippet cf "cf_the_img"
 endsnippet
 
 snippet cfp "cf_the_img with post id"
-<?php cf_the_img(['post' => $1, width' => $2, 'height' => $3, 'alt' => $4]); ?>
+<?php cf_the_img(['post' => $1, 'width' => $2, 'height' => $3, 'alt' => $4]); ?>
 endsnippet
 
 snippet cfi "cf_the_img with image attr"
@@ -96,7 +96,7 @@ endsnippet
 
 snippet cfv "cf_the_img replacing get_avatar"
 <?php 
-$avatar_url = reset( get_user_meta($author->ID, 'simple_local_avatar', true)  );
-cf_the_img(['image' => $avatar_url, 'width' => $1, 'height' => $1, 'alt' => $author->display_name, 'use_public_dir' => false]);
+$avatars = get_user_meta($author->ID, 'simple_local_avatar', true);
+cf_the_img(['image' => $avatars['full'], 'width' => $1, 'height' => $1, 'alt' => $author->display_name, 'use_public_dir' => false]);
 ?>
 endsnippet
