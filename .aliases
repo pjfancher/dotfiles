@@ -119,6 +119,27 @@ alias getscp=scpget
 ##########################################
 function setdev() {
     case "$1" in
+    'bc')
+        DESIGNATOR='bc'
+        SITE_NAME='BadCredit.org'
+        cd $BC_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
+    'da')
+        DESIGNATOR='da'
+        SITE_NAME='DatingAdvice.com'
+        cd $DA_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
+    'db')
+        DESIGNATOR='bd'
+        SITE_NAME='DigitalBrands.com'
+        cd $DB_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     'dn')
         DESIGNATOR='dn'
         SITE_NAME='DatingNews.com'
@@ -147,24 +168,10 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
-    'bc')
-        DESIGNATOR='bc'
-        SITE_NAME='BadCredit.org'
-        cd $BC_HOME_DIR
-        source site-aliases.sh
-        echo "Environment Set: $SITE_NAME"
-    ;;
-    'da')
-        DESIGNATOR='da'
-        SITE_NAME='DatingAdvice.com'
-        cd $DA_HOME_DIR
-        source site-aliases.sh
-        echo "Environment Set: $SITE_NAME"
-    ;;
-    'db')
-        DESIGNATOR='bd'
-        SITE_NAME='DigitalBrands.com'
-        cd $DB_HOME_DIR
+    'mt')
+        DESIGNATOR='mt'
+        SITE_NAME='MoneyTrends.com'
+        cd $MT_HOME_DIR
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
@@ -230,14 +237,12 @@ alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
 
 alias dev-docker="mosh $USER@165.227.183.22"
-alias dev-1204="mosh $USER@45.55.97.168"
 alias dev-1604="mosh $USER@104.236.238.33"
 
 alias careeners="ssh careeners@careeners.com"
 
 # PERMISSIONS
 ##########################################
-alias setdbdev='sudo find public_html/ -path "*/functions/scripts/*" -exec chown db-dev {} \; && sudo find public_html/ -path "*/functions/scripts/*" -exec chgrp db-dev {} \;'
 alias www-data='sudo chown -R www-data:www-data *';
 #alias db-admin='sudo chown -R db-admin:db-admin *';
 
@@ -253,8 +258,6 @@ alias bh="buildhtml"
 # WORDPRESS
 ##########################################
 alias w3tc="wp-cli plugin toggle w3-total-cache"
-alias ss="time monsoon && gplm && w3tc"
-#alias ss="time monsoon && gplm"
 
 # VARNISH
 ##########################################
