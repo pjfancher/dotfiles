@@ -73,9 +73,9 @@ brew cask install karabiner-elements
 
 # Dev
 ######################
-brew cask install virtualbox
-brew cask install blisk
-brew cask install postman
+# brew cask install virtualbox
+# brew cask install blisk
+# brew cask install postman
 brew cask install screaming-frog-seo-spider
 
 # Cleanup
