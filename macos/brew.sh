@@ -67,6 +67,7 @@ brew cask install google-chrome
 brew cask install firefox
 brew cask install iterm2
 brew cask install alfred
+brew cask install vlc
 brew cask install dropbox
 brew cask install itsycal
 brew cask install karabiner-elements
