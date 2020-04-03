@@ -67,15 +67,16 @@ brew cask install google-chrome
 brew cask install firefox
 brew cask install iterm2
 brew cask install alfred
+brew cask install vlc
 brew cask install dropbox
 brew cask install itsycal
 brew cask install karabiner-elements
 
 # Dev
 ######################
-brew cask install virtualbox
-brew cask install blisk
-brew cask install postman
+# brew cask install virtualbox
+# brew cask install blisk
+# brew cask install postman
 brew cask install screaming-frog-seo-spider
 
 # Cleanup
