@@ -46,6 +46,7 @@ packages=(
     tig
     ack-grep
     silversearcher-ag
+	renameutils
 )
 
 # Remove packages already installed from list
