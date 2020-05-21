@@ -40,7 +40,7 @@ snippet go
 	done
 snippet prod
 	# Checks if $IS_PRODUCTION environmental variable is set and is true
-	if [ -v IS_PRODUCTION ] && [ $IS_PRODUCTION ]; then
+	if [ "$IS_PRODUCTION" = true ]; then
 
 		# PRODUCTION ENVIRONMENT
 		${1}
