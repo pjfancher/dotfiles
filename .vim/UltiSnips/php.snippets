@@ -78,6 +78,16 @@ snippet img "<img>"
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/images/$1" alt="$2" title="$2" />$3
 endsnippet
 
+snippet ifset "if isset"
+if ( isset( $$1 ) && !empty( $$1 ) ) :
+	$2
+endif;
+endsnippet
+
+snippet tset "isset ternary"
+$$1 = isset( $$1 ) && !empty( $$1 ) ? $$1 : '';
+endsnippet
+
 snippet cf "cf_the_img"
 <?php cf_the_img(['width' => $1, 'height' => $2, 'alt' => $3]); ?>
 endsnippet

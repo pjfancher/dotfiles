@@ -38,6 +38,8 @@ snippet go
 			${4:#staments};;
 		esac
 	done
+snippet ifprod
+	if [ "$IS_PRODUCTION" = true ]; then
 snippet prod
 	# Checks if $IS_PRODUCTION environmental variable is set and is true
 	if [ "$IS_PRODUCTION" = true ]; then
