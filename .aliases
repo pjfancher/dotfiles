@@ -175,6 +175,13 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
+    '404')
+        DESIGNATOR='404'
+        SITE_NAME='404.center'
+        cd $FOF_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     esac
 }
 
