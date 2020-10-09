@@ -240,6 +240,7 @@ alias gvs="mosh $USER@$GVS"
 alias ha="mosh $USER@$HA"
 alias hr="mosh $USER@$HR"
 alias mt="mosh $USER@$MT"
+alias 404="mosh $USER@404.center"
 alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
 
