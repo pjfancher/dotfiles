@@ -12,6 +12,7 @@ print_in_purple "\n   Utilities\n   ------------------------------\n"
 # Define needed packages
 packages=(
     build-essential
+	nodejs
     npm
     sendmail
     libjpeg-progs
