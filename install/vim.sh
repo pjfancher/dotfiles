@@ -7,6 +7,7 @@ install_plugins() {
     # Install plugins.
     execute \
         "rm -rf '$VUNDLE_DIR' \
+		    && mkdir '$HOME'/.vim/undo/ \ 
             && git clone --quiet '$VUNDLE_GIT_REPO_URL' '$VUNDLE_DIR' \
             && printf '\n' | vim +PluginInstall +qall" \
         "Installing plugins" \
