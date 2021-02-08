@@ -9,6 +9,60 @@ snippet cb
 snippet /
 	/* ${1}
 	*****************************************************************************/
+
+snippet loaded
+	document.addEventListener("DOMContentLoaded", function() {
+	  ${1}
+	});
+
+snippet ready
+	document.addEventListener("DOMContentLoaded", function() {
+	  ${1}
+	});
+
+snippet qs
+	document.querySelector('${1}');
+
+snippet qsa
+	document.querySelectorAll('${1}')
+
+snippet qsc
+	document.querySelector('${1}').addEventListener('click', function() {
+	  ${2}
+	});
+
+snippet toarray
+	Array.prototype.slice.call(${1});
+
+snippet id
+	document.getElementById('${1}');
+	
+snippet fe
+	${1}.forEach(function(${2}) {
+	  ${3}
+	});
+
+snippet qfe
+	document.querySelectorAll('${1}').forEach(function(${2}) {
+	  ${3}
+	});
+
+snippet click
+	${1}.addEventListener('click', function() {
+	  ${2}
+	});
+
+snippet smooth
+	document.querySelector('${1}').scrollIntoView({
+		behavior: "smooth"
+	});${2}
+
+snippet fadeout
+	${1}.setAttribute('style', 'opacity:0; transition: opacity 0.5s ease;');	
+
+snippet fadein
+	${1}.setAttribute('style', 'opacity:1; transition: opacity 0.5s ease;');	
+
 snippet l
 	logger.info('${1}: ' + JSON.stringify(${2}));
 
