@@ -23,6 +23,7 @@ local gvs='$BG[237]$FG[038]'
 local dn='$BG[197]$FG[235]'
 local hr='$BG[015]$FG[021]'
 local mt='$BG[035]$FG[016]'
+local dr='$BG[015]$FG[039]'
 local fof='$BG[024]$FG[015]'
 
 
@@ -43,6 +44,7 @@ case ${(%):-%M} in
     *hostingreport* ) server_color=$hr;;
     *moneytrends* ) server_color=$mt;;
     *fourOhFour* ) server_color=$fof;;
+    *the-drizzle* ) server_color=$dr;;
     *) server_color=$dev;;
 esac
 

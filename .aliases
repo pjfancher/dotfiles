@@ -183,6 +183,13 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
+    'dr')
+        DESIGNATOR='dr'
+        SITE_NAME='thedrizzle.org'
+        cd $DR_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     esac
 }
 
@@ -229,6 +236,7 @@ HA='69.16.249.15'
 HR='50.28.106.148'
 MT='159.89.44.119'
 RM='64.91.241.174'
+DR='159.203.151.178'
 
 alias bc="mosh $USER@$BC"
 alias cr="mosh $USER@$CR"
@@ -241,6 +249,7 @@ alias gvs="mosh $USER@$GVS"
 alias ha="mosh $USER@$HA"
 alias hr="mosh $USER@$HR"
 alias mt="mosh $USER@$MT"
+alias dr="mosh $USER@$DR"
 alias 404="mosh $USER@404.center"
 alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
