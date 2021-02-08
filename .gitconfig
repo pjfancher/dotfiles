@@ -6,6 +6,6 @@
 	editor = vim
     hooksPath = "~/dotfiles/.git-hooks"
 [credential]
-	helper = cache --timeout=86400
+	helper = store
 [tig]
     tab-size = 4

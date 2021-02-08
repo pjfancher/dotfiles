@@ -87,3 +87,6 @@ Plugin 'majutsushi/tagbar'
 
 " ansi escape sequences concealed, but highlighted as specified (conceal) 
 Plugin 'powerman/vim-plugin-AnsiEsc'
+
+" EditorConfig Support
+Plugin 'editorconfig/editorconfig-vim'
