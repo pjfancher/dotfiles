@@ -412,13 +412,7 @@ call vundle#end()
 " NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto Open NERDTree when no file on command line
-function! StartUp()
- if 0 == argc()
-	 NERDTree
-	 call feedkeys("\<C-W>l:q\<Enter>","t")
- end
-endfunction
-au VimEnter * call StartUp()
+autocmd VimEnter * if argc() == 0 | NERDTree | call feedkeys("\<C-W>l:q\<Enter>","t")
 
 " Vimify NerdTree Tab Navigation
 " nmap <C-l> gt
