@@ -262,7 +262,7 @@ alias docs="mosh docentuser@db-docs.com"
 
 alias dev-docker="mosh $USER@165.227.183.22"
 alias dev1604="mosh $USER@104.236.238.33"
-alias dev20="mosh $USER@165.227.221.130"
+alias dev20="mosh $USER@159.89.190.15"
 
 alias careeners="ssh careeners@careeners.com"
 
