@@ -226,20 +226,25 @@ alias rv='sudo service varnish reload'
 # SITES
 ##########################################
 USER='pj'
-BC='50.28.104.211'
-CR='64.91.229.108'
-DA='50.28.104.181'
+BC='50.28.106.87'
+BC16='50.28.104.211'
+CR='67.43.9.201'
+CR16='64.91.229.108'
 DB='178.128.147.0'
-DN='64.91.233.2'
+DA='50.28.102.246'
+DN='67.43.9.46'
 GVS='107.170.2.251'
-HA='69.16.249.15'
-HR='50.28.106.148'
+HA='69.167.152.76'
+HR='50.28.103.17'
+HR16='50.28.106.148'
 MT='159.89.44.119'
 RM='64.91.241.174'
 DR='159.203.151.178'
 
 alias bc="mosh $USER@$BC"
+alias bc16="mosh $USER@$BC16"
 alias cr="mosh $USER@$CR"
+alias cr16="mosh $USER@$CR16"
 alias crp="mosh $USER@cardratespreview.com"
 alias da="mosh $USER@$DA"
 alias db="mosh $USER@$DB"
@@ -248,6 +253,7 @@ alias dn="mosh $USER@$DN"
 alias gvs="mosh $USER@$GVS"
 alias ha="mosh $USER@$HA"
 alias hr="mosh $USER@$HR"
+alias hr16="mosh $USER@$HR16"
 alias mt="mosh $USER@$MT"
 alias dr="mosh $USER@$DR"
 alias 404="mosh $USER@404.center"
@@ -255,7 +261,8 @@ alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
 
 alias dev-docker="mosh $USER@165.227.183.22"
-alias dev-1604="mosh $USER@104.236.238.33"
+alias dev1604="mosh $USER@104.236.238.33"
+alias dev20="mosh $USER@165.227.221.130"
 
 alias careeners="ssh careeners@careeners.com"
 
