@@ -260,8 +260,7 @@ alias 404="mosh $USER@404.center"
 alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
 
-alias dev-docker="mosh $USER@165.227.183.22"
-alias dev16="mosh $USER@104.236.238.33"
+alias dev16="mosh $USER@165.227.183.22"
 alias dev="mosh $USER@159.89.190.15"
 
 alias careeners="ssh careeners@careeners.com"
