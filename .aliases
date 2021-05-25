@@ -145,6 +145,7 @@ function setdev() {
         DESIGNATOR='dn'
         SITE_NAME='DatingNews.com'
         cd $DN_HOME_DIR
+        direnv allow
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
@@ -227,40 +228,37 @@ alias rv='sudo service varnish reload'
 ##########################################
 USER='pj'
 BC='50.28.106.87'
-BC16='50.28.104.211'
+BCPW='159.89.95.0'
 CR='67.43.9.201'
-CR16='64.91.229.108'
 DB='178.128.147.0'
-DA='50.28.102.246'
+DAold='50.28.102.246'
+DA='50.28.102.35'
 DN='67.43.9.46'
 GVS='107.170.2.251'
 HA='69.167.152.76'
 HR='50.28.103.17'
-HR16='50.28.106.148'
 MT='159.89.44.119'
 RM='64.91.241.174'
 DR='159.203.151.178'
 
 alias bc="mosh $USER@$BC"
-alias bc16="mosh $USER@$BC16"
+alias bcpw="mosh $USER@$BCPW"
 alias cr="mosh $USER@$CR"
-alias cr16="mosh $USER@$CR16"
 alias crp="mosh $USER@cardratespreview.com"
 alias da="mosh $USER@$DA"
+alias da-old="mosh $USER@$DA20old"
 alias db="mosh $USER@$DB"
 alias dc="mosh $USER@$DC"
 alias dn="mosh $USER@$DN"
 alias gvs="mosh $USER@$GVS"
 alias ha="mosh $USER@$HA"
 alias hr="mosh $USER@$HR"
-alias hr16="mosh $USER@$HR16"
 alias mt="mosh $USER@$MT"
 alias dr="mosh $USER@$DR"
 alias 404="mosh $USER@404.center"
 alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
 
-alias dev16="mosh $USER@165.227.183.22"
 alias dev="mosh $USER@159.89.190.15"
 
 alias careeners="ssh careeners@careeners.com"
@@ -294,7 +292,7 @@ alias less-downgrade='sudo npm install -g less@1.3.3'
 alias tial="tail";
 alias ctags-gen="ctags -R -f .git/tags ." #Generate ctags
 alias weather='curl http://wttr.in/32601'; #Show current weather
-alias getip="curl -s icanhazip.com" #Show IP Address
+alias getip="curl ifconfig.co" #Show IP Address
 alias ipget='getip'
 alias color="{spectrum_ls && spectrum_bls} | less" #All colors
 alias color-fg="spectrum_ls | less" #Foregroud colors
