@@ -136,3 +136,7 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 export PATH=~/.local/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# direnv zsh hook
+# https://github.com/direnv/direnv
+eval "$(direnv hook zsh)"
