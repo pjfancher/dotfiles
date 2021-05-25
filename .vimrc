@@ -201,6 +201,11 @@ imap <LocalLeader>r <Esc>gTi
 nmap <LocalLeader>r gT
 vmap <LocalLeader>r gT
 
+" Replace Leading Spaces with Leading Tabs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <Leader>t V:s/^\s*/\t/<CR>
+vmap <Leader>t :s/^\s*/\t/<CR>
+
 
 " Insert Mode LocalLeader Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -307,7 +312,7 @@ set history=1000
 
 " Persistent UNDO
 set undofile				" Save undo's after file closes
-set undodir=~/.vim/undodir	" where to save undo histories
+set undodir=~/.vim/undo	    " where to save undo histories
 set undolevels=1000			" How many undos
 set undoreload=10000		" number of lines to save for undo
 
@@ -565,11 +570,6 @@ nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gpm :!git push origin master<CR>
 nmap <Leader>gplm :!git pull origin master<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Tagbar
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <Leader>t :TagbarOpenAutoClose<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim Polygot
