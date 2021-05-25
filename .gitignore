@@ -1,7 +1,7 @@
 # VIM
 .vim/viminfo
 .vim/swaps/*
-.vim/undodir
+.vim/undo/*
 .vim/sessions
 .vim/bundle
 .vim/view
