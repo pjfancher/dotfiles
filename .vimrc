@@ -92,6 +92,13 @@ let &t_Co=256
 set t_Co=256
 
 
+" NEOVIM
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has('nvim')
+  set inccommand=split
+endif
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MAPPINGS
 " cmap handles command-line mappings
