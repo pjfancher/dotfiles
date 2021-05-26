@@ -116,6 +116,7 @@ scpget () {
 }
 alias getscp=scpget
 
+
 # Set Dev Function
 ##########################################
 function setdev() {
@@ -195,6 +196,21 @@ function setdev() {
 }
 
 alias sd=setdev
+
+
+# VIM
+##########################################
+
+# Use Neovim if installed. Else use vim
+##########################################
+getvim () {
+  if hash nvim >/dev/null 2>&1; then
+    nvim
+  else
+    vim
+  fi
+}
+alias vim=getvim
 
 
 # DOCKER
