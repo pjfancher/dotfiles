@@ -36,6 +36,7 @@ packages=(
     imagemagick
     finger
     vim-nox
+	neovim
     ctags
     tmux
     htop
