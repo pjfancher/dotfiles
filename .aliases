@@ -203,14 +203,14 @@ alias sd=setdev
 
 # Use Neovim if installed. Else use vim
 ##########################################
-getvim () {
-  if hash nvim >/dev/null 2>&1; then
-    nvim
-  else
-    vim
-  fi
-}
-alias vim=getvim
+#getvim () {
+  #if hash nvim >/dev/null 2>&1; then
+    #nvim
+  #else
+    #vim
+  #fi
+#}
+#alias vim=getvim
 
 
 # DOCKER
@@ -247,7 +247,7 @@ BC='50.28.106.87'
 BCPW='159.89.95.0'
 CR='67.43.9.201'
 DB='178.128.147.0'
-DAold='50.28.102.246'
+DB20='64.225.57.167'
 DA='50.28.102.35'
 DN='67.43.9.46'
 GVS='107.170.2.251'
@@ -264,6 +264,7 @@ alias crp="mosh $USER@cardratespreview.com"
 alias da="mosh $USER@$DA"
 alias da-old="mosh $USER@$DA20old"
 alias db="mosh $USER@$DB"
+alias db20="mosh $USER@$DB20"
 alias dc="mosh $USER@$DC"
 alias dn="mosh $USER@$DN"
 alias gvs="mosh $USER@$GVS"
