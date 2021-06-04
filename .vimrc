@@ -91,6 +91,11 @@ set encoding=utf8
 let &t_Co=256
 set t_Co=256
 
+" Matches 2 or more consecutive uppercase letters and gives them the 'Keyword' highlight group 
+" Specifically trying to target environment variables
+" List of highlight groups available: :highlight
+match Keyword /[A-Z]\{2,\}/
+
 
 " NEOVIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
