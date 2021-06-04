@@ -146,7 +146,6 @@ function setdev() {
         DESIGNATOR='dn'
         SITE_NAME='DatingNews.com'
         cd $DN_HOME_DIR
-        direnv allow
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
@@ -246,8 +245,8 @@ USER='pj'
 BC='50.28.106.87'
 BCPW='159.89.95.0'
 CR='67.43.9.201'
-DB='178.128.147.0'
-DB20='64.225.57.167'
+DBold='178.128.147.0'
+DB='64.225.57.167'
 DA='50.28.102.35'
 DN='67.43.9.46'
 GVS='107.170.2.251'
@@ -262,9 +261,8 @@ alias bcpw="mosh $USER@$BCPW"
 alias cr="mosh $USER@$CR"
 alias crp="mosh $USER@cardratespreview.com"
 alias da="mosh $USER@$DA"
-alias da-old="mosh $USER@$DA20old"
+alias db-old="mosh $USER@$DBold"
 alias db="mosh $USER@$DB"
-alias db20="mosh $USER@$DB20"
 alias dc="mosh $USER@$DC"
 alias dn="mosh $USER@$DN"
 alias gvs="mosh $USER@$GVS"
