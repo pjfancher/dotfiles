@@ -11,3 +11,6 @@
 
 # NPM
 npm-debug.log
+
+# Mac
+.DS_Store
