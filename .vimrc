@@ -94,7 +94,13 @@ set t_Co=256
 " Matches 2 or more consecutive uppercase letters and gives them the 'Keyword' highlight group 
 " Specifically trying to target environment variables
 " List of highlight groups available: :highlight
-match Keyword /[A-Z]\{2,\}/
+fun! SetHighlights()
+  syn match envVars /[A-Z]\{2,\}/
+  hi envVars ctermfg=111 guifg=#88b8f6
+endfu
+
+autocmd bufenter * :call SetHighlights()
+autocmd filetype * :call SetHighlights()
 
 
 " NEOVIM

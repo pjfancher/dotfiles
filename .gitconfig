@@ -4,8 +4,8 @@
 [core]
 	mergeoptions = --no-edit
 	editor = vim
-    hooksPath = "~/dotfiles/.git-hooks"
+	hooksPath = "~/dotfiles/.git-hooks"
 [credential]
 	helper = store
 [tig]
-    tab-size = 4
+	tab-size = 4
