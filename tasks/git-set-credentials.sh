@@ -17,11 +17,6 @@ if [ -f $PROFILE ]; then
   printf "Found and sourced: ${PROFILE}\n"
 fi
 
-# Define Credential Store Method for Git
-#*****************************************************************************
-printf "Setting .git/config to cache credentials on disk at ~/.git-credentials\n\n"
-git config credential.helper "store --file ~/.git-credentials"
-
 #*****************************************************************************
 # Check the needed ENV vars
 #*****************************************************************************
@@ -46,9 +41,15 @@ fi
 # Try to generate the ~/.git-credentials file
 #*****************************************************************************
 if [ -z "$GIT_USER" ] || [ -z "$GIT_PASS" ]; then
-  printf "\nERROR: Could not generate ~/.git-credentials file\nCheck your \$GIT_USER and \$GIT_PASS Environment variables.\n\n";
+  printf "\nERROR: Could not generate ${GC} file\nCheck your \$GIT_USER and \$GIT_PASS Environment variables.\n\n";
   exit 1
 else
-  printf "https://${GIT_USER}:${GIT_PASS}@github.com" > ~/.git-credentials
-  printf "Git Credentials stored in: ~/.git-credentials\n"
+  # Define Credential Store Method for Git
+  #*****************************************************************************
+  GC=~/.git-${GIT_USER}-credentials
+  printf "Setting .git/config to cache credentials on disk at ${GC}\n\n"
+  git config credential.helper "store --file ${GC}"
+
+  printf "https://${GIT_USER}:${GIT_PASS}@github.com" > ${GC}
+  printf "Git Credentials stored in: ${GC}\n"
 fi
