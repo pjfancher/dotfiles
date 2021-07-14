@@ -11,3 +11,6 @@
 
 # NPM
 npm-debug.log
+
+# Local .profile
+.profile
