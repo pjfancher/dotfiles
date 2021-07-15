@@ -55,6 +55,7 @@ else
   # Define Credential Store Method for Git
   #*****************************************************************************
   printf "Setting .git/config to cache credentials on disk at ${GC}\n\n"
+  git config --global --unset credential.helper
   git config credential.helper "store --file ${GC}"
 
   printf "https://${GIT_USER}:${GIT_PASS}@github.com" > ${GC}
