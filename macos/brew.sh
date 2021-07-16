@@ -51,6 +51,7 @@ brew install tig
 brew install ag
 brew install ncdu
 brew install dtrx
+brew install direnv
 
 # Casks
 ##############################################################################
