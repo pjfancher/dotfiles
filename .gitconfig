@@ -7,5 +7,3 @@
 	hooksPath = "~/dotfiles/.git-hooks"
 [tig]
 	tab-size = 4
-[credential]
-	helper = store --file ~/.git-credentials
