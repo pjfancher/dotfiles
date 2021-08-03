@@ -231,6 +231,7 @@ alias dockerclean='docker system prune --all --volumes --force'
 ##########################################
 alias monsoon='php ~/monsoon-php/monsoon.php'
 alias ack="ack-grep"
+alias bat="batcat"
 alias serve="python -m SimpleHTTPServer"
 
 # SERVICES
@@ -249,7 +250,7 @@ DBold='178.128.147.0'
 DB='64.225.57.167'
 DA='50.28.102.35'
 DN='67.43.9.46'
-GVS='107.170.2.251'
+GVS='142.93.10.78'
 HA='69.167.152.76'
 HR='50.28.103.17'
 MT='159.89.44.119'

@@ -76,42 +76,14 @@ snippet /
 	# ${1}
 	#*****************************************************************************
 	${2}
-snippet getopt
-	__ScriptVersion="${1:version}"
 
-	#===  FUNCTION  ================================================================
-	#         NAME:  usage
-	#  DESCRIPTION:  Display usage information.
-	#===============================================================================
-	function usage ()
-	{
-			cat <<- EOT
-
-	  Usage :  $${0:0} [options] [--] 
-
-	  Options: 
-	  -h|help       Display this message
-	  -v|version    Display script version
-
-			EOT
-	}    # ----------  end of function usage  ----------
-
-	#-----------------------------------------------------------------------
-	#  Handle command line arguments
-	#-----------------------------------------------------------------------
-
-	while getopts ":hv" opt
-	do
-	  case $opt in
-
-		h|help     )  usage; exit 0   ;;
-
-		v|version  )  echo "$${0:0} -- Version $__ScriptVersion"; exit 0   ;;
-
-		\? )  echo -e "\n  Option does not exist : $OPTARG\n"
-			  usage; exit 1   ;;
-
-	  esac    # --- end of case ---
+snippet foreach
+	for ${1:ARG} in "${${2:ARGS}[@]}"; do
+		${3}
 	done
-	shift $(($OPTIND-1))
 
+snippet array
+	${1:VAR}=('${2}' '${3}' '${4}')	
+
+snippet pf
+	printf "${1}\n"${2}

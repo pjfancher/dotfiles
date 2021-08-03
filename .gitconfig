@@ -1,9 +1,9 @@
-[user]
-	name = PJ Fancher
-	email = peejfancher@gmail.com
 [core]
 	mergeoptions = --no-edit
 	editor = vim
 	hooksPath = "~/dotfiles/.git-hooks"
 [tig]
 	tab-size = 4
+[user]
+	email = pj@digitalbrands.com
+	name = PJ Fancher
