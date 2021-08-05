@@ -316,6 +316,7 @@ alias color-bg="spectrum_bls | less" #Background colors
 alias perm="stat --format '%a' $1" #Show file permision numbers
 alias ubuntu="lsb_release -a" #Show Ubuntu version
 alias lts="lsb_release -a" #Show Ubuntu version
+alias network="tcpdump -i en0" #Show network traffic
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
