@@ -11,20 +11,18 @@ local git_branch='$(git_prompt_info)$(git_prompt_status)'
 ########################################
 local server_color=''
 local dev='$FG[065]'
-local db='$BG[202]$FG[000]'
-local da='$BG[175]$FG[233]'
-local pr='$BG[237]$FG[206]'
-local cd='$BG[018]$FG[245]'
 local bc='$BG[064]$FG[255]'
 local cr='$BG[060]$FG[253]'
-local dc='$BG[172]$FG[000]'
-local ha='$BG[130]$FG[255]'
-local gvs='$BG[237]$FG[038]'
+local da='$BG[175]$FG[233]'
+local db='$BG[202]$FG[000]'
 local dn='$BG[197]$FG[235]'
-local hr='$BG[015]$FG[021]'
-local mt='$BG[035]$FG[016]'
 local dr='$BG[015]$FG[039]'
 local fof='$BG[024]$FG[015]'
+local gvs='$BG[237]$FG[038]'
+local ha='$BG[130]$FG[255]'
+local hr='$BG[015]$FG[021]'
+local mt='$BG[035]$FG[016]'
+local sf='$BG[034]$FG[015]'
 
 
 ########################################
@@ -43,6 +41,7 @@ case ${(%):-%M} in
     *datingnews* ) server_color=$dn;;
     *hostingreport* ) server_color=$hr;;
     *moneytrends* ) server_color=$mt;;
+    *analytics-tools* ) server_color=$sf;;
     *fourOhFour* ) server_color=$fof;;
     *the-drizzle* ) server_color=$dr;;
     *) server_color=$dev;;
