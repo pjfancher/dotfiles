@@ -256,6 +256,7 @@ HR='50.28.103.17'
 MT='159.89.44.119'
 RM='64.91.241.174'
 DR='159.203.151.178'
+PJDEV='159.65.174.63'
 
 alias bc="mosh $USER@$BC"
 alias bcpw="mosh $USER@$BCPW"
@@ -276,8 +277,9 @@ alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
 
 alias dev="mosh $USER@159.89.190.15"
+alias pjdev="mosh $USER@$PJDEV"
 
-alias careeners="ssh careeners@careeners.com"
+alias careeners="ssh careeners@162.243.28.35"
 
 # PERMISSIONS
 ##########################################
@@ -301,6 +303,17 @@ alias w3tc="wp-cli plugin toggle w3-total-cache"
 ##########################################
 alias purge='curl -X PURGE $1';
 
+
+# Cloudflare
+##########################################
+alias cf-tunnel="cloudflared tunnel --url http://localhost:3000"
+
+
+# Home
+##########################################
+alias nas="ssh pj@192.168.86.49"
+
+#
 # MISC
 ##########################################
 alias less-upgrade='sudo npm install -g less@1.7.4'
