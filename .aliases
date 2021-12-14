@@ -191,6 +191,13 @@ function setdev() {
         source site-aliases.sh
         echo "Environment Set: $SITE_NAME"
     ;;
+    'sf')
+        DESIGNATOR='sf'
+        SITE_NAME='ScreamingFrog'
+        cd $SF_HOME_DIR
+        source site-aliases.sh
+        echo "Environment Set: $SITE_NAME"
+    ;;
     esac
 }
 
@@ -244,34 +251,40 @@ alias rv='sudo service varnish reload'
 ##########################################
 USER='pj'
 BC='50.28.106.87'
-BCPW='159.89.95.0'
 CR='67.43.9.201'
-DBold='178.128.147.0'
-DB='64.225.57.167'
 DA='50.28.102.35'
+DB='64.225.57.167'
 DN='67.43.9.46'
+DR='159.203.151.178'
 GVS='142.93.10.78'
 HA='69.167.152.76'
 HR='50.28.103.17'
 MT='159.89.44.119'
 RM='64.91.241.174'
+SF='142.93.113.123'
 DR='159.203.151.178'
 PJDEV='159.65.174.63'
 
+PWBC='159.89.95.0'
+PWHA='67.205.147.53'
+PWDA='157.230.219.87'
+alias pwbc="mosh $USER@$PWBC"
+alias pwha="mosh $USER@$PWHA"
+alias pwda="mosh $USER@$PWDA"
+
 alias bc="mosh $USER@$BC"
-alias bcpw="mosh $USER@$BCPW"
 alias cr="mosh $USER@$CR"
 alias crp="mosh $USER@cardratespreview.com"
 alias da="mosh $USER@$DA"
-alias db-old="mosh $USER@$DBold"
 alias db="mosh $USER@$DB"
 alias dc="mosh $USER@$DC"
 alias dn="mosh $USER@$DN"
+alias dr="mosh $USER@$DR"
 alias gvs="mosh $USER@$GVS"
 alias ha="mosh $USER@$HA"
 alias hr="mosh $USER@$HR"
 alias mt="mosh $USER@$MT"
-alias dr="mosh $USER@$DR"
+alias sf="mosh $USER@$SF"
 alias 404="mosh $USER@404.center"
 alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
