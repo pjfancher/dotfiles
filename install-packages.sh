@@ -7,9 +7,7 @@ ask_for_sudo
 
 # Load Scripts
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-  && . "install/packages/lamp.sh" \
-  && . "install/packages/pip.sh" \
-  && . "install/packages/npm.sh" \
+  && . "install/packages/ubuntu.sh" \
   && cd $HOME
 
 #Complete
