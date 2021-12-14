@@ -28,6 +28,7 @@ TOOLS=(
     'npm'
     'certbot'
     'python3-certbot-dns-cloudflare'
+    'direnv'
 
     # Helpful tools; not required
     'dtrx'
