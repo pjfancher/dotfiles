@@ -10,6 +10,12 @@ snippet /
 	/* ${1}
 	*****************************************************************************/
 
+snippet d
+	console.log(JSON.stringify(${1}, null, 2) )
+
+snippet pd
+	<pre>{JSON.stringify(${1}, null, 2)}</pre>
+
 snippet loaded
 	document.addEventListener("DOMContentLoaded", function() {
 	  ${1}
@@ -36,7 +42,7 @@ snippet toarray
 
 snippet id
 	document.getElementById('${1}');
-	
+
 snippet fe
 	${1}.forEach(function(${2}) {
 	  ${3}
@@ -58,11 +64,16 @@ snippet smooth
 	});${2}
 
 snippet fadeout
-	${1}.setAttribute('style', 'opacity:0; transition: opacity 0.5s ease;');	
+	${1}.setAttribute('style', 'opacity:0; transition: opacity 0.5s ease;');
 
 snippet fadein
-	${1}.setAttribute('style', 'opacity:1; transition: opacity 0.5s ease;');	
+	${1}.setAttribute('style', 'opacity:1; transition: opacity 0.5s ease;');
 
+
+snippet fof
+	for (const ${1} of ${2}) {
+
+	}
 snippet l
 	logger.info('${1}: ' + JSON.stringify(${2}));
 
@@ -211,7 +222,7 @@ snippet sing
 		$1 = function $1($2) {
 			return instance;
 		};
-		
+
 		// carry over the prototype properties
 		$1.prototype = this;
 
