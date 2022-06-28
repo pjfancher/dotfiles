@@ -101,6 +101,8 @@ snippet i
 	font-style: italic;
 snippet bff
 	font-family: @baseFontFamily;
+snippet bfb
+	font-family: @baseFontBold;
 snippet hff
 	font-family: @headingsFontFamily;
 snippet aff
@@ -116,6 +118,12 @@ snippet center
 	left: 0;
 	bottom: 0;
 	right: 0;
+
+snippet firefox
+	// Target Firefox 
+	@-moz-document url-prefix() { 
+		${1}
+	} // @-moz-document
 snippet flexcenter
 	display: flex;
 	align-items: center;

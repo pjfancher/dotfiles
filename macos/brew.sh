@@ -69,15 +69,19 @@ brew cask install firefox
 brew cask install iterm2
 brew cask install alfred
 brew cask install vlc
-brew cask install dropbox
 brew cask install itsycal
 brew cask install karabiner-elements
+brew cask install rectangle
+brew cask install 1password
+brew cask install cyberduck
+brew cask install nordvpn
+
 
 # Dev
 ######################
-# brew cask install virtualbox
-# brew cask install blisk
-# brew cask install postman
+
+brew cask install postman
+brew cask install visual-studio-code
 brew cask install screaming-frog-seo-spider
 
 # Cleanup

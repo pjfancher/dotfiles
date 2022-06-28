@@ -5,5 +5,16 @@
 [tig]
 	tab-size = 4
 [user]
-	email = pj@digitalbrands.com
+	email = peejfancher@gmail.com
 	name = PJ Fancher
+[safe]
+	directory = /home/cardrates
+	directory = /home/datingadvice
+	directory = /home/hostingreport
+	directory = /home/moneytrends
+	directory = /home/digitalbrands
+	directory = /home/badcredit
+	directory = /home/datingnews
+	directory = /home/hostingadvice
+	directory = /home/screamingfrog
+	directory = /home/hostingadvice/warmer
