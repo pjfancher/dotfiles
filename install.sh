@@ -9,6 +9,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
   && . "install/zsh.sh" \
   && . "install/vim.sh" \
   && cd $HOME
+  
+printf "\nChange Shell:\n"
+chsh -s $(which zsh)
 
 #Complete
 print_in_purple "\n\n   Environment Setup Complete! Enjoy!\n\n"
