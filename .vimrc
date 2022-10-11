@@ -469,7 +469,7 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
 endfunction
 
 " NERDTree Filetype Colors
-call NERDTreeHighlightFile('lock', 'white', '196', 'white', 'red')
+call NERDTreeHighlightFile('lock', '124', 'none', '124', 'none')
 call NERDTreeHighlightFile('php', '153', 'none', '153', 'none')
 call NERDTreeHighlightFile('html', '151', 'none', '151', 'none')
 call NERDTreeHighlightFile('css', '157', 'none', '222', 'none')

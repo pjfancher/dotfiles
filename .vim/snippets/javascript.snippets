@@ -44,9 +44,9 @@ snippet id
 	document.getElementById('${1}');
 
 snippet fe
-	${1}.forEach(function(${2}) {
-	  ${3}
-	});
+	Object.entries(${1}).forEach(([key, value]) => {
+	  ${2}
+	})
 
 snippet qfe
 	document.querySelectorAll('${1}').forEach(function(${2}) {
