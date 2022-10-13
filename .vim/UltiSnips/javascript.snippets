@@ -1,5 +1,11 @@
 snippet for "for"
 for (var i=0; i < $1.length; i++) {
-	var $2 = $1[i]; 
+	var $2 = $1[i];
 };
+endsnippet
+
+snippet map "map"
+$1.map((${2:value}, ${3:key}) => (
+  $4
+))
 endsnippet
