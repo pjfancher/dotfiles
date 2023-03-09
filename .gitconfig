@@ -5,7 +5,7 @@
 [tig]
 	tab-size = 4
 [user]
-	email = peejfancher@gmail.com
+	email = pj@digitalbrands.com
 	name = PJ Fancher
 [safe]
 	directory = /home/cardrates
@@ -18,3 +18,22 @@
 	directory = /home/hostingadvice
 	directory = /home/screamingfrog
 	directory = /home/hostingadvice/warmer
+	directory = /home/warmer
+	directory = /home/digitalbr
+	directory = /home/digitalbrands/warmer
+	directory = /home/datingadvice/warmer
+	directory = /home/datingnews/warmer
+	directory = /home/badcredit/warmer
+	directory = /home/cardrates/warmer
+	directory = /home/hostingreport/warmer
+	directory = /mnt/pj_storage_100gb/datingnews
+	directory = /mnt/pj_storage_100gb/badcredit
+	directory = /mnt/pj_storage_100gb/cardrates
+	directory = /mnt/pj_storage_100gb/datingadvice
+	directory = /mnt/pj_storage_100gb/digitalbrands
+	directory = /mnt/pj_storage_100gb/hostingadvice
+	directory = /mnt/pj_storage_100gb/hostingreport
+	directory = /mnt/pj_storage_100gb/hostingadvice/warmer
+	directory = /mnt/pj_storage_100gb/badcredit/warmer
+	directory = /mnt/pj_storage_100gb/datingnews/warmer
+	directory = /mnt/pj_storage_100gb/datingadvice/warmer
