@@ -112,7 +112,7 @@ cdg () {
 # Gets the scp path for a file
 ##########################################
 scpget () {
-  { echo $(getip); echo ":"; echo $(readlink -f $1); } | tr -d "\n"
+  { echo $(getip); echo ":"; echo $(readlink -f $1); } | sed ':a;N;$!ba;s/\n//g'
 }
 alias getscp=scpget
 
@@ -232,6 +232,7 @@ dstop() { docker stop $(docker ps -aq); } #Stop all docker containers
 dremove() { docker rm $(docker ps -a -q); } #Remove all docker containers
 dcc(){ docker-compose exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" $1 bash } #Login into given Docker container
 alias dockerclean='docker system prune --all --volumes --force'
+alias dri="docker rmi $(docker images -a -q)" # Remove cached images
 
 
 # PROGRAMS
