@@ -96,7 +96,7 @@ alias gitclean='git gc --prune=now --aggressive'
 
 # Python
 ##########################################
-alias python='python3.8'
+alias python='python3'
 alias py='python'
 
 # Get to the top of a git tree
@@ -292,7 +292,8 @@ alias docs="mosh docentuser@db-docs.com"
 alias dev="mosh $USER@159.89.190.15"
 alias pjdev="mosh $USER@$PJDEV"
 
-alias careeners="ssh careeners@162.243.28.35"
+#alias careeners="ssh careeners@162.243.28.35"
+alias careeners="ssh pj@104.248.232.138"
 
 # PERMISSIONS
 ##########################################

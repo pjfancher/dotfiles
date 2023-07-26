@@ -141,3 +141,6 @@ export PATH=~/.local/bin:$PATH
 # https://github.com/direnv/direnv
 eval "$(direnv hook zsh)"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Github co-pilot CLI
+eval "$(github-copilot-cli alias -- "$0")"

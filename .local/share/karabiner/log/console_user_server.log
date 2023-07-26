@@ -1,0 +1,397 @@
+[2022-08-02 13:38:35.949] [info] [console_user_server] version 14.4.0
+[2022-08-02 13:38:43.679] [info] [console_user_server] grabber_client is started.
+[2022-08-02 13:38:43.697] [info] [console_user_server] grabber_client is connected.
+[2022-08-02 13:38:44.111] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-08-02 13:38:44.112] [info] [console_user_server] core_configuration is updated.
+[2022-08-02 13:38:44.129] [info] [console_user_server] Check for updates...
+[2022-08-08 09:15:17.313] [info] [console_user_server] version 14.4.0
+[2022-08-08 09:15:27.111] [info] [console_user_server] grabber_client is started.
+[2022-08-08 09:15:27.113] [info] [console_user_server] grabber_client is connected.
+[2022-08-08 09:15:27.399] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-08-08 09:15:27.434] [info] [console_user_server] core_configuration is updated.
+[2022-08-08 09:15:27.453] [info] [console_user_server] Check for updates...
+[2022-08-25 07:01:04.079] [info] [console_user_server] version 14.4.0
+[2022-08-25 07:01:13.993] [info] [console_user_server] grabber_client is started.
+[2022-08-25 07:01:13.995] [info] [console_user_server] grabber_client is connected.
+[2022-08-25 07:01:14.277] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-08-25 07:01:14.279] [info] [console_user_server] core_configuration is updated.
+[2022-08-25 07:01:14.292] [info] [console_user_server] Check for updates...
+[2022-09-14 11:07:04.802] [info] [console_user_server] version 14.4.0
+[2022-09-14 11:07:10.402] [info] [console_user_server] grabber_client is started.
+[2022-09-14 11:07:10.403] [info] [console_user_server] grabber_client is connected.
+[2022-09-14 11:07:10.645] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-09-14 11:07:10.684] [info] [console_user_server] core_configuration is updated.
+[2022-09-14 11:07:10.708] [info] [console_user_server] Check for updates...
+[2022-09-14 11:07:32.000] [error] [console_user_server] grabber_client error: Connection reset by peer
+[2022-09-14 11:07:32.000] [info] [console_user_server] grabber_client is closed.
+[2022-09-14 11:07:32.585] [info] [console_user_server] version 14.9.0
+[2022-09-14 11:07:32.747] [info] [console_user_server] on_console_changed: on_console:true
+[2022-09-14 11:07:32.749] [info] [console_user_server] grabber_client is started.
+[2022-09-14 11:07:32.749] [error] [console_user_server] grabber_client connect_failed: Connection refused
+[2022-09-14 11:07:33.898] [info] [console_user_server] grabber_client is connected.
+[2022-09-14 11:07:34.095] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-09-14 11:07:34.097] [info] [console_user_server] core_configuration is updated.
+[2022-09-14 11:08:04.156] [info] [console_user_server] Check for updates...
+[2022-09-17 22:41:29.081] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-09-17 22:41:29.163] [info] [console_user_server] grabber_client is stopped.
+[2022-09-17 22:41:29.175] [info] [console_user_server] grabber_client is started.
+[2022-09-17 22:41:29.176] [info] [console_user_server] grabber_client is connected.
+[2022-09-17 22:41:29.402] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-09-17 22:41:29.406] [info] [console_user_server] core_configuration is updated.
+[2022-09-17 22:41:59.503] [info] [console_user_server] Check for updates...
+[2022-09-21 15:27:21.325] [info] [console_user_server] version 14.9.0
+[2022-09-21 15:27:27.061] [info] [console_user_server] on_console_changed: on_console:true
+[2022-09-21 15:27:27.063] [info] [console_user_server] grabber_client is started.
+[2022-09-21 15:27:27.063] [info] [console_user_server] grabber_client is connected.
+[2022-09-21 15:27:27.270] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-09-21 15:27:27.296] [info] [console_user_server] core_configuration is updated.
+[2022-09-21 15:27:57.324] [info] [console_user_server] Check for updates...
+[2022-09-25 18:32:20.423] [info] [console_user_server] version 14.9.0
+[2022-09-25 18:32:29.853] [info] [console_user_server] on_console_changed: on_console:true
+[2022-09-25 18:32:29.855] [info] [console_user_server] grabber_client is started.
+[2022-09-25 18:32:29.856] [info] [console_user_server] grabber_client is connected.
+[2022-09-25 18:32:30.068] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-09-25 18:32:30.106] [info] [console_user_server] core_configuration is updated.
+[2022-09-25 18:33:00.168] [info] [console_user_server] Check for updates...
+[2022-09-25 18:44:55.194] [info] [console_user_server] version 14.10.0
+[2022-09-25 18:44:55.479] [info] [console_user_server] on_console_changed: on_console:true
+[2022-09-25 18:44:55.480] [info] [console_user_server] grabber_client is started.
+[2022-09-25 18:44:55.481] [error] [console_user_server] grabber_client connect_failed: Permission denied
+[2022-09-25 18:44:56.492] [info] [console_user_server] grabber_client is connected.
+[2022-09-25 18:44:56.771] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-09-25 18:44:56.772] [info] [console_user_server] core_configuration is updated.
+[2022-09-25 18:45:26.788] [info] [console_user_server] Check for updates...
+[2022-09-25 22:46:40.648] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-09-25 22:46:40.648] [info] [console_user_server] grabber_client is stopped.
+[2022-09-25 22:46:40.649] [info] [console_user_server] grabber_client is started.
+[2022-09-25 22:46:40.656] [info] [console_user_server] grabber_client is connected.
+[2022-09-25 22:46:40.762] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-09-25 22:46:40.763] [info] [console_user_server] core_configuration is updated.
+[2022-09-25 22:47:10.799] [info] [console_user_server] Check for updates...
+[2022-10-19 23:05:53.314] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-10-19 23:05:53.355] [info] [console_user_server] grabber_client is stopped.
+[2022-10-19 23:05:53.411] [info] [console_user_server] grabber_client is started.
+[2022-10-19 23:05:53.412] [info] [console_user_server] grabber_client is connected.
+[2022-10-19 23:05:53.665] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-10-19 23:05:53.665] [info] [console_user_server] core_configuration is updated.
+[2022-10-19 23:06:23.682] [info] [console_user_server] Check for updates...
+[2022-10-20 06:40:01.308] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-10-20 06:40:01.311] [info] [console_user_server] grabber_client is stopped.
+[2022-10-20 06:40:01.640] [info] [console_user_server] grabber_client is started.
+[2022-10-20 06:40:01.658] [info] [console_user_server] grabber_client is connected.
+[2022-10-20 06:40:01.777] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-10-20 06:40:01.778] [info] [console_user_server] core_configuration is updated.
+[2022-10-20 06:40:31.984] [info] [console_user_server] Check for updates...
+[2022-11-10 14:28:29.026] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-11-10 14:28:29.027] [info] [console_user_server] grabber_client is stopped.
+[2022-11-10 14:28:29.040] [info] [console_user_server] grabber_client is started.
+[2022-11-10 14:28:29.041] [info] [console_user_server] grabber_client is connected.
+[2022-11-10 14:28:29.300] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-11-10 14:28:29.301] [info] [console_user_server] core_configuration is updated.
+[2022-11-10 14:28:59.330] [info] [console_user_server] Check for updates...
+[2022-11-19 06:40:22.948] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-11-19 06:40:22.950] [info] [console_user_server] grabber_client is stopped.
+[2022-11-19 06:40:22.987] [info] [console_user_server] grabber_client is started.
+[2022-11-19 06:40:22.993] [info] [console_user_server] grabber_client is connected.
+[2022-11-19 06:40:24.325] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-11-19 06:40:24.354] [info] [console_user_server] core_configuration is updated.
+[2022-11-19 06:40:54.765] [info] [console_user_server] Check for updates...
+[2022-11-20 23:01:48.029] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-11-20 23:01:48.399] [info] [console_user_server] grabber_client is stopped.
+[2022-11-20 23:01:48.418] [info] [console_user_server] grabber_client is started.
+[2022-11-20 23:01:48.419] [info] [console_user_server] grabber_client is connected.
+[2022-11-20 23:01:48.613] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-11-20 23:01:48.614] [info] [console_user_server] core_configuration is updated.
+[2022-11-20 23:02:18.633] [info] [console_user_server] Check for updates...
+[2022-11-24 21:22:04.097] [info] [console_user_server] version 14.10.0
+[2022-11-24 21:22:14.521] [info] [console_user_server] on_console_changed: on_console:true
+[2022-11-24 21:22:14.523] [info] [console_user_server] grabber_client is started.
+[2022-11-24 21:22:14.524] [info] [console_user_server] grabber_client is connected.
+[2022-11-24 21:22:14.686] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-11-24 21:22:14.687] [info] [console_user_server] core_configuration is updated.
+[2022-11-24 21:22:34.710] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-11-24 21:22:34.717] [info] [console_user_server] grabber_client is stopped.
+[2022-11-24 21:22:34.721] [info] [console_user_server] grabber_client is started.
+[2022-11-24 21:22:34.722] [info] [console_user_server] grabber_client is connected.
+[2022-11-24 21:22:34.852] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-11-24 21:22:34.852] [info] [console_user_server] core_configuration is updated.
+[2022-11-24 21:23:04.866] [info] [console_user_server] Check for updates...
+[2022-11-25 22:40:06.417] [info] [console_user_server] version 14.10.0
+[2022-11-25 22:40:16.732] [info] [console_user_server] on_console_changed: on_console:true
+[2022-11-25 22:40:16.752] [info] [console_user_server] grabber_client is started.
+[2022-11-25 22:40:16.753] [info] [console_user_server] grabber_client is connected.
+[2022-11-25 22:40:16.923] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-11-25 22:40:16.952] [info] [console_user_server] core_configuration is updated.
+[2022-11-25 22:40:47.022] [info] [console_user_server] Check for updates...
+[2022-12-02 21:16:20.231] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-02 21:16:20.233] [info] [console_user_server] grabber_client is stopped.
+[2022-12-02 21:16:20.281] [info] [console_user_server] grabber_client is started.
+[2022-12-02 21:16:20.381] [info] [console_user_server] grabber_client is connected.
+[2022-12-02 21:16:20.585] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-02 21:16:20.596] [info] [console_user_server] core_configuration is updated.
+[2022-12-02 21:16:50.615] [info] [console_user_server] Check for updates...
+[2022-12-03 19:44:12.339] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-03 19:44:12.344] [info] [console_user_server] grabber_client is stopped.
+[2022-12-03 19:44:12.347] [info] [console_user_server] grabber_client is started.
+[2022-12-03 19:44:12.348] [info] [console_user_server] grabber_client is connected.
+[2022-12-03 19:44:12.817] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-03 19:44:12.818] [info] [console_user_server] core_configuration is updated.
+[2022-12-03 19:44:42.836] [info] [console_user_server] Check for updates...
+[2022-12-07 21:17:53.549] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-07 21:17:53.555] [info] [console_user_server] grabber_client is stopped.
+[2022-12-07 21:17:53.558] [info] [console_user_server] grabber_client is started.
+[2022-12-07 21:17:53.559] [info] [console_user_server] grabber_client is connected.
+[2022-12-07 21:17:53.842] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-07 21:17:53.843] [info] [console_user_server] core_configuration is updated.
+[2022-12-07 21:18:23.864] [info] [console_user_server] Check for updates...
+[2022-12-10 11:10:11.781] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-10 11:10:11.781] [info] [console_user_server] grabber_client is stopped.
+[2022-12-10 11:10:11.799] [info] [console_user_server] grabber_client is started.
+[2022-12-10 11:10:11.800] [info] [console_user_server] grabber_client is connected.
+[2022-12-10 11:10:12.048] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-10 11:10:12.049] [info] [console_user_server] core_configuration is updated.
+[2022-12-10 11:10:42.077] [info] [console_user_server] Check for updates...
+[2022-12-10 13:10:56.329] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-10 13:10:56.337] [info] [console_user_server] grabber_client is stopped.
+[2022-12-10 13:10:56.339] [info] [console_user_server] grabber_client is started.
+[2022-12-10 13:10:56.340] [info] [console_user_server] grabber_client is connected.
+[2022-12-10 13:10:56.421] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-10 13:10:56.422] [info] [console_user_server] core_configuration is updated.
+[2022-12-10 13:15:56.307] [info] [console_user_server] Check for updates...
+[2022-12-10 16:44:12.559] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-10 16:44:12.567] [info] [console_user_server] grabber_client is stopped.
+[2022-12-10 16:44:12.568] [info] [console_user_server] grabber_client is started.
+[2022-12-10 16:44:12.569] [info] [console_user_server] grabber_client is connected.
+[2022-12-10 16:44:12.635] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-10 16:44:12.636] [info] [console_user_server] core_configuration is updated.
+[2022-12-10 17:01:33.680] [info] [console_user_server] Check for updates...
+[2022-12-10 17:01:44.912] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-10 17:01:44.917] [info] [console_user_server] grabber_client is stopped.
+[2022-12-10 17:01:44.919] [info] [console_user_server] grabber_client is started.
+[2022-12-10 17:01:44.920] [info] [console_user_server] grabber_client is connected.
+[2022-12-10 17:01:45.030] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-10 17:01:45.031] [info] [console_user_server] core_configuration is updated.
+[2022-12-10 17:02:15.115] [info] [console_user_server] Check for updates...
+[2022-12-11 22:34:23.747] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-11 22:34:23.748] [info] [console_user_server] grabber_client is stopped.
+[2022-12-11 22:34:23.750] [info] [console_user_server] grabber_client is started.
+[2022-12-11 22:34:23.750] [info] [console_user_server] grabber_client is connected.
+[2022-12-11 22:34:23.969] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-11 22:34:23.983] [info] [console_user_server] core_configuration is updated.
+[2022-12-11 22:34:54.013] [info] [console_user_server] Check for updates...
+[2022-12-14 22:04:35.771] [info] [console_user_server] version 14.10.0
+[2022-12-14 22:04:43.999] [info] [console_user_server] on_console_changed: on_console:true
+[2022-12-14 22:04:44.010] [info] [console_user_server] grabber_client is started.
+[2022-12-14 22:04:44.011] [info] [console_user_server] grabber_client is connected.
+[2022-12-14 22:04:44.121] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-14 22:04:44.148] [info] [console_user_server] core_configuration is updated.
+[2022-12-14 22:05:14.168] [info] [console_user_server] Check for updates...
+[2022-12-14 22:05:47.958] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-14 22:05:47.960] [info] [console_user_server] grabber_client is stopped.
+[2022-12-14 22:05:47.990] [info] [console_user_server] grabber_client is started.
+[2022-12-14 22:05:47.991] [info] [console_user_server] grabber_client is connected.
+[2022-12-14 22:05:48.065] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-14 22:05:48.065] [info] [console_user_server] core_configuration is updated.
+[2022-12-14 22:06:18.116] [info] [console_user_server] Check for updates...
+[2022-12-19 22:36:28.115] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2022-12-19 22:36:28.117] [info] [console_user_server] grabber_client is stopped.
+[2022-12-19 22:36:28.124] [info] [console_user_server] grabber_client is started.
+[2022-12-19 22:36:28.125] [info] [console_user_server] grabber_client is connected.
+[2022-12-19 22:36:28.394] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2022-12-19 22:36:28.403] [info] [console_user_server] core_configuration is updated.
+[2022-12-19 22:36:58.450] [info] [console_user_server] Check for updates...
+[2023-01-02 19:46:29.974] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2023-01-02 19:46:29.975] [info] [console_user_server] grabber_client is stopped.
+[2023-01-02 19:46:29.977] [info] [console_user_server] grabber_client is started.
+[2023-01-02 19:46:29.978] [info] [console_user_server] grabber_client is connected.
+[2023-01-02 19:46:30.241] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-02 19:46:30.241] [info] [console_user_server] core_configuration is updated.
+[2023-01-02 19:47:00.309] [info] [console_user_server] Check for updates...
+[2023-01-02 20:00:01.962] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2023-01-02 20:00:01.962] [info] [console_user_server] grabber_client is stopped.
+[2023-01-02 20:00:01.980] [info] [console_user_server] grabber_client is started.
+[2023-01-02 20:00:01.981] [info] [console_user_server] grabber_client is connected.
+[2023-01-02 20:00:02.077] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-02 20:00:02.078] [info] [console_user_server] core_configuration is updated.
+[2023-01-02 20:00:32.116] [info] [console_user_server] Check for updates...
+[2023-01-04 12:59:29.696] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-04 12:59:29.698] [info] [console_user_server] core_configuration is updated.
+[2023-01-05 01:32:45.516] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2023-01-05 01:32:45.925] [info] [console_user_server] grabber_client is stopped.
+[2023-01-05 01:32:46.590] [info] [console_user_server] grabber_client is started.
+[2023-01-05 01:32:46.635] [info] [console_user_server] grabber_client is connected.
+[2023-01-05 01:32:48.546] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-05 01:32:48.628] [info] [console_user_server] core_configuration is updated.
+[2023-01-05 03:33:01.459] [info] [console_user_server] Check for updates...
+[2023-01-06 20:10:24.228] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2023-01-06 20:10:24.229] [info] [console_user_server] grabber_client is stopped.
+[2023-01-06 20:10:24.249] [info] [console_user_server] grabber_client is started.
+[2023-01-06 20:10:24.251] [info] [console_user_server] grabber_client is connected.
+[2023-01-06 20:10:24.529] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-06 20:10:24.543] [info] [console_user_server] core_configuration is updated.
+[2023-01-06 20:10:54.662] [info] [console_user_server] Check for updates...
+[2023-01-07 20:06:06.855] [info] [console_user_server] grabber_client next heartbeat deadline exceeded
+[2023-01-07 20:06:06.859] [info] [console_user_server] grabber_client is stopped.
+[2023-01-07 20:06:06.866] [info] [console_user_server] grabber_client is started.
+[2023-01-07 20:06:06.868] [info] [console_user_server] grabber_client is connected.
+[2023-01-07 20:06:07.240] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-07 20:06:07.251] [info] [console_user_server] core_configuration is updated.
+[2023-01-07 20:06:37.392] [info] [console_user_server] Check for updates...
+[2023-01-07 20:07:19.231] [error] [console_user_server] grabber_client error: Connection reset by peer
+[2023-01-07 20:07:19.232] [info] [console_user_server] grabber_client is closed.
+[2023-01-07 20:07:20.141] [info] [console_user_server] version 14.11.0
+[2023-01-07 20:07:20.298] [info] [console_user_server] on_console_changed: on_console:true
+[2023-01-07 20:07:20.300] [info] [console_user_server] grabber_client is started.
+[2023-01-07 20:07:20.300] [error] [console_user_server] grabber_client connect_failed: Connection refused
+[2023-01-07 20:07:21.346] [info] [console_user_server] grabber_client is connected.
+[2023-01-07 20:07:21.480] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-07 20:07:21.482] [info] [console_user_server] core_configuration is updated.
+[2023-01-07 20:07:51.502] [info] [console_user_server] Check for updates...
+[2023-01-17 13:16:30.376] [info] [console_user_server] version 14.11.0
+[2023-01-17 13:16:37.779] [info] [console_user_server] on_console_changed: on_console:true
+[2023-01-17 13:16:37.781] [info] [console_user_server] grabber_client is started.
+[2023-01-17 13:16:37.782] [info] [console_user_server] grabber_client is connected.
+[2023-01-17 13:16:37.978] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-17 13:16:37.982] [info] [console_user_server] core_configuration is updated.
+[2023-01-17 13:17:07.995] [info] [console_user_server] Check for updates...
+[2023-01-17 13:21:09.473] [info] [console_user_server] version 14.11.0
+[2023-01-17 13:21:16.837] [info] [console_user_server] on_console_changed: on_console:true
+[2023-01-17 13:21:16.840] [info] [console_user_server] grabber_client is started.
+[2023-01-17 13:21:16.841] [info] [console_user_server] grabber_client is connected.
+[2023-01-17 13:21:17.046] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-17 13:21:17.050] [info] [console_user_server] core_configuration is updated.
+[2023-01-17 13:21:49.280] [info] [console_user_server] Check for updates...
+[2023-01-17 13:30:31.627] [info] [console_user_server] version 14.11.0
+[2023-01-17 13:30:40.247] [info] [console_user_server] on_console_changed: on_console:true
+[2023-01-17 13:30:40.266] [info] [console_user_server] grabber_client is started.
+[2023-01-17 13:30:40.267] [info] [console_user_server] grabber_client is connected.
+[2023-01-17 13:30:40.429] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-17 13:30:40.433] [info] [console_user_server] core_configuration is updated.
+[2023-01-17 13:31:10.460] [info] [console_user_server] Check for updates...
+[2023-01-26 14:34:32.205] [info] [console_user_server] version 14.11.0
+[2023-01-26 14:34:39.828] [info] [console_user_server] on_console_changed: on_console:true
+[2023-01-26 14:34:39.832] [info] [console_user_server] grabber_client is started.
+[2023-01-26 14:34:39.833] [info] [console_user_server] grabber_client is connected.
+[2023-01-26 14:34:40.010] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-26 14:34:40.015] [info] [console_user_server] core_configuration is updated.
+[2023-01-26 14:35:10.034] [info] [console_user_server] Check for updates...
+[2023-01-28 13:38:20.874] [info] [console_user_server] version 14.11.0
+[2023-01-28 13:38:29.502] [info] [console_user_server] on_console_changed: on_console:true
+[2023-01-28 13:38:29.505] [info] [console_user_server] grabber_client is started.
+[2023-01-28 13:38:29.507] [info] [console_user_server] grabber_client is connected.
+[2023-01-28 13:38:29.738] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-28 13:38:29.750] [info] [console_user_server] core_configuration is updated.
+[2023-01-28 13:38:59.759] [info] [console_user_server] Check for updates...
+[2023-01-28 13:42:17.494] [info] [console_user_server] version 14.11.0
+[2023-01-28 13:42:26.299] [info] [console_user_server] on_console_changed: on_console:true
+[2023-01-28 13:42:26.321] [info] [console_user_server] grabber_client is started.
+[2023-01-28 13:42:26.322] [info] [console_user_server] grabber_client is connected.
+[2023-01-28 13:42:26.485] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-01-28 13:42:26.489] [info] [console_user_server] core_configuration is updated.
+[2023-01-28 13:42:56.514] [info] [console_user_server] Check for updates...
+[2023-02-08 08:09:44.366] [info] [console_user_server] version 14.11.0
+[2023-02-08 08:09:50.676] [info] [console_user_server] on_console_changed: on_console:true
+[2023-02-08 08:09:50.694] [info] [console_user_server] grabber_client is started.
+[2023-02-08 08:09:50.695] [info] [console_user_server] grabber_client is connected.
+[2023-02-08 08:09:50.908] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-02-08 08:09:50.913] [info] [console_user_server] core_configuration is updated.
+[2023-02-08 08:10:20.922] [info] [console_user_server] Check for updates...
+[2023-02-12 08:25:34.292] [info] [console_user_server] grabber_client is closed.
+[2023-02-12 08:25:35.463] [info] [console_user_server] grabber_client is connected.
+[2023-02-12 08:25:36.262] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-02-12 08:25:36.275] [info] [console_user_server] core_configuration is updated.
+[2023-02-12 09:15:52.129] [info] [console_user_server] Check for updates...
+[2023-02-18 22:21:30.887] [info] [console_user_server] version 14.11.0
+[2023-02-18 22:21:39.319] [info] [console_user_server] on_console_changed: on_console:true
+[2023-02-18 22:21:39.321] [info] [console_user_server] grabber_client is started.
+[2023-02-18 22:21:39.322] [info] [console_user_server] grabber_client is connected.
+[2023-02-18 22:21:39.521] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-02-18 22:21:39.525] [info] [console_user_server] core_configuration is updated.
+[2023-02-18 22:22:09.565] [info] [console_user_server] Check for updates...
+[2023-02-21 08:46:25.119] [info] [console_user_server] version 14.11.0
+[2023-02-21 08:46:33.655] [info] [console_user_server] on_console_changed: on_console:true
+[2023-02-21 08:46:33.658] [info] [console_user_server] grabber_client is started.
+[2023-02-21 08:46:33.659] [info] [console_user_server] grabber_client is connected.
+[2023-02-21 08:46:33.851] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-02-21 08:46:33.854] [info] [console_user_server] core_configuration is updated.
+[2023-02-21 08:47:03.872] [info] [console_user_server] Check for updates...
+[2023-02-21 08:50:27.070] [info] [console_user_server] version 14.11.0
+[2023-02-21 08:50:33.521] [info] [console_user_server] on_console_changed: on_console:true
+[2023-02-21 08:50:33.523] [info] [console_user_server] grabber_client is started.
+[2023-02-21 08:50:33.524] [info] [console_user_server] grabber_client is connected.
+[2023-02-21 08:50:33.859] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-02-21 08:50:33.870] [info] [console_user_server] core_configuration is updated.
+[2023-02-21 08:51:04.003] [info] [console_user_server] Check for updates...
+[2023-02-21 08:56:24.177] [info] [console_user_server] version 14.11.0
+[2023-02-21 08:56:32.943] [info] [console_user_server] on_console_changed: on_console:true
+[2023-02-21 08:56:32.964] [info] [console_user_server] grabber_client is started.
+[2023-02-21 08:56:32.966] [info] [console_user_server] grabber_client is connected.
+[2023-02-21 08:56:33.293] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-02-21 08:56:33.316] [info] [console_user_server] core_configuration is updated.
+[2023-02-21 08:57:03.410] [info] [console_user_server] Check for updates...
+[2023-02-21 09:04:07.932] [info] [console_user_server] version 14.11.0
+[2023-02-21 09:04:16.285] [info] [console_user_server] on_console_changed: on_console:true
+[2023-02-21 09:04:16.289] [info] [console_user_server] grabber_client is started.
+[2023-02-21 09:04:16.290] [info] [console_user_server] grabber_client is connected.
+[2023-02-21 09:04:16.525] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-02-21 09:04:16.529] [info] [console_user_server] core_configuration is updated.
+[2023-02-21 09:04:46.561] [info] [console_user_server] Check for updates...
+[2023-04-18 08:18:33.335] [info] [console_user_server] version 14.11.0
+[2023-04-18 08:18:41.038] [info] [console_user_server] on_console_changed: on_console:true
+[2023-04-18 08:18:41.039] [info] [console_user_server] grabber_client is started.
+[2023-04-18 08:18:41.040] [info] [console_user_server] grabber_client is connected.
+[2023-04-18 08:18:41.280] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-04-18 08:18:41.281] [info] [console_user_server] core_configuration is updated.
+[2023-04-18 08:19:11.298] [info] [console_user_server] Check for updates...
+[2023-05-06 09:46:28.060] [info] [console_user_server] version 14.11.0
+[2023-05-06 09:46:38.044] [info] [console_user_server] on_console_changed: on_console:true
+[2023-05-06 09:46:38.047] [info] [console_user_server] grabber_client is started.
+[2023-05-06 09:46:38.048] [info] [console_user_server] grabber_client is connected.
+[2023-05-06 09:46:38.210] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-05-06 09:46:38.233] [info] [console_user_server] core_configuration is updated.
+[2023-05-06 09:47:08.271] [info] [console_user_server] Check for updates...
+[2023-05-06 09:47:32.255] [error] [console_user_server] grabber_client error: Connection reset by peer
+[2023-05-06 09:47:32.255] [info] [console_user_server] grabber_client is closed.
+[2023-05-06 09:47:34.177] [info] [console_user_server] version 14.12.0
+[2023-05-06 09:47:34.388] [info] [console_user_server] on_console_changed: on_console:true
+[2023-05-06 09:47:34.390] [info] [console_user_server] grabber_client is started.
+[2023-05-06 09:47:34.391] [error] [console_user_server] grabber_client connect_failed: Permission denied
+[2023-05-06 09:47:35.402] [info] [console_user_server] grabber_client is connected.
+[2023-05-06 09:47:35.602] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-05-06 09:47:35.604] [info] [console_user_server] core_configuration is updated.
+[2023-05-06 09:48:05.654] [info] [console_user_server] Check for updates...
+[2023-06-09 09:42:13.116] [info] [console_user_server] version 14.12.0
+[2023-06-09 09:42:22.217] [info] [console_user_server] on_console_changed: on_console:true
+[2023-06-09 09:42:22.219] [info] [console_user_server] grabber_client is started.
+[2023-06-09 09:42:22.221] [info] [console_user_server] grabber_client is connected.
+[2023-06-09 09:42:22.514] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-06-09 09:42:22.522] [info] [console_user_server] core_configuration is updated.
+[2023-06-09 09:42:52.610] [info] [console_user_server] Check for updates...
+[2023-06-30 09:20:34.388] [info] [console_user_server] version 14.12.0
+[2023-06-30 09:20:43.653] [info] [console_user_server] on_console_changed: on_console:true
+[2023-06-30 09:20:43.655] [info] [console_user_server] grabber_client is started.
+[2023-06-30 09:20:43.656] [info] [console_user_server] grabber_client is connected.
+[2023-06-30 09:20:43.893] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-06-30 09:20:43.895] [info] [console_user_server] core_configuration is updated.
+[2023-06-30 09:21:13.907] [info] [console_user_server] Check for updates...
+[2023-07-03 13:33:21.660] [info] [console_user_server] version 14.12.0
+[2023-07-03 13:33:30.212] [info] [console_user_server] on_console_changed: on_console:true
+[2023-07-03 13:33:30.214] [info] [console_user_server] grabber_client is started.
+[2023-07-03 13:33:30.215] [info] [console_user_server] grabber_client is connected.
+[2023-07-03 13:33:30.438] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-07-03 13:33:30.444] [info] [console_user_server] core_configuration is updated.
+[2023-07-03 13:34:00.460] [info] [console_user_server] Check for updates...
+[2023-07-12 16:28:08.236] [info] [console_user_server] version 14.12.0
+[2023-07-12 16:28:16.612] [info] [console_user_server] on_console_changed: on_console:true
+[2023-07-12 16:28:16.614] [info] [console_user_server] grabber_client is started.
+[2023-07-12 16:28:16.631] [info] [console_user_server] grabber_client is connected.
+[2023-07-12 16:28:16.840] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-07-12 16:28:16.846] [info] [console_user_server] core_configuration is updated.
+[2023-07-12 16:28:46.883] [info] [console_user_server] Check for updates...
+[2023-07-20 13:25:51.509] [info] [console_user_server] version 14.12.0
+[2023-07-20 13:25:58.997] [info] [console_user_server] on_console_changed: on_console:true
+[2023-07-20 13:25:58.999] [info] [console_user_server] grabber_client is started.
+[2023-07-20 13:25:59.000] [info] [console_user_server] grabber_client is connected.
+[2023-07-20 13:25:59.541] [info] [console_user_server] Load /Users/pj/.config/karabiner/karabiner.json...
+[2023-07-20 13:25:59.546] [info] [console_user_server] core_configuration is updated.
+[2023-07-20 13:26:29.553] [info] [console_user_server] Check for updates...
