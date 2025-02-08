@@ -257,7 +257,8 @@ DA='50.28.102.35'
 DB='64.225.57.167'
 DN='67.43.9.46'
 DR='159.203.151.178'
-GVS='142.93.10.78'
+GVS='5.161.122.42'
+GVSDEV='5.161.241.255'
 HA='69.167.152.76'
 HR='50.28.103.17'
 MT='159.89.44.119'
@@ -282,6 +283,7 @@ alias dc="mosh $USER@$DC"
 alias dn="mosh $USER@$DN"
 alias dr="mosh $USER@$DR"
 alias gvs="mosh $USER@$GVS"
+alias gvsdev="mosh $USER@GVSDEV"
 alias ha="mosh $USER@$HA"
 alias hr="mosh $USER@$HR"
 alias mt="mosh $USER@$MT"
@@ -295,6 +297,7 @@ alias pjdev="mosh $USER@$PJDEV"
 
 #alias careeners="ssh careeners@162.243.28.35"
 alias careeners="ssh pj@104.248.232.138"
+alias gvs-ts="ssh pj@5.161.122.42"
 
 # PERMISSIONS
 ##########################################
@@ -326,7 +329,7 @@ alias cf-tunnel="cloudflared tunnel --url http://localhost:3000"
 
 # Home
 ##########################################
-alias nas="ssh pj@192.168.86.49"
+alias nas="ssh pj@192.168.86.22"
 
 #
 # MISC
