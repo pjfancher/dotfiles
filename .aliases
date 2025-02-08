@@ -231,7 +231,7 @@ alias dsr="dstop && dremove" # Stop and remove all docker containers
 dstop() { docker stop $(docker ps -aq); } #Stop all docker containers
 dremove() { docker rm $(docker ps -a -q); } #Remove all docker containers
 dcc(){ docker-compose exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" $1 bash } #Login into given Docker container
-alias dockerclean='docker system prune --all --volumes --force'
+alias dockerclean='docker system prune --all --volumes --force && docker volume rm $(docker volume ls -q -f dangling=true)'
 alias dri="docker rmi $(docker images -a -q)" # Remove cached images
 
 

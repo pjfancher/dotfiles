@@ -74,7 +74,7 @@ brew cask install karabiner-elements
 brew cask install rectangle
 brew cask install 1password
 brew cask install cyberduck
-brew cask install nordvpn
+brew cask install cursor
 
 
 # Dev
