@@ -23,7 +23,7 @@ fi
 
 echo "Setting Homebrew permissions...."
 BREW_PREFIX=$(brew --prefix)
-chown -R $USER $BREW_PREFIX/*
+#:echown -R $USER $BREW_PREFIX/*
 
 echo "Updating and upgrading Homebrew..."; echo;
 yes | brew update &> /dev/null

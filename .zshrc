@@ -144,3 +144,10 @@ eval "$(direnv hook zsh)"
 
 # Github co-pilot CLI
 eval "$(github-copilot-cli alias -- "$0")"
+
+# bun completions
+[ -s "/Users/pj/.bun/_bun" ] && source "/Users/pj/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

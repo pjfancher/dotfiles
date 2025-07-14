@@ -329,7 +329,7 @@ alias cf-tunnel="cloudflared tunnel --url http://localhost:3000"
 
 # Home
 ##########################################
-alias nas="ssh pj@192.168.86.22"
+alias nas="ssh pj@192.168.86.64"
 
 #
 # MISC
