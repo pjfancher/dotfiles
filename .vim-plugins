@@ -77,7 +77,7 @@ Plugin 'elzr/vim-json'
 Plugin 'Valloric/YouCompleteMe'
 "
 " The ultimate snippet solution for Vim
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 
 " Display number of search matches & index of a current match
 Plugin 'google/vim-searchindex'
