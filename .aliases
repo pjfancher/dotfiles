@@ -230,7 +230,7 @@ alias dps="docker ps" #Docker process list
 alias dsr="dstop && dremove" # Stop and remove all docker containers
 dstop() { docker stop $(docker ps -aq); } #Stop all docker containers
 dremove() { docker rm $(docker ps -a -q); } #Remove all docker containers
-dcc(){ docker-compose exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" $1 bash } #Login into given Docker container
+dcc(){ docker-compose exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" $1 bash; } #Login into given Docker container
 alias dockerclean='docker system prune --all --volumes --force && docker volume rm $(docker volume ls -q -f dangling=true)'
 alias dri="docker rmi $(docker images -a -q)" # Remove cached images
 
@@ -292,7 +292,7 @@ alias 404="mosh $USER@404.center"
 alias rainmaker="mosh $USER@$RM"
 alias docs="mosh docentuser@db-docs.com"
 
-alias dev="mosh $USER@159.89.190.15"
+alias dev="mosh $USER@24.199.92.145"
 alias pjdev="mosh $USER@$PJDEV"
 
 #alias careeners="ssh careeners@162.243.28.35"
