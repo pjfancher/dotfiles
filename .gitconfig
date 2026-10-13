@@ -1,15 +1,9 @@
-[user]
-	name = PJ Fancher
-	email = peejfancher@gmail.com
 [core]
 	mergeoptions = --no-edit
 	editor = vim
 	hooksPath = "~/dotfiles/.git-hooks"
 [tig]
 	tab-size = 4
-[user]
-	email = peejfancher@gmail.com
-	name = PJ Fancher
 [safe]
 	directory = /home/cardrates
 	directory = /home/datingadvice
@@ -49,3 +43,7 @@
 	directory = /home/sites/hostingadvice
 	directory = /home/sites/datingnews
 	directory = /home/sites/cardrates
+# Machine-specific git identity + GitHub credential helper.
+# Written by ~/dotfiles/install/github.sh (re-run it to switch accounts).
+[include]
+	path = ~/.gitconfig.local

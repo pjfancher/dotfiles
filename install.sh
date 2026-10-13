@@ -8,6 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
   && . "install/symlinks.sh" \
   && . "install/zsh.sh" \
   && . "install/vim.sh" \
+  && . "install/github.sh" \
   && cd $HOME
   
 #Complete
