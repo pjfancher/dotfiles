@@ -349,9 +349,11 @@ alias network="sudo tcpdump -i en0" #Show network traffic
 
 # SUFFIX ALIASES ( if extension: open with )
 ##########################################
-alias -s log="tail -f"
-alias -s php="vim"
-alias -s css="vim"
-alias -s less="vim"
-alias -s js="vim"
-alias -s md="vim"
+if [ -n "$ZSH_VERSION" ]; then
+	alias -s log="tail -f"
+	alias -s php="vim"
+	alias -s css="vim"
+	alias -s less="vim"
+	alias -s js="vim"
+	alias -s md="vim"
+fi
